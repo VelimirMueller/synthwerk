@@ -1,4 +1,4 @@
-// Renders assets/social/social-preview.svg to assets/social-preview.png (1280 × 640).
+// Renders assets/social/social-preview-v2.svg to assets/social-preview.png (1280 × 640).
 // Needs Playwright with Chromium: npm i --no-save playwright@1.64.0 && npx playwright install chromium
 // Run from the repo root: node scripts/render-social.mjs
 import { statSync } from 'node:fs'
@@ -6,7 +6,7 @@ import { fileURLToPath } from 'node:url'
 import { chromium } from 'playwright'
 
 const root = new URL('../', import.meta.url)
-const src = new URL('assets/social/social-preview.svg', root)
+const src = new URL('assets/social/social-preview-v2.svg', root)
 const out = fileURLToPath(new URL('assets/social-preview.png', root))
 
 const browser = await chromium.launch()

@@ -1,0 +1,26 @@
+   your website             your app                 you, the operator
+        |                       |                            |
+ +------v-------+       +-------v------+             +-------v------+
+ |   widgets    |       |     sdk      |             |    studio    |
+ | chat, vision |       | npm packages |             | build, admin |
+ +------+-------+       +-------+------+             +-------+------+
+        |                       |                            |
+        +-----------------------+----------------------------+
+                                | HTTPS
+ +------------------------------v-----------------------------------+
+ |  edge     TLS  /  WAF  /  rate limit             (from infra)    |
+ +-----+--------------+--------------+--------------+----------+----+
+       |              |              |              |          :
+ +-----v----+   +-----v----+   +-----v----+   +-----v----+  +..v.........+
+ | identity |   |   llm    |   |  vision  |   |  pulse   |  :  Strobe    :
+ | orgs     |   | chat     |   | image    |   | health   |  :  mascot    :
+ | roles    |   | gateway  |   | labels   |   | audit    |  :  public    :
+ +-----+----+   +-----+----+   +-----+----+   +-----+----+  +............+
+       |              |              |              |        isolated: no
+ ======+==============+==============+==============+=====   tools, no db,
+   NATS event bus  (CloudEvents, facts only)                  no egress
+
+ contracts  OpenAPI + event schemas --> generated clients
+ infra      servers, compose stack, edge, bus, repo settings
+ e2e        Playwright tests across all services
+ blueprint  shared CI, lint configs, templates for every repo
