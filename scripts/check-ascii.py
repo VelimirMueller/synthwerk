@@ -3,7 +3,8 @@
 
 Checks every ```text block in the given Markdown files and every assets/ascii/*.txt file:
 - no tab characters, no trailing spaces
-- printable ASCII only; U+2588 FULL BLOCK is allowed in wordmark files and README blocks
+- printable ASCII only; U+2588 FULL BLOCK is allowed in wordmark files and in blocks
+  whose first 5 rows hold only full blocks and spaces (a block wordmark)
 - 80 columns or less
 Exit 0: all rules pass. Exit 1: a rule fails.
 
@@ -42,14 +43,18 @@ def main():
     errors = []
     count = 0
     for doc in docs:
-        text = open(doc, encoding="utf-8").read()
+        with open(doc, encoding="utf-8") as fh:
+            text = fh.read()
         for m in re.finditer(r"^```text\n(.*?)^```", text, flags=re.S | re.M):
             start = text[: m.start()].count("\n") + 2
             block = m.group(1).rstrip("\n").split("\n")
-            errors += check(f"{doc} (block at line {start}) row", block, True)
+            is_wordmark = any(BLOCK in line for line in block[:5]) and all(
+                set(line) <= {BLOCK, " "} for line in block[:5])
+            errors += check(f"{doc} (block at line {start}) row", block, is_wordmark)
             count += 1
     for path in sorted(glob.glob("assets/ascii/*.txt")):
-        lines = open(path, encoding="utf-8").read().rstrip("\n").split("\n")
+        with open(path, encoding="utf-8") as fh:
+            lines = fh.read().rstrip("\n").split("\n")
         errors += check(path, lines, os.path.basename(path).startswith("wordmark"))
         count += 1
     for e in errors:
