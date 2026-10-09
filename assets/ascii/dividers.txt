@@ -1,0 +1,19 @@
+# Section headers. Copy one line into a ```text block, change the label.
+# Width: 72 columns. Number on the left, label on the right, in capitals.
+
+-- 01 ------------------------------------------------------ OVERVIEW --
+-- 02 ----------------------------------------------------- ECOSYSTEM --
+-- 03 --------------------------------------------------------- REPOS --
+-- 04 -------------------------------------------- TWO WAYS TO USE IT --
+-- 05 ---------------------------------------------------- PRINCIPLES --
+-- 06 ------------------------------------------------------- ROADMAP --
+-- 07 --------------------------------------------- HOW THE REPOS FIT --
+-- 08 ---------------------------------------------------------- DOCS --
+
+# Status block (top of a README, under the intro). Max 40 columns: fits a phone.
+[ STATUS ]  M0 clean slate, 2026-10
+[ WORKS  ]  blueprint, tokens, vision
+[ NEXT   ]  M1: spine runs locally
+
+# Terminal snippet:
+$ gh repo clone VelimirMueller/synthwerk

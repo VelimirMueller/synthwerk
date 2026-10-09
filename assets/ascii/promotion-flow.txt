@@ -1,0 +1,11 @@
+ +----------+  PR + checks  +--------+     auto      +-------+
+ |  feat/*  | ------------> |  main  | ------------> |  dev  |
+ +----------+               +--------+               +---+---+
+                                                         |
+                                                         | tag vX.Y.Z
+                                                         |
+ +-------+   manual approval   +-------+                 |
+ |  prd  | <------------------ |  stg  | <---------------+
+ +-------+                     +-------+
+
+  trunk-based: no env branches. one image, built once, promoted by digest.
