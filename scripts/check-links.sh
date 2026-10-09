@@ -2,7 +2,8 @@
 # Checks every github.com/VelimirMueller/synthwerk* link in README.md with the GitHub API.
 # Read-only: it calls `gh api` with GET only. Needs an authenticated `gh`.
 # The repo `synthwerk` itself may return 404 until it is published (allowed, reported as SKIP).
-# Exit 0: all links resolve. Exit 1: one or more links are broken.
+# Exit 0: all links resolve. Exit 1: one or more links are broken (404).
+# Exit 2: an API call failed for another reason (no auth, rate limit, network).
 set -euo pipefail
 
 cd "$(dirname "$0")/.."
@@ -17,6 +18,7 @@ fail=0
 while IFS= read -r url; do
   rest="${url#https://github.com/${owner}/}"
   rest="${rest%%#*}"
+  rest="${rest%%\?*}"
   repo="${rest%%/*}"
   path=""
   ref=""
@@ -35,8 +37,11 @@ while IFS= read -r url; do
     endpoint="repos/${owner}/${repo}"
   fi
 
-  if gh api -X GET "$endpoint" --silent 2>/dev/null; then
+  if err=$(gh api -X GET "$endpoint" --silent 2>&1); then
     echo "OK    $url"
+  elif [[ "$err" != *"HTTP 404"* ]]; then
+    echo "ERR   $url (${err%%$'\n'*})"
+    [ "$fail" -eq 1 ] || fail=2
   elif [ "$repo" = "$allow_404" ] && [ -z "$path" ]; then
     echo "SKIP  $url (not published yet)"
   else

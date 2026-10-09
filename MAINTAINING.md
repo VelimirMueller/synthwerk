@@ -29,5 +29,6 @@ scripts/check-links.sh other.md   # checks another file
 ```
 
 - The script calls `gh api` with GET only. It needs a signed-in `gh`.
+- Exit 0: all links resolve. Exit 1: a link is broken. Exit 2: an API call failed (auth, rate limit, network).
 - A 404 for the repo `synthwerk` itself is allowed until the repo is published.
 - Update the repo table when a repo is created or changes status. Then run the check.
