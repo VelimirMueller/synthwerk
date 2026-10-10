@@ -157,6 +157,12 @@ A repo without a link does not exist yet.
 
 ### Docs
 
+- [Docs index](docs/README.md): every topic, one link per line. Start here.
+- [Getting started](docs/getting-started.md), [developer guide](docs/developer-guide.md) and [contribution guide](CONTRIBUTING.md).
+- [Use cases](docs/use-cases.md), [feature catalogue](docs/feature-catalogue.md) and [stakeholder guide](docs/stakeholder-guide.md).
+- [Design system](docs/design-system.md): tokens, colours, Figma library, `synthwerk-ui`.
+- [Infrastructure](docs/infrastructure.md), [CI/CD](docs/ci-cd.md) and [third-party tools](docs/third-party.md).
+- [Roadmap](docs/roadmap.md), [ticket board](https://github.com/VelimirMueller/synthwerk/projects), [changelog](CHANGELOG.md) and [release notes](docs/release-notes.md).
 - [Blueprint README](https://github.com/VelimirMueller/synthwerk-blueprint#readme): how a repo adopts the shared CI and templates.
 - [Definition of Ready](https://github.com/VelimirMueller/synthwerk-blueprint/blob/main/docs/process/definition-of-ready.md) and [Definition of Done](https://github.com/VelimirMueller/synthwerk-blueprint/blob/main/docs/process/definition-of-done.md).
 - [Repo templates](https://github.com/VelimirMueller/synthwerk-blueprint/tree/main/templates/_common) and [caller workflows](https://github.com/VelimirMueller/synthwerk-blueprint/tree/main/examples/workflows).

@@ -1,0 +1,101 @@
+{
+  "group": "flagship",
+  "version": "v1",
+  "dividers": [
+    {"key": "index",        "index": "01", "title": "DOCS",              "caption": "ONE LINK PER LINE. NO TREASURE HUNT.",    "art": "strip-flagship-1"},
+    {"key": "start",        "index": "02", "title": "GETTING STARTED",   "caption": "TEN MINUTES. COFFEE NOT INCLUDED.",       "art": "strip-flagship-2"},
+    {"key": "usecases",     "index": "03", "title": "USE CASES",         "caption": "WHO NEEDS THIS, AND FOR WHAT.",           "art": "strip-flagship-3"},
+    {"key": "features",     "index": "04", "title": "FEATURE CATALOGUE", "caption": "PLANNED MEANS PLANNED.",                  "art": "strip-flagship-4"},
+    {"key": "roadmap",      "index": "05", "title": "ROADMAP",           "caption": "ESTIMATES. NOT PROMISES.",                "art": "strip-flagship-5"},
+    {"key": "design",       "index": "06", "title": "DESIGN SYSTEM",     "caption": "ONE SOURCE. NO DRIFT.",                   "art": "strip-flagship-1"},
+    {"key": "infra",        "index": "07", "title": "INFRASTRUCTURE",    "caption": "THREE PROVIDERS. ONE DEMO.",              "art": "strip-flagship-2"},
+    {"key": "cicd",         "index": "08", "title": "CI/CD",             "caption": "BUILT ONCE. PROMOTED BY DIGEST.",         "art": "strip-flagship-3"},
+    {"key": "developer",    "index": "09", "title": "DEVELOPER GUIDE",   "caption": "NAMES, RULES, ONE FORMATTER.",            "art": "strip-flagship-4"},
+    {"key": "stakeholder",  "index": "10", "title": "STAKEHOLDER GUIDE", "caption": "FIVE MINUTES. NO SLIDES.",                "art": "strip-flagship-5"},
+    {"key": "thirdparty",   "index": "11", "title": "THIRD-PARTY TOOLS", "caption": "EVERYTHING WE DID NOT WRITE.",            "art": "strip-flagship-1"},
+    {"key": "releases",     "index": "12", "title": "RELEASE NOTES",     "caption": "FOR PEOPLE WHO SKIP COMMITS.",            "art": "strip-flagship-2"},
+    {"key": "board",        "index": "13", "title": "TICKET BOARD",      "caption": "FIVE COLUMNS. THREE IN PROGRESS, MAX.",   "art": "strip-flagship-3"}
+  ],
+  "panels": [
+    {"key": "index-areas", "type": "cards", "title": "FOUR WAYS INTO THE DOCS", "items": [
+      {"title": "PRODUCT", "text": "Use cases, feature catalogue, stakeholder guide, design system."},
+      {"title": "BUILD", "text": "Getting started, developer guide, contribution guide, architecture."},
+      {"title": "RUN", "text": "Infrastructure, hosting and database, CI/CD, third-party tools."},
+      {"title": "PROJECT", "text": "Roadmap, ticket board, changelog, release notes, license."}
+    ]},
+    {"key": "start-terminal", "type": "terminal", "title": "GET THE MAP", "lines": [
+      "$ gh repo clone VelimirMueller/synthwerk",
+      "$ cd synthwerk",
+      "$ python3 scripts/check-ascii.py",
+      "# exit 0: all rules pass",
+      "$ scripts/check-links.sh",
+      "# exit 0: all links resolve"
+    ]},
+    {"key": "usecases-personas", "type": "cards", "title": "FOUR PEOPLE, FOUR GOALS", "items": [
+      {"title": "SAM, SOLO DEV", "text": "Adds AI chat to a client site fast. Uses the snippet and the SDK."},
+      {"title": "LENA, AGENCY", "text": "Runs one widget on many sites from one admin."},
+      {"title": "MAX, END USER", "text": "Asks a question and gets a streamed answer. Scans a card."},
+      {"title": "ADA, ADMIN", "text": "Sees health, manages users and tunes the AI."}
+    ]},
+    {"key": "features-stats", "type": "stats", "title": "THE CATALOGUE IN NUMBERS", "items": [
+      {"value": "10", "label": "FEATURE AREAS"},
+      {"value": "5", "label": "EPICS IN THE MVP"},
+      {"value": "2", "label": "PARTS RELEASED"},
+      {"value": "1", "label": "SERVICE WORKING"}
+    ]},
+    {"key": "roadmap-status", "type": "status", "title": "SEVEN MILESTONES", "rows": [
+      {"label": "M0 clean slate, 2026-10", "value": "in progress", "state": "wip"},
+      {"label": "M1 spine runs locally, 2026-11", "value": "planned", "state": "planned"},
+      {"label": "M2 chat slice on dev, 2027-01", "value": "planned", "state": "planned"},
+      {"label": "M3 MVP on prd, 2027-02", "value": "planned", "state": "planned"},
+      {"label": "M4 public demo, 2027-04", "value": "planned", "state": "planned"},
+      {"label": "M5 paid plans and SDK apps, 2027-05", "value": "planned", "state": "planned"},
+      {"label": "M6 cluster-ready, 2027-06", "value": "planned", "state": "planned"}
+    ]},
+    {"key": "design-flow", "type": "flow", "title": "FROM TOKEN TO PRODUCT", "nodes": [
+      {"title": "TOKENS", "sub": "released, 0.2.0", "hot": true},
+      {"title": "FIGMA", "sub": "library, planned"},
+      {"title": "SYNTHWERK-UI", "sub": "components, planned"},
+      {"title": "PRODUCTS", "sub": "studio, widgets, site"}
+    ], "caption": "One source: tokens. Figma and code read the same values."},
+    {"key": "design-rules", "type": "cards", "title": "THE LOOK IN THREE RULES", "items": [
+      {"title": "ONE ACCENT", "text": "Indigo is the accent of the product. One accent per surface."},
+      {"title": "GREEN IS STATUS", "text": "Emerald means the current status. It is never decoration."},
+      {"title": "DARK AND LIGHT", "text": "Every surface has both versions. Text values pass 4.5:1."}
+    ]},
+    {"key": "infra-flow", "type": "flow", "title": "THE DEMO STACK", "nodes": [
+      {"title": "VERCEL", "sub": "front ends"},
+      {"title": "VPS", "sub": "edge, services, models", "hot": true},
+      {"title": "SUPABASE", "sub": "Postgres"},
+      {"title": "GITHUB", "sub": "code, CI/CD, board"}
+    ], "caption": "Decided 2026-10-10. Nothing is deployed yet."},
+    {"key": "cicd-flow", "type": "flow", "title": "ONE IMAGE, FOUR STOPS", "nodes": [
+      {"title": "FEAT/*", "sub": "PR + checks"},
+      {"title": "MAIN", "sub": "trunk", "hot": true},
+      {"title": "DEV", "sub": "auto"},
+      {"title": "STG", "sub": "tag vX.Y.Z"},
+      {"title": "PRD", "sub": "manual approval"}
+    ], "caption": "No environment branches. Deploys start with milestone M1."},
+    {"key": "developer-stats", "type": "stats", "title": "THE REPOS IN NUMBERS", "items": [
+      {"value": "8", "label": "REPOS ON GITHUB"},
+      {"value": "4", "label": "REPOS PLANNED"},
+      {"value": "5", "label": "SHARED WORKFLOWS"},
+      {"value": "1", "label": "CONTRACT"}
+    ]},
+    {"key": "stakeholder-status", "type": "status", "title": "WHAT IS TRUE TODAY", "rows": [
+      {"label": "Shared CI and templates", "value": "released, v1", "state": "ok"},
+      {"label": "Design tokens", "value": "released, 0.2.0", "state": "ok"},
+      {"label": "Image recognition", "value": "working, eval 93.1 %", "state": "ok"},
+      {"label": "Sign-in, chat, admin, health", "value": "rewrite planned", "state": "planned"},
+      {"label": "Public demo", "value": "planned, M4", "state": "planned"},
+      {"label": "Deployed services", "value": "none", "state": "off"}
+    ]},
+    {"key": "board-flow", "type": "flow", "title": "A TASK, LEFT TO RIGHT", "nodes": [
+      {"title": "BACKLOG", "sub": "known"},
+      {"title": "READY", "sub": "planned, clear"},
+      {"title": "IN PROGRESS", "sub": "3 tasks max", "hot": true},
+      {"title": "IN REVIEW", "sub": "PR open"},
+      {"title": "DONE", "sub": "merged, verified"}
+    ], "caption": "One board for all synthwerk repos."}
+  ]
+}

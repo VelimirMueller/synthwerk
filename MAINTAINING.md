@@ -34,6 +34,13 @@ npx playwright install chromium
 node scripts/render-social.mjs
 ```
 
+## Change the docs images
+
+- The images of the pages in `docs/` are in `assets/docs/`. The spec is `brand/docs-kit.json`.
+- They come from the `vm-brand` kit, like the README images. Do not edit them by hand.
+- After a change to the spec, run the kit with `--out assets/docs`. Then copy the new alt texts from `assets/docs/alt-v1.json` into the pages.
+- For a new look, raise `version` in the spec and update the file names in the pages.
+
 ## Change the ASCII art
 
 - The ASCII kit is in `assets/ascii/`. The README uses copies of these files in `text` code blocks.
