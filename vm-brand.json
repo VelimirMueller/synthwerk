@@ -3,5 +3,9 @@
   "tagline": "AI services you run yourself. In small pieces.",
   "sublabel": "MAP · 8 REPOS · MILESTONE M0",
   "bannerVersion": "v2",
-  "art": {"file": "v2/synthwerk.png", "seed": 311}
+  "art": {
+    "file": "v2/synthwerk.png",
+    "seed": 311
+  },
+  "status": "WORKING"
 }
