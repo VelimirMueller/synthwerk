@@ -12,6 +12,7 @@ This file started on 2026-10-10. The earlier entries are taken from the merged p
 ### Added
 
 - Docs index in [docs/README.md](docs/README.md) with pages for use cases, feature catalogue, roadmap, design system, infrastructure, CI/CD, getting started, developer guide, stakeholder guide, third-party tools and release notes.
+- A header image and a panel in dark and light on each docs page. The spec is `brand/docs-kit.json`.
 - [CONTRIBUTING.md](CONTRIBUTING.md) and this changelog.
 - Ticket board layout in [docs/project-board.md](docs/project-board.md).
 - `docs/architecture.md` with the full ecosystem diagrams.

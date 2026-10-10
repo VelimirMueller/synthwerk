@@ -1,9 +1,16 @@
 # Ticket board
 
+<img alt="13 TICKET BOARD. FIVE COLUMNS. THREE IN PROGRESS, MAX." src="../assets/docs/divider-board-v1.svg" width="100%">
+
 The layout of the Synthwerk board on GitHub Projects. One board for all `synthwerk-*` repos.
 
 - Board: [github.com/VelimirMueller/synthwerk/projects](https://github.com/VelimirMueller/synthwerk/projects)
 - A task is a GitHub issue in the repo that the work changes. The board collects them.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="../assets/docs/board-flow-v1-dark.svg">
+  <img alt="BACKLOG -&gt; READY -&gt; IN PROGRESS -&gt; IN REVIEW -&gt; DONE. One board for all synthwerk repos." src="../assets/docs/board-flow-v1-light.svg" width="100%">
+</picture>
 
 ## Columns
 

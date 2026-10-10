@@ -1,9 +1,16 @@
 # CI/CD
 
+<img alt="08 CI/CD. BUILT ONCE. PROMOTED BY DIGEST." src="../assets/docs/divider-cicd-v1.svg" width="100%">
+
 How a change gets from a branch to production.
 
 - **Today:** the shared CI is released as [synthwerk-blueprint](https://github.com/VelimirMueller/synthwerk-blueprint) v1. `synthwerk-sdk` uses it and is green.
 - **Planned:** deploys start with milestone M1. No service deploys yet.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="../assets/docs/cicd-flow-v1-dark.svg">
+  <img alt="FEAT/* -&gt; MAIN -&gt; DEV -&gt; STG -&gt; PRD. No environment branches. Deploys start with milestone M1." src="../assets/docs/cicd-flow-v1-light.svg" width="100%">
+</picture>
 
 ## The flow
 

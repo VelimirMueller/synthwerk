@@ -1,5 +1,7 @@
 # Roadmap
 
+<img alt="05 ROADMAP. ESTIMATES. NOT PROMISES." src="../assets/docs/divider-roadmap-v1.svg" width="100%">
+
 Seven milestones, M0 to M6. Dates are estimates. Work is planned in two-week sprints.
 
 ```text
@@ -13,6 +15,11 @@ Seven milestones, M0 to M6. Dates are estimates. Work is planned in two-week spr
 
   [>>] in progress    [  ] planned    [##] done
 ```
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="../assets/docs/roadmap-status-v1-dark.svg">
+  <img alt="M0 clean slate, 2026-10: in progress. M1 spine runs locally, 2026-11: planned. M2 chat slice on dev, 2027-01: planned. M3 MVP on prd, 2027-02: planned. M4 public demo, 2027-04: planned. M5 paid plans and SDK apps, 2027-05: planned. M6 cluster-ready, 2027-06: planned" src="../assets/docs/roadmap-status-v1-light.svg" width="100%">
+</picture>
 
 ## Milestones
 

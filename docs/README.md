@@ -1,5 +1,7 @@
 # Synthwerk docs
 
+<img alt="01 DOCS. ONE LINK PER LINE. NO TREASURE HUNT." src="../assets/docs/divider-index-v1.svg" width="100%">
+
 The index of everything about Synthwerk. One line per topic, one link per line.
 
 ```text
@@ -13,6 +15,11 @@ The index of everything about Synthwerk. One line per topic, one link per line.
 ```
 
 A line marked `planned` names a thing that does not exist yet. The page says when it arrives.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="../assets/docs/index-areas-v1-dark.svg">
+  <img alt="PRODUCT: Use cases, feature catalogue, stakeholder guide, design system. BUILD: Getting started, developer guide, contribution guide, architecture. RUN: Infrastructure, hosting and database, CI/CD, third-party tools. PROJECT: Roadmap, ticket board, changelog, release notes, license" src="../assets/docs/index-areas-v1-light.svg" width="100%">
+</picture>
 
 ## Product
 

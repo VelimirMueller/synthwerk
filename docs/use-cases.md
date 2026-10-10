@@ -1,6 +1,13 @@
 # Use cases
 
+<img alt="03 USE CASES. WHO NEEDS THIS, AND FOR WHAT." src="../assets/docs/divider-usecases-v1.svg" width="100%">
+
 Who uses Synthwerk, and for what. Each case names the milestone that delivers it.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="../assets/docs/usecases-personas-v1-dark.svg">
+  <img alt="SAM, SOLO DEV: Adds AI chat to a client site fast. Uses the snippet and the SDK. LENA, AGENCY: Runs one widget on many sites from one admin. MAX, END USER: Asks a question and gets a streamed answer. Scans a card. ADA, ADMIN: Sees health, manages users and tunes the AI" src="../assets/docs/usecases-personas-v1-light.svg" width="100%">
+</picture>
 
 ## Users
 

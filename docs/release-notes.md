@@ -1,5 +1,7 @@
 # Release notes
 
+<img alt="12 RELEASE NOTES. FOR PEOPLE WHO SKIP COMMITS." src="../assets/docs/divider-releases-v1.svg" width="100%">
+
 What changed across the Synthwerk repos, newest first. Written for readers who do not read commits.
 
 - The changes of this repo alone are in [CHANGELOG.md](../CHANGELOG.md).

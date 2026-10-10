@@ -1,9 +1,16 @@
 # Getting started
 
+<img alt="02 GETTING STARTED. TEN MINUTES. COFFEE NOT INCLUDED." src="../assets/docs/divider-start-v1.svg" width="100%">
+
 What you can run today, in about 10 minutes.
 
 - **Today:** the map, the shared CI, the design tokens and the vision service work.
 - **Not yet:** `docker compose up` for the full stack arrives with milestone M1.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="../assets/docs/start-terminal-v1-dark.svg">
+  <img alt="Terminal: $ gh repo clone VelimirMueller/synthwerk | $ cd synthwerk | $ python3 scripts/check-ascii.py | # exit 0: all rules pass | $ scripts/check-links.sh | # exit 0: all links resolve" src="../assets/docs/start-terminal-v1-light.svg" width="100%">
+</picture>
 
 ## You need
 

@@ -1,5 +1,7 @@
 # Feature catalogue
 
+<img alt="04 FEATURE CATALOGUE. PLANNED MEANS PLANNED." src="../assets/docs/divider-features-v1.svg" width="100%">
+
 Every planned feature, by area. One line per feature group.
 
 - **State** is one of `released`, `working`, `planned`.
@@ -17,6 +19,11 @@ Every planned feature, by area. One line per feature group.
   gateway     core      public     sections   promotion
   quotas      adapters  demo       publish    events
 ```
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="../assets/docs/features-stats-v1-dark.svg">
+  <img alt="10 FEATURE AREAS. 5 EPICS IN THE MVP. 2 PARTS RELEASED. 1 SERVICE WORKING" src="../assets/docs/features-stats-v1-light.svg" width="100%">
+</picture>
 
 ## Identity and access
 

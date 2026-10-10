@@ -1,5 +1,7 @@
 # Third-party tools
 
+<img alt="11 THIRD-PARTY TOOLS. EVERYTHING WE DID NOT WRITE." src="../assets/docs/divider-thirdparty-v1.svg" width="100%">
+
 Every outside tool and service that Synthwerk uses or plans to use.
 
 - **In use** means a Synthwerk repo uses it today.

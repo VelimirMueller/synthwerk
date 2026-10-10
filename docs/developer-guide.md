@@ -1,6 +1,13 @@
 # Developer guide
 
+<img alt="09 DEVELOPER GUIDE. NAMES, RULES, ONE FORMATTER." src="../assets/docs/divider-developer-v1.svg" width="100%">
+
 How the Synthwerk repos are built, named and changed.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="../assets/docs/developer-stats-v1-dark.svg">
+  <img alt="8 REPOS ON GITHUB. 4 REPOS PLANNED. 5 SHARED WORKFLOWS. 1 CONTRACT" src="../assets/docs/developer-stats-v1-light.svg" width="100%">
+</picture>
 
 ## Repos
 

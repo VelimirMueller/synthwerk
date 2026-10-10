@@ -1,6 +1,13 @@
 # Stakeholder guide
 
+<img alt="10 STAKEHOLDER GUIDE. FIVE MINUTES. NO SLIDES." src="../assets/docs/divider-stakeholder-v1.svg" width="100%">
+
 Synthwerk in five minutes, for people who decide and do not build.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="../assets/docs/stakeholder-status-v1-dark.svg">
+  <img alt="Shared CI and templates: released, v1. Design tokens: released, 0.2.0. Image recognition: working, eval 93.1 %. Sign-in, chat, admin, health: rewrite planned. Public demo: planned, M4. Deployed services: none" src="../assets/docs/stakeholder-status-v1-light.svg" width="100%">
+</picture>
 
 ## What it is
 
