@@ -147,12 +147,12 @@ A repo without a link does not exist yet.
 ```
 
 - **M0 Clean slate**, 2026‑10, in progress. Old names removed. Blueprint CI green in a repo.
-- **M1 Spine runs locally**, 2026‑11. `docker compose up` starts edge, bus, database, telemetry, pulse.
-- **M2 Chat slice on dev**, 2027‑01. A passkey user gets streamed answers in an embedded chat.
-- **M3 MVP on prd**, 2027‑02. The approved stg build runs on prd. Restore drill done.
-- **M4 Public demo**, 2027‑04. Public site with live chat, vision and the mascot.
-- **M5 Paid plans and SDK apps**, 2027‑05. Checkout changes entitlements. App templates for React and Vue.
-- **M6 Cluster-ready**, 2027‑06. Same images on k3s. Security review closed. Card scan works.
+- **M1 Spine runs locally**, 2026‑11, planned. `docker compose up` starts edge, bus, database, telemetry, pulse.
+- **M2 Chat slice on dev**, 2027‑01, planned. A passkey user gets streamed answers in an embedded chat.
+- **M3 MVP on prd**, 2027‑02, planned. The approved stg build runs on prd. Restore drill done.
+- **M4 Public demo**, 2027‑04, planned. Public site with live chat, vision and the mascot.
+- **M5 Paid plans and SDK apps**, 2027‑05, planned. Checkout changes entitlements. App templates for React and Vue.
+- **M6 Cluster-ready**, 2027‑06, planned. Same images on k3s. Security review closed. Card scan works.
 - Targets are estimates. Estimates are not promises. This line is.
 
 ### Docs
