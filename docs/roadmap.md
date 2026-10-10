@@ -75,6 +75,6 @@ The design system runs beside the epics. It has no milestone of its own yet.
 
 ## Where the work is tracked
 
-- Tasks: the [ticket board](https://github.com/VelimirMueller/synthwerk/projects). Its layout is in [project-board.md](project-board.md).
+- Tasks: the [issues](https://github.com/VelimirMueller/synthwerk/issues). How the work is tracked: [project-board.md](project-board.md).
 - Shipped changes: [CHANGELOG.md](../CHANGELOG.md) and [release-notes.md](release-notes.md).
 - Targets are estimates. Estimates are not promises.

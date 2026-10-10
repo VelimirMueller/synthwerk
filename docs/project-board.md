@@ -4,8 +4,8 @@
 
 The layout of the Synthwerk board on GitHub Projects. One board for all `synthwerk-*` repos.
 
-- Board: [github.com/VelimirMueller/synthwerk/projects](https://github.com/VelimirMueller/synthwerk/projects)
-- A task is a GitHub issue in the repo that the work changes. The board collects them.
+- The board itself is private. The tasks are public: they are [issues](https://github.com/VelimirMueller/synthwerk/issues) in the repo that the work changes.
+- The board collects the issues and adds status, track, roadmap, epic, priority and size.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="../assets/docs/board-flow-v1-dark.svg">

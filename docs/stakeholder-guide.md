@@ -52,7 +52,7 @@ Synthwerk in five minutes, for people who decide and do not build.
 
 | Question | Where |
 |---|---|
-| What is in progress | [Ticket board](https://github.com/VelimirMueller/synthwerk/projects) |
+| What is in progress | [Open tasks](https://github.com/VelimirMueller/synthwerk/issues) |
 | What changed | [release-notes.md](release-notes.md) |
 | What is planned | [roadmap.md](roadmap.md) |
 | What it will do | [feature-catalogue.md](feature-catalogue.md) |
