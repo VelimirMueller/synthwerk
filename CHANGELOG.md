@@ -5,6 +5,8 @@ This repo has no versions. Entries are grouped by date.
 
 Changes across all Synthwerk repos are in [docs/release-notes.md](docs/release-notes.md).
 
+This file started on 2026-10-10. The earlier entries are taken from the merged pull requests #1 to #5, so they list files that were already on `main`, for example `docs/architecture.md`.
+
 ## 2026-10-10
 
 ### Added
