@@ -149,7 +149,7 @@ Copy this skeleton. Keep the order. Delete a section only when it has no content
 <block wordmark of the role, from scripts/ascii-wordmark.py>
 ```
 
-[MIT](LICENSE) © 2026 Velimir Mueller
+[MIT](../LICENSE) © 2026 Velimir Mueller
 ````
 
 - Write prose in ASD-STE100: short sentences, active voice, one idea per sentence.
