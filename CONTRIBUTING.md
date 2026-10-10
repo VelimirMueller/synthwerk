@@ -5,7 +5,7 @@ Thank you for your interest. This page says how to send a change to a Synthwerk 
 ## Before you start
 
 - Read the [developer guide](docs/developer-guide.md).
-- Look for an open task on the [ticket board](https://github.com/VelimirMueller/synthwerk/projects).
+- Look for an open task in the [issues](https://github.com/VelimirMueller/synthwerk/issues).
 - For a large change, open an issue first and describe the problem. Wait for an answer before you write code.
 
 ## Send a change

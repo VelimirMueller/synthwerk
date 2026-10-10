@@ -63,7 +63,7 @@ A line marked `planned` names a thing that does not exist yet. The page says whe
 | Topic | Where | State |
 |---|---|---|
 | Roadmap | [roadmap.md](roadmap.md) | M0 in progress |
-| Ticket board | [Projects](https://github.com/VelimirMueller/synthwerk/projects) | layout in [project-board.md](project-board.md) |
+| Tasks | [Issues](https://github.com/VelimirMueller/synthwerk/issues) | how the work is tracked: [project-board.md](project-board.md) |
 | Changelog | [CHANGELOG.md](../CHANGELOG.md) | written |
 | Release notes | [release-notes.md](release-notes.md) | written |
 | License | [MIT](../LICENSE) | in force |

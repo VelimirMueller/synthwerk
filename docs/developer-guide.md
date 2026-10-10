@@ -52,7 +52,7 @@ How the Synthwerk repos are built, named and changed.
 
 ## A change, step by step
 
-1. Take a task from the [ticket board](https://github.com/VelimirMueller/synthwerk/projects).
+1. Take a task from the [issues](https://github.com/VelimirMueller/synthwerk/issues).
 2. Create a branch from `main`.
 3. Write the change and its tests.
 4. Run the checks of the repo. Each README names them.
