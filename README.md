@@ -1,7 +1,4 @@
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/banner/banner-v2-dark.svg">
-  <img alt="SYNTHWERK. Modular AI services. In development, milestone M0." src="assets/banner/banner-v2-light.svg" width="100%">
-</picture>
+<img alt="SYNTHWERK. Modular AI services. In development, milestone M0. 8 repos, 93.1 % vision eval, MIT license." src=".github/readme/hero.jpg" width="100%">
 
 <p align="center">
   <a href="#roadmap"><img alt="status: M0 clean slate" src="https://img.shields.io/badge/status-M0_clean_slate-10b981?style=for-the-badge&labelColor=18181b"></a>
