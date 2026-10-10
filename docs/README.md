@@ -45,6 +45,7 @@ A line marked `planned` names a thing that does not exist yet. The page says whe
 |---|---|---|
 | Getting started | [getting-started.md](getting-started.md) | written |
 | Developer guide | [developer-guide.md](developer-guide.md) | written |
+| Claude project setup | [CLAUDE-PROJECT.md](CLAUDE-PROJECT.md) | written, project not created yet |
 | Contribution guide | [CONTRIBUTING.md](../CONTRIBUTING.md) | written |
 | Architecture | [architecture.md](architecture.md) | written |
 | Wiki | [github.com/VelimirMueller/synthwerk/wiki](https://github.com/VelimirMueller/synthwerk/wiki) | points to this folder |

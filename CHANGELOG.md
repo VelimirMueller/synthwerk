@@ -7,6 +7,12 @@ Changes across all Synthwerk repos are in [docs/release-notes.md](docs/release-n
 
 This file started on 2026-10-10. The earlier entries are taken from the merged pull requests #1 to #5, so they list files that were already on `main`, for example `docs/architecture.md`.
 
+## 2026-10-11
+
+### Added
+
+- [docs/CLAUDE-PROJECT.md](docs/CLAUDE-PROJECT.md): steps and paste-ready instructions for a Claude project about Synthwerk.
+
 ## 2026-10-10
 
 ### Added
