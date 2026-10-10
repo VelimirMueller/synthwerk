@@ -1,0 +1,45 @@
+{
+  "group": "flagship",
+  "version": "v2",
+  "dividers": [
+    {"key": "what",   "index": "01", "title": "WHAT IT DOES", "caption": "A MAP. THE TERRITORY IS ELSEWHERE.", "art": "strip-flagship-1"},
+    {"key": "start",  "index": "02", "title": "QUICK START",  "caption": "NOTHING TO INSTALL. YET.",            "art": "strip-flagship-2"},
+    {"key": "how",    "index": "03", "title": "HOW IT WORKS", "caption": "BOXES AND ARROWS, AS PROMISED.",      "art": "strip-flagship-3"},
+    {"key": "usage",  "index": "04", "title": "USAGE",        "caption": "THE REFERENCE. CONDENSED.",           "art": "strip-flagship-4"},
+    {"key": "status", "index": "05", "title": "STATUS",       "caption": "HONEST NUMBERS ONLY.",                "art": "strip-flagship-5"}
+  ],
+  "panels": [
+    {"key": "stats", "type": "stats", "title": "SYNTHWERK IN NUMBERS", "items": [
+      {"value": "8", "label": "REPOS ON GITHUB"},
+      {"value": "4", "label": "REPOS PLANNED"},
+      {"value": "7", "label": "MILESTONES, M0-M6"},
+      {"value": "0", "label": "PAID AI APIS IN DEV"}
+    ]},
+    {"key": "features", "type": "cards", "title": "TWO WAYS IN, ONE WAY TO RUN", "items": [
+      {"title": "DROP IN", "text": "One loader script adds chat and vision widgets with sign-in to any page. Milestone M2."},
+      {"title": "BUILD", "text": "Your own app on the same services: @synthwerk/react, @synthwerk/vue, @synthwerk/tokens. Tokens now, SDK at M5."},
+      {"title": "RUN IT YOURSELF", "text": "Local models in development. Vision runs on CPU with ONNX. No paid AI provider."}
+    ]},
+    {"key": "start", "type": "terminal", "title": "QUICK START", "lines": [
+      "$ gh repo clone VelimirMueller/synthwerk",
+      "$ cd synthwerk",
+      "$ python3 scripts/check-ascii.py",
+      "# exit 0: all rules pass",
+      "$ scripts/check-links.sh"
+    ]},
+    {"key": "flow", "type": "flow", "title": "ONE REQUEST, LEFT TO RIGHT", "nodes": [
+      {"title": "CLIENTS", "sub": "widgets, sdk, studio"},
+      {"title": "EDGE", "sub": "TLS, WAF, rate limit", "hot": true},
+      {"title": "SERVICES", "sub": "identity, llm, vision, pulse"},
+      {"title": "NATS BUS", "sub": "CloudEvents, facts only"}
+    ], "caption": "Strobe, the public mascot, sits beside this flow. No tools, no database, no egress."},
+    {"key": "status", "type": "status", "title": "WHAT WORKS TODAY", "rows": [
+      {"label": "synthwerk-blueprint", "value": "v1.0.0 released", "state": "ok"},
+      {"label": "synthwerk-sdk / tokens", "value": "0.1.0", "state": "ok"},
+      {"label": "synthwerk-vision", "value": "working", "state": "ok"},
+      {"label": "M0 clean slate", "value": "in progress", "state": "wip"},
+      {"label": "identity, llm, widgets, studio", "value": "rewrite planned", "state": "planned"},
+      {"label": "contracts, infra, pulse, e2e", "value": "not created yet", "state": "off"}
+    ]}
+  ]
+}
