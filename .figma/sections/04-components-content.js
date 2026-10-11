@@ -75,7 +75,7 @@ SW.codeComp = async (p, m) => { const c = SW.cmp('VERTICAL', { r: 'sm', w: 560, 
     const role = mark === '+' ? 'success' : mark === '-' ? 'danger' : null;
     const row = SW.row(16, { pad: [1, 16], name: 'line', fill: role ? SW.r(m, role) : null, op: role ? 0.1 : null });
     SW.add(row, await SW.t(String(i + 1), 'mono/sm', SW.r(m, 'fg-subtle'), { name: 'n', w: 20, align: 'RIGHT' }),
-      await SW.t(mark, 'mono/sm', SW.r(m, role || 'fg-subtle'), { name: 'mark' }), await SW.t(str, 'mono/sm', SW.r(m, role ? 'fg' : i === 0 || i === 4 ? 'fg-muted' : 'fg'), { name: 'code' }));
+      await SW.t(mark, 'mono/sm', SW.r(m, role || 'fg-subtle'), { name: 'mark', w: 10 }), await SW.t(str, 'mono/sm', SW.r(m, role ? 'fg' : i === 0 || i === 4 ? 'fg-muted' : 'fg'), { name: 'code' }));
     SW.put(body, row, true); }
   SW.put(c, body, true); return c; };
 
