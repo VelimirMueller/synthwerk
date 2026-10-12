@@ -1,0 +1,12 @@
+{
+  "id": "synthwerk",
+  "name": "Synthwerk",
+  "figma": { "fileKey": "e7RJDqZc1F6TBW0Bqad8KG", "plan": "starter" },
+  "match": { "collections": ["primitives", "group"], "fileName": "synthwerk" },
+  "pages": ["Design", "Tech", "Brand & Roadmap"],
+  "fonts": [["Inter", "Regular"], ["Inter", "Semi Bold"], ["Space Mono", "Regular"], ["Space Mono", "Bold"], ["JetBrains Mono", "Regular"]],
+  "sections": ["sections"],
+  "art": "art",
+  "tokens": "tokens.json",
+  "quality": { "minTokenCoverage": 0.85, "minStyleCoverage": 0.85 }
+}
