@@ -1,6 +1,6 @@
 # CI/CD
 
-<img alt="08 CI/CD. BUILT ONCE. PROMOTED BY DIGEST." src="../assets/docs/divider-cicd-v1.svg" width="100%">
+<img alt="08 CI/CD. BUILT ONCE. PROMOTED BY DIGEST." src="../assets/docs/divider-cicd-v2.svg" width="100%">
 
 How a change gets from a branch to production.
 
@@ -8,8 +8,8 @@ How a change gets from a branch to production.
 - **Planned:** deploys start with milestone M1. No service deploys yet.
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="../assets/docs/cicd-flow-v1-dark.svg">
-  <img alt="FEAT/* -&gt; MAIN -&gt; DEV -&gt; STG -&gt; PRD. No environment branches. Deploys start with milestone M1." src="../assets/docs/cicd-flow-v1-light.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="../assets/docs/cicd-flow-v2-dark.svg">
+  <img alt="FEAT/* -&gt; MAIN -&gt; DEV -&gt; STG -&gt; PRD. No environment branches. Deploys start with milestone M1." src="../assets/docs/cicd-flow-v2-light.svg" width="100%">
 </picture>
 
 ## The flow

@@ -7,6 +7,17 @@ Changes across all Synthwerk repos are in [docs/release-notes.md](docs/release-n
 
 This file started on 2026-10-10. The earlier entries are taken from the merged pull requests #1 to #5, so they list files that were already on `main`, for example `docs/architecture.md`.
 
+## 2026-10-12
+
+### Changed
+
+- Milestone M0 Clean slate is done: the roadmap, the README status and the status images say so.
+- README images move to `v4` and docs images to `v2`. Only the status, roadmap and now panels have new content.
+
+### Fixed
+
+- README says `@synthwerk/tokens` 0.2.0. `docs/CLAUDE-PROJECT.md` names the demo stack and says the SDK is planned.
+
 ## 2026-10-11
 
 ### Added

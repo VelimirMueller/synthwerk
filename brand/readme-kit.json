@@ -1,6 +1,6 @@
 {
   "group": "flagship",
-  "version": "v3",
+  "version": "v4",
   "dividers": [
     {
       "key": "what",
@@ -140,8 +140,8 @@
         },
         {
           "label": "M0 clean slate",
-          "value": "in progress",
-          "state": "wip"
+          "value": "done",
+          "state": "ok"
         },
         {
           "label": "identity, llm, widgets, studio",
@@ -389,7 +389,7 @@
       "rows": [
         {
           "cmd": "M0 · 2026-10",
-          "text": "**Clean slate.** In progress. Old names removed. Blueprint CI green in a repo."
+          "text": "**Clean slate.** Done. Old names removed. Blueprint CI green in a repo."
         },
         {
           "cmd": "M1 · 2026-11",
@@ -527,7 +527,7 @@
       "items": [
         {
           "value": "M0",
-          "label": "STATUS: CLEAN SLATE, 2026-10"
+          "label": "DONE: CLEAN SLATE, 2026-10"
         },
         {
           "value": "3",

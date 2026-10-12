@@ -1,6 +1,6 @@
 # Feature catalogue
 
-<img alt="04 FEATURE CATALOGUE. PLANNED MEANS PLANNED." src="../assets/docs/divider-features-v1.svg" width="100%">
+<img alt="04 FEATURE CATALOGUE. PLANNED MEANS PLANNED." src="../assets/docs/divider-features-v2.svg" width="100%">
 
 Every planned feature, by area. One line per feature group.
 
@@ -21,8 +21,8 @@ Every planned feature, by area. One line per feature group.
 ```
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="../assets/docs/features-stats-v1-dark.svg">
-  <img alt="10 FEATURE AREAS. 5 EPICS IN THE MVP. 2 PARTS RELEASED. 1 SERVICE WORKING" src="../assets/docs/features-stats-v1-light.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="../assets/docs/features-stats-v2-dark.svg">
+  <img alt="10 FEATURE AREAS. 5 EPICS IN THE MVP. 2 PARTS RELEASED. 1 SERVICE WORKING" src="../assets/docs/features-stats-v2-light.svg" width="100%">
 </picture>
 
 ## Identity and access

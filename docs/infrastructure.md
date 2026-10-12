@@ -1,6 +1,6 @@
 # Infrastructure
 
-<img alt="07 INFRASTRUCTURE. THREE PROVIDERS. ONE DEMO." src="../assets/docs/divider-infra-v1.svg" width="100%">
+<img alt="07 INFRASTRUCTURE. THREE PROVIDERS. ONE DEMO." src="../assets/docs/divider-infra-v2.svg" width="100%">
 
 Where Synthwerk runs. This page covers hosting, the database and the demo.
 
@@ -9,8 +9,8 @@ Where Synthwerk runs. This page covers hosting, the database and the demo.
 - **Open:** the production plan names a different provider. See [Open decisions](#open-decisions).
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="../assets/docs/infra-flow-v1-dark.svg">
-  <img alt="VERCEL -&gt; VPS -&gt; SUPABASE -&gt; GITHUB. Decided 2026-10-10. Nothing is deployed yet." src="../assets/docs/infra-flow-v1-light.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="../assets/docs/infra-flow-v2-dark.svg">
+  <img alt="VERCEL -&gt; VPS -&gt; SUPABASE -&gt; GITHUB. Decided 2026-10-10. Nothing is deployed yet." src="../assets/docs/infra-flow-v2-light.svg" width="100%">
 </picture>
 
 ## Demo stack

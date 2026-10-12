@@ -11,7 +11,7 @@
 -- 08 ---------------------------------------------------------- DOCS --
 
 # Status block (top of a README, under the intro). Max 40 columns: fits a phone.
-[ STATUS ]  M0 clean slate, 2026-10
+[ STATUS ]  M0 clean slate done, 2026-10
 [ WORKS  ]  blueprint, tokens, vision
 [ NEXT   ]  M1: spine runs locally
 

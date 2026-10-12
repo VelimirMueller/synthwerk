@@ -1,11 +1,18 @@
 # Release notes
 
-<img alt="12 RELEASE NOTES. FOR PEOPLE WHO SKIP COMMITS." src="../assets/docs/divider-releases-v1.svg" width="100%">
+<img alt="12 RELEASE NOTES. FOR PEOPLE WHO SKIP COMMITS." src="../assets/docs/divider-releases-v2.svg" width="100%">
 
 What changed across the Synthwerk repos, newest first. Written for readers who do not read commits.
 
 - The changes of this repo alone are in [CHANGELOG.md](../CHANGELOG.md).
 - Each service repo keeps its own changelog.
+
+## 2026-10-12
+
+- **M0 Clean slate done.** No repo uses the old project names on `main`. The proof is in [#20](https://github.com/VelimirMueller/synthwerk/issues/20).
+- **Blueprint CI green.** `synthwerk-sdk` runs the blueprint `ts-ci@v1` workflow green on `main`: [run 38022313400](https://github.com/VelimirMueller/synthwerk-sdk/actions/runs/38022313400).
+- **Security cleanup.** Secret scanning and push protection are on in every public repo. Unused tokens and environments are removed. Details in [#21](https://github.com/VelimirMueller/synthwerk/issues/21).
+- **synthwerk-vision.** The rename check passes again on `main`.
 
 ## 2026-10-10
 
