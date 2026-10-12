@@ -125,7 +125,7 @@
       "rows": [
         {
           "label": "synthwerk-blueprint",
-          "value": "v1.0.0 released",
+          "value": "v1.0.1 released",
           "state": "ok"
         },
         {
@@ -272,7 +272,7 @@
       "rows": [
         {
           "cmd": "synthwerk-blueprint",
-          "text": "Shared CI workflows, lint configs, templates, feature-doc skill. YAML, JS. **v1.0.0 released.**"
+          "text": "Shared CI workflows, lint configs, templates, feature-doc skill. YAML, JS. **v1.0.1 released.**"
         },
         {
           "cmd": "synthwerk-sdk",
@@ -612,7 +612,7 @@
         },
         {
           "label": "synthwerk-blueprint",
-          "sub": "v1.0.0 released",
+          "sub": "v1.0.1 released",
           "href": "https://github.com/VelimirMueller/synthwerk-blueprint"
         },
         {
