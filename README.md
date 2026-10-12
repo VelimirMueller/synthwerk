@@ -119,7 +119,7 @@ scripts/check-links.sh           # checks README.md
 <p>
 <picture>
   <source media="(prefers-color-scheme: light)" srcset="assets/readme/repos-v4-light.svg">
-  <img alt="synthwerk-blueprint: Shared CI workflows, lint configs, templates, feature-doc skill. YAML, JS. v1.0.0 released. synthwerk-sdk: npm packages. Design tokens now, SDK later. TypeScript. tokens 0.2.0. synthwerk-vision: Image labels with an open vocabulary and a topic tree. Python. Working. synthwerk-identity: Orgs, roles, entitlements, paywall. Login by Zitadel. Go. Rewrite planned. synthwerk-llm: LLM gateway, streaming chat, mascot binary. Go. Rewrite planned. synthwerk-widgets: Embeddable chat and vision widgets. Vue 3.5. Rewrite planned. synthwerk-studio: Public site, page builder, admin, live health. Nuxt 4. Rewrite planned. synthwerk-contracts: OpenAPI, event schemas, generated clients. OpenAPI, JSON Schema. Planned. synthwerk-infra: Servers, compose stack, edge, repo settings. OpenTofu. Planned. synthwerk-pulse: Health, audit log, KPIs over SSE. Go. Planned. synthwerk-e2e: End-to-end tests across all services. Playwright. Planned" src="assets/readme/repos-v4-dark.svg" width="100%">
+  <img alt="synthwerk-blueprint: Shared CI workflows, lint configs, templates, feature-doc skill. YAML, JS. v1.0.1 released. synthwerk-sdk: npm packages. Design tokens now, SDK later. TypeScript. tokens 0.2.0. synthwerk-vision: Image labels with an open vocabulary and a topic tree. Python. Working. synthwerk-identity: Orgs, roles, entitlements, paywall. Login by Zitadel. Go. Rewrite planned. synthwerk-llm: LLM gateway, streaming chat, mascot binary. Go. Rewrite planned. synthwerk-widgets: Embeddable chat and vision widgets. Vue 3.5. Rewrite planned. synthwerk-studio: Public site, page builder, admin, live health. Nuxt 4. Rewrite planned. synthwerk-contracts: OpenAPI, event schemas, generated clients. OpenAPI, JSON Schema. Planned. synthwerk-infra: Servers, compose stack, edge, repo settings. OpenTofu. Planned. synthwerk-pulse: Health, audit log, KPIs over SSE. Go. Planned. synthwerk-e2e: End-to-end tests across all services. Playwright. Planned" src="assets/readme/repos-v4-dark.svg" width="100%">
 </picture>
 </p>
 
@@ -186,7 +186,7 @@ scripts/check-links.sh           # checks README.md
 <p>
 <picture>
   <source media="(prefers-color-scheme: light)" srcset="assets/readme/status-v4-light.svg">
-  <img alt="synthwerk-blueprint: v1.0.0 released. synthwerk-sdk / tokens: 0.2.0. synthwerk-vision: working. M0 clean slate: done. identity, llm, widgets, studio: rewrite planned. contracts, infra, pulse, e2e: not created yet" src="assets/readme/status-v4-dark.svg" width="100%">
+  <img alt="synthwerk-blueprint: v1.0.1 released. synthwerk-sdk / tokens: 0.2.0. synthwerk-vision: working. M0 clean slate: done. identity, llm, widgets, studio: rewrite planned. contracts, infra, pulse, e2e: not created yet" src="assets/readme/status-v4-dark.svg" width="100%">
 </picture>
 </p>
 
