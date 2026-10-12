@@ -8,7 +8,7 @@
 | Pin `synthwerk` and up to 5 `synthwerk-*` repos | Profile page → **Customize your pins** | After the first push |
 
 - `assets/social-preview.png` is the live preview: the cover frame of the Figma library (`.figma/sections/01-cover.js`), exported from Figma as PNG.
-- To change it, export the cover frame again, replace the file and upload it. The PNG must stay below 1 MB.
+- To change it, export the cover frame again, replace the file and upload it. The PNG must stay below 1 MB. The current export is 1200 × 645 (632 KB). GitHub recommends 1280 × 640.
 - No script writes this file.
 
 ## Change the images
