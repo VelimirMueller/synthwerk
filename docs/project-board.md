@@ -1,6 +1,6 @@
 # Ticket board
 
-<img alt="13 TICKET BOARD. FIVE COLUMNS. THREE IN PROGRESS, MAX." src="../assets/docs/divider-board-v1.svg" width="100%">
+<img alt="13 TICKET BOARD. FIVE COLUMNS. THREE IN PROGRESS, MAX." src="../assets/docs/divider-board-v2.svg" width="100%">
 
 The layout of the Synthwerk board on GitHub Projects. One board for all `synthwerk-*` repos.
 
@@ -8,8 +8,8 @@ The layout of the Synthwerk board on GitHub Projects. One board for all `synthwe
 - The board collects the issues and adds status, track, roadmap, epic, priority and size.
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="../assets/docs/board-flow-v1-dark.svg">
-  <img alt="BACKLOG -&gt; READY -&gt; IN PROGRESS -&gt; IN REVIEW -&gt; DONE. One board for all synthwerk repos." src="../assets/docs/board-flow-v1-light.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="../assets/docs/board-flow-v2-dark.svg">
+  <img alt="BACKLOG -&gt; READY -&gt; IN PROGRESS -&gt; IN REVIEW -&gt; DONE. One board for all synthwerk repos." src="../assets/docs/board-flow-v2-light.svg" width="100%">
 </picture>
 
 ## Columns

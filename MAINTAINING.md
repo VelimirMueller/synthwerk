@@ -38,7 +38,7 @@ node scripts/render-social.mjs
 
 - The images of the pages in `docs/` are in `assets/docs/`. The spec is `brand/docs-kit.json`.
 - They come from the `vm-brand` kit, like the README images. Do not edit them by hand.
-- After a change to the spec, run the kit with `--out assets/docs`. Then copy the new alt texts from `assets/docs/alt-v1.json` into the pages.
+- After a change to the spec, run the kit with `--out assets/docs`. Then copy the new alt texts from `assets/docs/alt-<version>.json` into the pages.
 - For a new look, raise `version` in the spec and update the file names in the pages.
 
 ## Change the ASCII art

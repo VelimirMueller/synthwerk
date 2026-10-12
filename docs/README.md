@@ -1,6 +1,6 @@
 # Synthwerk docs
 
-<img alt="01 DOCS. ONE LINK PER LINE. NO TREASURE HUNT." src="../assets/docs/divider-index-v1.svg" width="100%">
+<img alt="01 DOCS. ONE LINK PER LINE. NO TREASURE HUNT." src="../assets/docs/divider-index-v2.svg" width="100%">
 
 The index of everything about Synthwerk. One line per topic, one link per line.
 
@@ -17,8 +17,8 @@ The index of everything about Synthwerk. One line per topic, one link per line.
 A line marked `planned` names a thing that does not exist yet. The page says when it arrives.
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="../assets/docs/index-areas-v1-dark.svg">
-  <img alt="PRODUCT: Use cases, feature catalogue, stakeholder guide, design system. BUILD: Getting started, developer guide, contribution guide, architecture. RUN: Infrastructure, hosting and database, CI/CD, third-party tools. PROJECT: Roadmap, ticket board, changelog, release notes, license" src="../assets/docs/index-areas-v1-light.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="../assets/docs/index-areas-v2-dark.svg">
+  <img alt="PRODUCT: Use cases, feature catalogue, stakeholder guide, design system. BUILD: Getting started, developer guide, contribution guide, architecture. RUN: Infrastructure, hosting and database, CI/CD, third-party tools. PROJECT: Roadmap, ticket board, changelog, release notes, license" src="../assets/docs/index-areas-v2-light.svg" width="100%">
 </picture>
 
 ## Product
@@ -63,7 +63,7 @@ A line marked `planned` names a thing that does not exist yet. The page says whe
 
 | Topic | Where | State |
 |---|---|---|
-| Roadmap | [roadmap.md](roadmap.md) | M0 in progress |
+| Roadmap | [roadmap.md](roadmap.md) | M0 done |
 | Tasks | [Issues](https://github.com/VelimirMueller/synthwerk/issues) | how the work is tracked: [project-board.md](project-board.md) |
 | Changelog | [CHANGELOG.md](../CHANGELOG.md) | written |
 | Release notes | [release-notes.md](release-notes.md) | written |

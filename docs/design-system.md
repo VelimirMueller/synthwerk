@@ -1,6 +1,6 @@
 # Design system
 
-<img alt="06 DESIGN SYSTEM. ONE SOURCE. NO DRIFT." src="../assets/docs/divider-design-v1.svg" width="100%">
+<img alt="06 DESIGN SYSTEM. ONE SOURCE. NO DRIFT." src="../assets/docs/divider-design-v2.svg" width="100%">
 
 One visual language for every Synthwerk surface: READMEs, websites, the studio, the widgets.
 
@@ -19,13 +19,13 @@ One visual language for every Synthwerk surface: READMEs, websites, the studio, 
 ```
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="../assets/docs/design-flow-v1-dark.svg">
-  <img alt="TOKENS -&gt; FIGMA -&gt; SYNTHWERK-UI -&gt; PRODUCTS. One source: tokens. Figma and code read the same values." src="../assets/docs/design-flow-v1-light.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="../assets/docs/design-flow-v2-dark.svg">
+  <img alt="TOKENS -&gt; FIGMA -&gt; SYNTHWERK-UI -&gt; PRODUCTS. One source: tokens. Figma and code read the same values." src="../assets/docs/design-flow-v2-light.svg" width="100%">
 </picture>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="../assets/docs/design-rules-v1-dark.svg">
-  <img alt="ONE ACCENT: Indigo is the accent of the product. One accent per surface. GREEN IS STATUS: Emerald means the current status. It is never decoration. DARK AND LIGHT: Every surface has both versions. Text values pass 4.5:1" src="../assets/docs/design-rules-v1-light.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="../assets/docs/design-rules-v2-dark.svg">
+  <img alt="ONE ACCENT: Indigo is the accent of the product. One accent per surface. GREEN IS STATUS: Emerald means the current status. It is never decoration. DARK AND LIGHT: Every surface has both versions. Text values pass 4.5:1" src="../assets/docs/design-rules-v2-light.svg" width="100%">
 </picture>
 
 ## The layers

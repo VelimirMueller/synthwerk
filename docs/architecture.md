@@ -59,7 +59,7 @@ The full diagrams behind the [README](../README.md). The README keeps the short 
 -- 06 ------------------------------------------------------- ROADMAP --
 
   M0       M1       M2       M3       M4       M5       M6
-  [>>]-----[  ]-----[  ]-----[  ]-----[  ]-----[  ]-----[  ]
+  [##]-----[  ]-----[  ]-----[  ]-----[  ]-----[  ]-----[  ]
   2026-10  2026-11  2027-01  2027-02  2027-04  2027-05  2027-06
   clean    spine    chat     MVP      public   paid +   cluster
   slate    local    on dev   on prd   demo     SDK      ready
