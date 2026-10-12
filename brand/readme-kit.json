@@ -2,44 +2,736 @@
   "group": "flagship",
   "version": "v2",
   "dividers": [
-    {"key": "what",   "index": "01", "title": "WHAT IT DOES", "caption": "A MAP. THE TERRITORY IS ELSEWHERE.", "art": "strip-flagship-1"},
-    {"key": "start",  "index": "02", "title": "QUICK START",  "caption": "NOTHING TO INSTALL. YET.",            "art": "strip-flagship-2"},
-    {"key": "how",    "index": "03", "title": "HOW IT WORKS", "caption": "BOXES AND ARROWS, AS PROMISED.",      "art": "strip-flagship-3"},
-    {"key": "usage",  "index": "04", "title": "USAGE",        "caption": "THE REFERENCE. CONDENSED.",           "art": "strip-flagship-4"},
-    {"key": "status", "index": "05", "title": "STATUS",       "caption": "HONEST NUMBERS ONLY.",                "art": "strip-flagship-5"}
+    {
+      "key": "what",
+      "index": "01",
+      "title": "WHAT IT DOES",
+      "caption": "A MAP. THE TERRITORY IS ELSEWHERE.",
+      "art": "strip-flagship-1"
+    },
+    {
+      "key": "start",
+      "index": "02",
+      "title": "QUICK START",
+      "caption": "NOTHING TO INSTALL. YET.",
+      "art": "strip-flagship-2"
+    },
+    {
+      "key": "how",
+      "index": "03",
+      "title": "HOW IT WORKS",
+      "caption": "BOXES AND ARROWS, AS PROMISED.",
+      "art": "strip-flagship-3"
+    },
+    {
+      "key": "usage",
+      "index": "04",
+      "title": "USAGE",
+      "caption": "THE REFERENCE. CONDENSED.",
+      "art": "strip-flagship-4"
+    },
+    {
+      "key": "status",
+      "index": "05",
+      "title": "STATUS",
+      "caption": "HONEST NUMBERS ONLY.",
+      "art": "strip-flagship-5"
+    }
   ],
   "panels": [
-    {"key": "stats", "type": "stats", "title": "SYNTHWERK IN NUMBERS", "items": [
-      {"value": "8", "label": "REPOS ON GITHUB"},
-      {"value": "4", "label": "REPOS PLANNED"},
-      {"value": "7", "label": "MILESTONES, M0-M6"},
-      {"value": "0", "label": "PAID AI APIS IN DEV"}
-    ]},
-    {"key": "features", "type": "cards", "title": "TWO WAYS IN, ONE WAY TO RUN", "items": [
-      {"title": "DROP IN", "text": "One loader script adds chat and vision widgets with sign-in to any page. Milestone M2."},
-      {"title": "BUILD", "text": "Your own app on the same services: @synthwerk/react, @synthwerk/vue, @synthwerk/tokens. Tokens now, SDK at M5."},
-      {"title": "RUN IT YOURSELF", "text": "Local models in development. Vision runs on CPU with ONNX. No paid AI provider."}
-    ]},
-    {"key": "start", "type": "terminal", "title": "QUICK START", "lines": [
-      "$ gh repo clone VelimirMueller/synthwerk",
-      "$ cd synthwerk",
-      "$ python3 scripts/check-ascii.py",
-      "# exit 0: all rules pass",
-      "$ scripts/check-links.sh"
-    ]},
-    {"key": "flow", "type": "flow", "title": "ONE REQUEST, LEFT TO RIGHT", "nodes": [
-      {"title": "CLIENTS", "sub": "widgets, sdk, studio"},
-      {"title": "EDGE", "sub": "TLS, WAF, rate limit", "hot": true},
-      {"title": "SERVICES", "sub": "identity, llm, vision, pulse"},
-      {"title": "NATS BUS", "sub": "CloudEvents, facts only"}
-    ], "caption": "Strobe, the public mascot, sits beside this flow. No tools, no database, no egress."},
-    {"key": "status", "type": "status", "title": "WHAT WORKS TODAY", "rows": [
-      {"label": "synthwerk-blueprint", "value": "v1.0.0 released", "state": "ok"},
-      {"label": "synthwerk-sdk / tokens", "value": "0.1.0", "state": "ok"},
-      {"label": "synthwerk-vision", "value": "working", "state": "ok"},
-      {"label": "M0 clean slate", "value": "in progress", "state": "wip"},
-      {"label": "identity, llm, widgets, studio", "value": "rewrite planned", "state": "planned"},
-      {"label": "contracts, infra, pulse, e2e", "value": "not created yet", "state": "off"}
-    ]}
-  ]
+    {
+      "key": "stats",
+      "type": "stats",
+      "title": "SYNTHWERK IN NUMBERS",
+      "items": [
+        {
+          "value": "8",
+          "label": "REPOS ON GITHUB"
+        },
+        {
+          "value": "4",
+          "label": "REPOS PLANNED"
+        },
+        {
+          "value": "7",
+          "label": "MILESTONES, M0-M6"
+        },
+        {
+          "value": "0",
+          "label": "PAID AI APIS IN DEV"
+        }
+      ]
+    },
+    {
+      "key": "features",
+      "type": "cards",
+      "title": "TWO WAYS IN, ONE WAY TO RUN",
+      "items": [
+        {
+          "title": "DROP IN",
+          "text": "One loader script adds chat and vision widgets with sign-in to any page. Milestone M2."
+        },
+        {
+          "title": "BUILD",
+          "text": "Your own app on the same services: @synthwerk/react, @synthwerk/vue, @synthwerk/tokens. Tokens now, SDK at M5."
+        },
+        {
+          "title": "RUN IT YOURSELF",
+          "text": "Local models in development. Vision runs on CPU with ONNX. No paid AI provider."
+        }
+      ]
+    },
+    {
+      "key": "start",
+      "type": "terminal",
+      "title": "QUICK START",
+      "lines": [
+        "$ gh repo clone VelimirMueller/synthwerk",
+        "$ cd synthwerk",
+        "$ python3 scripts/check-ascii.py",
+        "# exit 0: all rules pass",
+        "$ scripts/check-links.sh"
+      ]
+    },
+    {
+      "key": "flow",
+      "type": "flow",
+      "title": "ONE REQUEST, LEFT TO RIGHT",
+      "nodes": [
+        {
+          "title": "CLIENTS",
+          "sub": "widgets, sdk, studio"
+        },
+        {
+          "title": "EDGE",
+          "sub": "TLS, WAF, rate limit",
+          "hot": true
+        },
+        {
+          "title": "SERVICES",
+          "sub": "identity, llm, vision, pulse"
+        },
+        {
+          "title": "NATS BUS",
+          "sub": "CloudEvents, facts only"
+        }
+      ],
+      "caption": "Strobe, the public mascot, sits beside this flow. No tools, no database, no egress."
+    },
+    {
+      "key": "status",
+      "type": "status",
+      "title": "WHAT WORKS TODAY",
+      "rows": [
+        {
+          "label": "synthwerk-blueprint",
+          "value": "v1.0.0 released",
+          "state": "ok"
+        },
+        {
+          "label": "synthwerk-sdk / tokens",
+          "value": "0.1.0",
+          "state": "ok"
+        },
+        {
+          "label": "synthwerk-vision",
+          "value": "working",
+          "state": "ok"
+        },
+        {
+          "label": "M0 clean slate",
+          "value": "in progress",
+          "state": "wip"
+        },
+        {
+          "label": "identity, llm, widgets, studio",
+          "value": "rewrite planned",
+          "state": "planned"
+        },
+        {
+          "label": "contracts, infra, pulse, e2e",
+          "value": "not created yet",
+          "state": "off"
+        }
+      ]
+    },
+    {
+      "key": "lead",
+      "type": "lead",
+      "title": "ABOUT",
+      "text": "**Synthwerk** is a set of small services for AI chat, image recognition and page building. You run all of it yourself. This repo is the map. It contains no service. It is very good at that."
+    },
+    {
+      "key": "what",
+      "type": "notes",
+      "title": "WHAT IT DOES",
+      "columns": 2,
+      "items": [
+        {
+          "lead": "One repo per part",
+          "text": "Each part is a separate repo `synthwerk-<role>`. This repo is the map."
+        },
+        {
+          "lead": "Two ways in",
+          "text": "Drop the widgets into a website, or build your own app with the SDK."
+        },
+        {
+          "lead": "Local models, local-first",
+          "text": "In development, models run on your machine. No paid AI provider is needed. Self-hosted."
+        },
+        {
+          "lead": "What works today",
+          "text": "The blueprint, the design tokens and the vision classifier. The other services are planned or in rewrite."
+        }
+      ]
+    },
+    {
+      "key": "startnotes",
+      "type": "notes",
+      "title": "GET THE MAP, CHECK THE MAP",
+      "items": [
+        {
+          "lead": "No service runs yet",
+          "text": "The quick start is: get the map, check the map. `check-ascii.py` reads `README.md` and `assets/ascii`. `check-links.sh` checks `README.md`."
+        },
+        {
+          "lead": "Adopt the shared CI",
+          "text": "Start with the [blueprint](https://github.com/VelimirMueller/synthwerk-blueprint#readme)."
+        },
+        {
+          "lead": "Containers come later",
+          "text": "`docker compose up` arrives with milestone M1."
+        }
+      ]
+    },
+    {
+      "key": "pipeline",
+      "type": "flow",
+      "title": "FROM BRANCH TO PRD",
+      "nodes": [
+        {
+          "title": "FEAT/*",
+          "sub": "Opens a PR. Checks must pass."
+        },
+        {
+          "title": "MAIN",
+          "sub": "Every merge goes to dev automatically."
+        },
+        {
+          "title": "DEV",
+          "sub": "A tag vX.Y.Z promotes to stg."
+        },
+        {
+          "title": "STG",
+          "sub": "Manual approval promotes to prd."
+        },
+        {
+          "title": "PRD",
+          "sub": "Same image, promoted by digest.",
+          "hot": true
+        }
+      ],
+      "caption": "Trunk-based. No env branches. One image, built once, promoted by digest."
+    },
+    {
+      "key": "how",
+      "type": "notes",
+      "title": "RULES OF THE ECOSYSTEM",
+      "columns": 2,
+      "items": [
+        {
+          "lead": "Trunk-based",
+          "text": "There are no environment branches. One image is built once and promoted by digest."
+        },
+        {
+          "lead": "One blueprint",
+          "text": "Every repo calls the blueprint workflows at `@v1` and uses the same README and feature-doc layout."
+        },
+        {
+          "lead": "One contract",
+          "text": "APIs and events are defined in `synthwerk-contracts`. Clients are generated from it."
+        },
+        {
+          "lead": "Read-only MCP tools",
+          "text": "The llm service reads the other services through read-only MCP tools."
+        },
+        {
+          "lead": "No deploys yet",
+          "text": "No service deploys yet. This flow is the target for milestone M1 and later."
+        },
+        {
+          "lead": "Full diagram",
+          "text": "The full ecosystem diagram is in `docs/architecture.md`."
+        }
+      ]
+    },
+    {
+      "key": "repos",
+      "type": "commands",
+      "title": "THE REPOS",
+      "rows": [
+        {
+          "cmd": "synthwerk-blueprint",
+          "text": "Shared CI workflows, lint configs, templates, feature-doc skill. YAML, JS. **v1.0.0 released.**"
+        },
+        {
+          "cmd": "synthwerk-sdk",
+          "text": "npm packages. Design tokens now, SDK later. TypeScript. **tokens 0.1.0.**"
+        },
+        {
+          "cmd": "synthwerk-vision",
+          "text": "Image labels with an open vocabulary and a topic tree. Python. **Working.**"
+        },
+        {
+          "cmd": "synthwerk-identity",
+          "text": "Orgs, roles, entitlements, paywall. Login by Zitadel. Go. **Rewrite planned.**"
+        },
+        {
+          "cmd": "synthwerk-llm",
+          "text": "LLM gateway, streaming chat, mascot binary. Go. **Rewrite planned.**"
+        },
+        {
+          "cmd": "synthwerk-widgets",
+          "text": "Embeddable chat and vision widgets. Vue 3.5. **Rewrite planned.**"
+        },
+        {
+          "cmd": "synthwerk-studio",
+          "text": "Public site, page builder, admin, live health. Nuxt 4. **Rewrite planned.**"
+        },
+        {
+          "cmd": "synthwerk-contracts",
+          "text": "OpenAPI, event schemas, generated clients. OpenAPI, JSON Schema. **Planned.**"
+        },
+        {
+          "cmd": "synthwerk-infra",
+          "text": "Servers, compose stack, edge, repo settings. OpenTofu. **Planned.**"
+        },
+        {
+          "cmd": "synthwerk-pulse",
+          "text": "Health, audit log, KPIs over SSE. Go. **Planned.**"
+        },
+        {
+          "cmd": "synthwerk-e2e",
+          "text": "End-to-end tests across all services. Playwright. **Planned.**"
+        }
+      ]
+    },
+    {
+      "key": "repostate",
+      "type": "notes",
+      "columns": 2,
+      "items": [
+        {
+          "lead": "Rewrite planned",
+          "text": "The repo has a new README. The old code is kept at the tag `legacy-final`."
+        },
+        {
+          "lead": "Planned",
+          "text": "The repo does not exist yet. It has no link below."
+        }
+      ]
+    },
+    {
+      "key": "ways",
+      "type": "notes",
+      "title": "TWO WAYS TO USE IT",
+      "columns": 2,
+      "items": [
+        {
+          "lead": "Drop in",
+          "text": "One loader script on your page gives chat and vision widgets plus sign-in. Settings live in studio. Ready at milestone M2 (planned)."
+        },
+        {
+          "lead": "Build",
+          "text": "Your own app on the same services with `@synthwerk/react` or `@synthwerk/vue`, and `@synthwerk/tokens`. Tokens now. SDK at milestone M5 (planned)."
+        },
+        {
+          "lead": "Sign-in",
+          "text": "AI calls need a signed-in user. Passkeys and MFA. Both ways use the same accounts and roles."
+        },
+        {
+          "lead": "Names are the plan",
+          "text": "The loader script and the SDK packages do not exist yet."
+        }
+      ]
+    },
+    {
+      "key": "principles",
+      "type": "notes",
+      "title": "PRINCIPLES",
+      "items": [
+        {
+          "lead": "Local-first",
+          "text": "Development uses local models. Vision runs on CPU with ONNX and calls no external API."
+        },
+        {
+          "lead": "Isolated public mascot",
+          "text": "Strobe is a no-login helper on the website. It has no tools, no database and no network egress. It uses a local model only. The name is not final."
+        },
+        {
+          "lead": "Scope on the token, not the prompt",
+          "text": "Each service checks the scope in the user's token. A prompt cannot change access."
+        },
+        {
+          "lead": "Events for facts",
+          "text": "Services publish facts as CloudEvents on NATS. Questions use HTTP."
+        },
+        {
+          "lead": "No anonymous AI",
+          "text": "Chat and vision need a signed-in user. Only the mascot is public."
+        }
+      ]
+    },
+    {
+      "key": "roadmap",
+      "type": "commands",
+      "title": "ROADMAP · ESTIMATES, NOT PROMISES",
+      "rows": [
+        {
+          "cmd": "M0 · 2026-10",
+          "text": "**Clean slate.** In progress. Old names removed. Blueprint CI green in a repo."
+        },
+        {
+          "cmd": "M1 · 2026-11",
+          "text": "**Spine runs locally.** Planned. `docker compose up` starts edge, bus, database, telemetry, pulse."
+        },
+        {
+          "cmd": "M2 · 2027-01",
+          "text": "**Chat slice on dev.** Planned. A passkey user gets streamed answers in an embedded chat."
+        },
+        {
+          "cmd": "M3 · 2027-02",
+          "text": "**MVP on prd.** Planned. The approved stg build runs on prd. Restore drill done."
+        },
+        {
+          "cmd": "M4 · 2027-04",
+          "text": "**Public demo.** Planned. Public site with live chat, vision and the mascot."
+        },
+        {
+          "cmd": "M5 · 2027-05",
+          "text": "**Paid plans and SDK apps.** Planned. Checkout changes entitlements. App templates for React and Vue."
+        },
+        {
+          "cmd": "M6 · 2027-06",
+          "text": "**Cluster-ready.** Planned. Same images on k3s. Security review closed. Card scan works."
+        },
+        {
+          "cmd": "M0-M6",
+          "text": "Targets are estimates. Estimates are not promises. This line is."
+        }
+      ]
+    },
+    {
+      "key": "docs",
+      "type": "commands",
+      "title": "DOCS IN THIS REPO",
+      "rows": [
+        {
+          "cmd": "docs/README.md",
+          "text": "**Docs index:** every topic, one link per line. Start here."
+        },
+        {
+          "cmd": "docs/getting-started.md",
+          "text": "Getting started."
+        },
+        {
+          "cmd": "docs/developer-guide.md",
+          "text": "Developer guide."
+        },
+        {
+          "cmd": "CONTRIBUTING.md",
+          "text": "Contribution guide."
+        },
+        {
+          "cmd": "docs/use-cases.md",
+          "text": "Use cases."
+        },
+        {
+          "cmd": "docs/feature-catalogue.md",
+          "text": "Feature catalogue."
+        },
+        {
+          "cmd": "docs/stakeholder-guide.md",
+          "text": "Stakeholder guide."
+        },
+        {
+          "cmd": "docs/design-system.md",
+          "text": "Design system: tokens, colours, Figma library, `synthwerk-ui`."
+        },
+        {
+          "cmd": "docs/infrastructure.md",
+          "text": "Infrastructure."
+        },
+        {
+          "cmd": "docs/ci-cd.md",
+          "text": "CI/CD."
+        },
+        {
+          "cmd": "docs/third-party.md",
+          "text": "Third-party tools."
+        },
+        {
+          "cmd": "docs/roadmap.md",
+          "text": "Roadmap."
+        },
+        {
+          "cmd": "CHANGELOG.md",
+          "text": "Changelog."
+        },
+        {
+          "cmd": "docs/release-notes.md",
+          "text": "Release notes."
+        },
+        {
+          "cmd": "docs/architecture.md",
+          "text": "Architecture: the full ecosystem, two-ways, roadmap and repo-flow diagrams."
+        },
+        {
+          "cmd": "docs/presence-style.md",
+          "text": "Presence style guide: colours, fonts, ASCII rules and the README layout for every repo."
+        },
+        {
+          "cmd": "MAINTAINING.md",
+          "text": "Manual steps for this repo."
+        }
+      ]
+    },
+    {
+      "key": "elsewhere",
+      "type": "notes",
+      "title": "DOCS IN OTHER REPOS",
+      "columns": 2,
+      "items": [
+        {
+          "lead": "Blueprint README",
+          "text": "How a repo adopts the shared CI and templates: [synthwerk-blueprint](https://github.com/VelimirMueller/synthwerk-blueprint#readme)."
+        },
+        {
+          "lead": "Ready and Done",
+          "text": "[Definition of Ready](https://github.com/VelimirMueller/synthwerk-blueprint/blob/main/docs/process/definition-of-ready.md) and [Definition of Done](https://github.com/VelimirMueller/synthwerk-blueprint/blob/main/docs/process/definition-of-done.md), in the blueprint."
+        },
+        {
+          "lead": "Templates and workflows",
+          "text": "[Repo templates](https://github.com/VelimirMueller/synthwerk-blueprint/tree/main/templates/_common) and [caller workflows](https://github.com/VelimirMueller/synthwerk-blueprint/tree/main/examples/workflows), in the blueprint."
+        },
+        {
+          "lead": "Design tokens",
+          "text": "Colours and themes: [packages/tokens](https://github.com/VelimirMueller/synthwerk-sdk/tree/main/packages/tokens) in `synthwerk-sdk`."
+        }
+      ]
+    },
+    {
+      "key": "now",
+      "type": "stats",
+      "title": "WHERE IT STANDS",
+      "items": [
+        {
+          "value": "M0",
+          "label": "STATUS: CLEAN SLATE, 2026-10"
+        },
+        {
+          "value": "3",
+          "label": "WORKS: BLUEPRINT, TOKENS, VISION"
+        },
+        {
+          "value": "M1",
+          "label": "NEXT: SPINE RUNS LOCALLY"
+        }
+      ]
+    },
+    {
+      "key": "checks",
+      "type": "terminal",
+      "title": "CHECKS · NO TESTS, NO CODE TO TEST",
+      "lines": [
+        "# the checks cover the words and the links",
+        "$ python3 scripts/check-ascii.py",
+        "# exit 0: all rules pass",
+        "$ scripts/check-links.sh",
+        "# exit 0: all links resolve"
+      ]
+    },
+    {
+      "key": "links",
+      "type": "buttons",
+      "items": [
+        {
+          "label": "Blueprint",
+          "sub": "adopt the shared CI",
+          "href": "https://github.com/VelimirMueller/synthwerk-blueprint#readme"
+        },
+        {
+          "label": "Getting started",
+          "sub": "docs/getting-started.md",
+          "href": "docs/getting-started.md"
+        },
+        {
+          "label": "Docs index",
+          "sub": "docs/README.md",
+          "href": "docs/README.md"
+        },
+        {
+          "label": "synthwerk-sdk",
+          "sub": "tokens 0.1.0",
+          "href": "https://github.com/VelimirMueller/synthwerk-sdk"
+        },
+        {
+          "label": "synthwerk-vision",
+          "sub": "working",
+          "href": "https://github.com/VelimirMueller/synthwerk-vision"
+        },
+        {
+          "label": "synthwerk-identity",
+          "sub": "rewrite planned",
+          "href": "https://github.com/VelimirMueller/synthwerk-identity"
+        },
+        {
+          "label": "synthwerk-llm",
+          "sub": "rewrite planned",
+          "href": "https://github.com/VelimirMueller/synthwerk-llm"
+        },
+        {
+          "label": "synthwerk-widgets",
+          "sub": "rewrite planned",
+          "href": "https://github.com/VelimirMueller/synthwerk-widgets"
+        },
+        {
+          "label": "synthwerk-studio",
+          "sub": "rewrite planned",
+          "href": "https://github.com/VelimirMueller/synthwerk-studio"
+        },
+        {
+          "label": "Architecture",
+          "sub": "docs/architecture.md",
+          "href": "docs/architecture.md"
+        },
+        {
+          "label": "Roadmap",
+          "sub": "docs/roadmap.md",
+          "href": "docs/roadmap.md"
+        },
+        {
+          "label": "synthwerk-blueprint",
+          "sub": "v1.0.0 released",
+          "href": "https://github.com/VelimirMueller/synthwerk-blueprint"
+        },
+        {
+          "label": "Open tasks",
+          "sub": "github issues",
+          "href": "https://github.com/VelimirMueller/synthwerk/issues"
+        },
+        {
+          "label": "Changelog",
+          "sub": "CHANGELOG.md",
+          "href": "CHANGELOG.md"
+        },
+        {
+          "label": "License",
+          "sub": "MIT",
+          "href": "LICENSE"
+        },
+        {
+          "label": "Plain text",
+          "sub": "show copyable commands"
+        }
+      ]
+    },
+    {
+      "key": "footer",
+      "type": "footer",
+      "studio": "VM. studio / flagship",
+      "text": "open source · look per vm-brand playbook · MIT (c) 2026 Velimir Mueller",
+      "eof": "-- EOF -- the map is not the city --"
+    }
+  ],
+  "readme": {
+    "hero_alt": "SYNTHWERK. AI services you run yourself. In small pieces. Map, 8 repos, milestone M0. Working.",
+    "items": [
+      "lead",
+      "stats",
+      "divider:what",
+      "features",
+      "what",
+      "divider:start",
+      "start",
+      {
+        "details": "links",
+        "chip": 16,
+        "code": [
+          [
+            "bash",
+            "gh repo clone VelimirMueller/synthwerk\ncd synthwerk\npython3 scripts/check-ascii.py   # README.md and assets/ascii\nscripts/check-links.sh           # checks README.md"
+          ]
+        ]
+      },
+      "startnotes",
+      {
+        "buttons": "links",
+        "only": [
+          1,
+          2,
+          3
+        ]
+      },
+      "divider:how",
+      "flow",
+      "pipeline",
+      "how",
+      {
+        "buttons": "links",
+        "only": [
+          10,
+          11,
+          12
+        ]
+      },
+      "divider:usage",
+      "repos",
+      "repostate",
+      {
+        "buttons": "links",
+        "only": [
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "buttons": "links",
+        "only": [
+          7,
+          8,
+          9
+        ]
+      },
+      "ways",
+      "principles",
+      "roadmap",
+      "docs",
+      "elsewhere",
+      "divider:status",
+      "status",
+      "now",
+      "checks",
+      {
+        "details": "links",
+        "chip": 16,
+        "code": [
+          [
+            "bash",
+            "python3 scripts/check-ascii.py   # exit 0: all rules pass\nscripts/check-links.sh           # exit 0: all links resolve"
+          ]
+        ]
+      },
+      {
+        "buttons": "links",
+        "only": [
+          13,
+          14,
+          15
+        ]
+      },
+      "footer"
+    ]
+  }
 }
