@@ -7,7 +7,9 @@
 | Upload `assets/social-preview.png` | Repo **Settings → General → Social preview** | After the first push, and after each change of the image |
 | Pin `synthwerk` and up to 5 `synthwerk-*` repos | Profile page → **Customize your pins** | After the first push |
 
-- The PNG must stay below 1 MB and at 1280 × 640.
+- `assets/social-preview.png` is the live preview: the cover frame of the Figma library (`.figma/sections/01-cover.js`), exported from Figma as PNG.
+- To change it, export the cover frame again, replace the file and upload it. The PNG must stay below 1 MB. The current export is 1200 × 645 (632 KB). GitHub recommends 1280 × 640.
+- No script writes this file.
 
 ## Change the images
 
@@ -26,7 +28,7 @@ python3 scripts/make-banner.py --version v3
 
 - Then change `v2` to `v3` in `README.md` and in `scripts/render-social.mjs`. Remove the old files.
 
-Render the social-preview PNG from `assets/social/social-preview-v2.svg`:
+Render the older social card (not the live preview) from `assets/social/social-preview-v2.svg` to `assets/social/social-card-v2.png`:
 
 ```sh
 npm i --no-save playwright@1.64.0

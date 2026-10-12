@@ -172,8 +172,9 @@ Copy this skeleton. Keep the order. Delete a section only when it has no content
   +------------------------------------------------------------------+
 ```
 
-- `scripts/make-banner.py` writes the dark banner, the light banner and the social-preview SVG.
-- The social preview is 1280 × 640. It adds a row of repo chips.
+- `scripts/make-banner.py` writes the dark banner, the light banner and the social card SVG.
+- The social card is 1280 × 640. It adds a row of repo chips.
+- The live social preview of this repo is not the card. It is the cover frame of the Figma library. See [MAINTAINING.md](../MAINTAINING.md).
 - Each new version gets a new file name (`--version v3`). GitHub caches images by URL.
 
 Make the overview banner:
@@ -195,7 +196,7 @@ python3 scripts/make-banner.py --repo vision --version v1 \
 ```
 
 - Copy `scripts/make-banner.py` and `assets/fonts/` into the repo, or run the script from this repo with `--out <repo>/assets`.
-- Render the social PNG with `node scripts/render-social.mjs`. See [MAINTAINING.md](../MAINTAINING.md).
+- Render the social card PNG with `node scripts/render-social.mjs`. It writes `assets/social/social-card-v2.png`. See [MAINTAINING.md](../MAINTAINING.md).
 - Check the result in dark and light at 1280 px and 390 px before you commit.
 
 ## Review checklist
