@@ -109,7 +109,8 @@ SW.block = async (label, title, note, m) => { m = SW.m(m); const x = SW.col(12, 
   return x; };
 SW.panel = (m, o) => SW.col(o && o.gap != null ? o.gap : 20, Object.assign({ pad: 32, r: 'card', fill: SW.r(m, 'surface'), stroke: SW.r(m, 'border') }, o || {}));
 
-// Faint 32 px grid (bound to <mode>/texture-grid) + the three edge glows of the website, behind the board content.
+// Faint 32 px grid (bound to <mode>/texture-grid) with a fade into the background, behind the board content.
+// No coloured edge glows: the multi-colour gradient did not fit the boards (#61).
 // Call after the content is in, so the board size is known.
 SW.texture = (b, m) => { m = SW.m(m); const w = b.width, hh = Math.min(b.height, 1120), step = 32;
   const g = figma.createFrame(); g.name = 'texture'; g.resize(w, hh); g.fills = []; g.clipsContent = true;
@@ -117,10 +118,6 @@ SW.texture = (b, m) => { m = SW.m(m); const w = b.width, hh = Math.min(b.height,
   for (let y = step; y < hh; y += step) { const r = SW.rect(w, 1, SW.r(m, 'texture-grid')); r.x = 0; r.y = y; g.appendChild(r); }
   const bg = SW.hex[SW.r(m, 'bg')] || '#0C0C10';
   const fade = h.rect(w, hh, [h.grad([[0, bg, 0], [0.6, bg, 0.2], [1, bg, 1]], 90)]); fade.name = 'grid-fade'; g.appendChild(fade);
-  const k = m === 'dark' ? [0.22, 0.14, 0.22] : [0.14, 0.08, 0.14];
-  for (const [i, [col, cx, rx, ry]] of [['teal-500', 0.16, 0.36, 0.52], ['red-500', 0.52, 0.28, 0.36], ['violet-500', 0.9, 0.34, 0.56]].entries()) {
-    const e = figma.createEllipse(); e.name = 'glow-edge/' + col.split('-')[0]; const ew = w * rx * 2, eh = Math.min(hh, 900) * ry * 2;
-    e.resize(ew, eh); e.x = w * cx - ew / 2; e.y = -eh / 2; e.fills = [h.radial(SW.hex[col] || '#6366F1', k[i])]; g.appendChild(e); }
   g.locked = true; SW.under(b, g, 0, 0); return g; };
 SW.finish = (s, b, m) => { SW.texture(b, m); return h.place(s, b); };
 
