@@ -1,6 +1,6 @@
 {
   "group": "flagship",
-  "version": "v2",
+  "version": "v3",
   "dividers": [
     {
       "key": "what",
@@ -130,7 +130,7 @@
         },
         {
           "label": "synthwerk-sdk / tokens",
-          "value": "0.1.0",
+          "value": "0.2.0",
           "state": "ok"
         },
         {
@@ -276,7 +276,7 @@
         },
         {
           "cmd": "synthwerk-sdk",
-          "text": "npm packages. Design tokens now, SDK later. TypeScript. **tokens 0.1.0.**"
+          "text": "npm packages. Design tokens now, SDK later. TypeScript. **tokens 0.2.0.**"
         },
         {
           "cmd": "synthwerk-vision",
@@ -572,7 +572,7 @@
         },
         {
           "label": "synthwerk-sdk",
-          "sub": "tokens 0.1.0",
+          "sub": "tokens 0.2.0",
           "href": "https://github.com/VelimirMueller/synthwerk-sdk"
         },
         {

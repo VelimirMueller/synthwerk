@@ -28,14 +28,17 @@ design-system.md and presence-style.md, then the README. If a request breaks one
 them, say which rule it breaks before you answer.
 
 What Synthwerk is:
-- Embeddable widgets (chat, vision) for any website, an SDK (@synthwerk/* on npm) for
-  apps, and a studio for operators (builder, admin, health).
+- Embeddable widgets (chat, vision) for any website, an SDK (@synthwerk/*) for apps,
+  and a studio for operators (builder, admin, health). Only @synthwerk/tokens exists
+  today, used from the repo and not on npm yet. The SDK is planned: React and Vue at M5.
 - Services: identity (orgs, roles, entitlements, on Zitadel), llm (chat gateway: local
   models in dev, any provider in prod), vision (open-vocabulary image labels), pulse
   (health, audit). One repo per role: synthwerk-<role>.
 - Go for identity, llm and pulse. Python for vision. Vue/Nuxt for widgets and studio.
 - Events on NATS JetStream with CloudEvents, outbox pattern, facts only.
-- Edge: Traefik with Coraza WAF. Hosting: Hetzner with OpenTofu. Telemetry: OpenTelemetry.
+- Edge: Traefik with Coraza WAF. Telemetry: OpenTelemetry.
+- Hosting: the demo runs on Vercel, one IONOS VPS and Supabase. Production hosting is
+  Open (infrastructure.md).
 - Branching: trunk + promotion. main -> dev, tag -> stg, approval -> prd, same image digest.
 
 Fixed rules:
