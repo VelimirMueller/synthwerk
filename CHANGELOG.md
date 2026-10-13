@@ -7,6 +7,13 @@ Changes across all Synthwerk repos are in [docs/release-notes.md](docs/release-n
 
 This file started on 2026-10-10. The earlier entries are taken from the merged pull requests #1 to #5, so they list files that were already on `main`, for example `docs/architecture.md`.
 
+## 2026-10-13
+
+### Changed
+
+- `@synthwerk/ui-vue` 0.1.0 (`synthwerk-ui`) is built: the roadmap (D3), the feature catalogue and the design system say so. The package name and the epic stay open (M2).
+- The design-flow image shows Figma and `synthwerk-ui` as built.
+
 ## 2026-10-12
 
 ### Changed
