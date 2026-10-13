@@ -17,7 +17,7 @@
 - README v2 (2026-10-10): `assets/banner/hero-v2-*.svg` and `assets/readme/*.svg` come from the `vm-brand` kit. The spec is `brand/readme-kit.json`, the manifest is `vm-brand.json`. The `banner-v2-*` files below are the older banner and stay for old links.
 - Do not change a banner file in place. GitHub caches raw images. Make a new version and update the links.
 - Do not edit the SVGs by hand. `scripts/make-banner.py` writes them. All text is outlined to paths. The SVGs contain no `<text>`, no fonts and no external references.
-- The fonts for the outlines are in `assets/fonts/` (Space Mono and Inter, SIL OFL 1.1).
+- The fonts for the outlines are in `assets/fonts/` (Space Mono and Inter, SIL OFL 1.1). JetBrains Mono is there too, for code; the banners do not use it.
 
 Make a new banner version (dark, light and the social-preview SVG):
 

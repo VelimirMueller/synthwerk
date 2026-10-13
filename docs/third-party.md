@@ -58,9 +58,11 @@ Every outside tool and service that Synthwerk uses or plans to use.
 | Font | Use | License |
 |---|---|---|
 | Inter | Headings and body | SIL OFL 1.1 |
-| Space Mono | Labels, code, ASCII art | SIL OFL 1.1 |
+| Space Mono | Labels, ASCII art, short `$` commands | SIL OFL 1.1 |
+| JetBrains Mono | Code, logs and diffs | SIL OFL 1.1 |
 
 - The font files and their license texts are in `assets/fonts/`.
+- The files are the Latin `woff2` subsets from Fontsource. JetBrains Mono: `@fontsource/jetbrains-mono` 5.3.0, weights 400 and 700.
 
 ## Rules
 

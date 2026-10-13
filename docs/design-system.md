@@ -42,7 +42,8 @@ One visual language for every Synthwerk surface: READMEs, websites, the studio, 
 
 - Near-black page, 1 px borders, no shadows in dark mode.
 - A faint grid and one soft glow at the edge. A glow never sits behind text.
-- **Inter** for headings and body. **Space Mono** for labels, code and ASCII art.
+- **Inter** for headings and body. **Space Mono** for labels, ASCII art and short `$` commands.
+- **JetBrains Mono** is the code font: code blocks, logs and diffs (token `mono`).
 - White pills for actions. Capital labels with wide tracking.
 - Every surface has a dark and a light version.
 
