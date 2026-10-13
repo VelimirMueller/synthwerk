@@ -15,7 +15,7 @@ It must be created by hand in claude.ai: there is no command for it.
    - `docs/design-system.md`
    - `docs/presence-style.md`
    - `docs/developer-guide.md`
-4. Optional: connect `VelimirMueller/synthwerk-sdk` and add `packages/tokens/src/tokens.ts`, the source of the design tokens.
+4. Optional: connect `VelimirMueller/synthwerk-sdk` and add `packages/tokens/src/tokens.ts`, the source of the design tokens, and `packages/ui-vue/README.md`, the first components.
 5. After a file changes in the repo, sync it in the project. The repo is the source.
 
 ## Project instructions
@@ -30,9 +30,14 @@ breaks one of them, say which rule it breaks before you answer.
 
 What Synthwerk is:
 - Embeddable widgets (chat, vision) for any website, an SDK (@synthwerk/*) for
-  apps, and a studio for operators (builder, admin, health). Only
-  @synthwerk/tokens exists today, used from the repo and not on npm yet. The SDK
-  is planned: React and Vue at M5.
+  apps, and a studio for operators (builder, admin, health).
+- Built in synthwerk-sdk, used from the repo, not on npm yet:
+  - @synthwerk/tokens 0.2.0: the design tokens.
+  - @synthwerk/ui-vue 0.1.0: seven Vue 3.5 components (SwButton, SwPill,
+    SwInput, SwCard, SwStatusPill, SwTerminalSnippet, SwDivider). They read
+    tokens only, pass contrast tests and send every link through safeHref().
+- Planned: the SDK client, and the React and Vue adapters at M5. The package
+  name and epic of synthwerk-ui are Open (M2).
 - Services: identity (orgs, roles, entitlements, on Zitadel), llm (chat gateway:
   local models in dev, any provider in prod), vision (open-vocabulary image
   labels), pulse (health, audit). One repo per role: synthwerk-<role>.
@@ -44,6 +49,8 @@ What Synthwerk is:
   hosting is Open (infrastructure.md).
 - Branching: trunk + promotion. main -> dev, tag -> stg, approval -> prd, same
   image digest.
+- This repo: every pull request runs the checks workflow (ASCII rules, links,
+  script lint). A ruleset on main requires it.
 
 Fixed rules:
 - No anonymous AI. A signed-out visitor never triggers an AI call. The only
@@ -56,10 +63,14 @@ Fixed rules:
   first.
 
 Look:
-- Public look = near-black, Inter + Space Mono, emerald #10b981 for status only,
-  indigo #6366f1 as the accent, faint grid, one soft glow. Every image in dark
-  and light.
+- Public look = near-black, Inter for text, Space Mono for labels and ASCII
+  art, JetBrains Mono for code, emerald #10b981 for status only, indigo #6366f1
+  as the accent, faint grid, one soft glow at the edge. Every image in dark and
+  light.
 - Colours and type come from @synthwerk/tokens. Do not invent values.
+- The Figma library is built from code (the vfb pack in .figma/). Its boards
+  show the grid only: no coloured edge glows. Change a token in
+  @synthwerk/tokens first, never on a board. design-system.md has the steps.
 
 How to answer:
 - Result first. Short sentences. Bullets for lists. No marketing words.
