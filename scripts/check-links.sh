@@ -1,18 +1,27 @@
 #!/usr/bin/env bash
-# Checks every github.com/VelimirMueller/synthwerk* link in README.md with the GitHub API.
+# Checks every github.com/VelimirMueller/synthwerk* link in the given Markdown files with the GitHub API.
+# Usage: scripts/check-links.sh [FILE...]   (default: README.md)
 # Read-only: it calls `gh api` with GET only. Needs an authenticated `gh`.
 # The repo `synthwerk` itself may return 404 until it is published (allowed, reported as SKIP).
+# A file without such links passes.
 # Exit 0: all links resolve. Exit 1: one or more links are broken (404).
 # Exit 2: an API call failed for another reason (no auth, rate limit, network).
 set -euo pipefail
 
 cd "$(dirname "$0")/.."
-file="${1:-README.md}"
+[ "$#" -gt 0 ] || set -- README.md
 owner="VelimirMueller"
 allow_404="synthwerk"
 
-links=$(grep -oE "https://github\.com/${owner}/synthwerk[A-Za-z0-9._-]*(/[^)\"'[:space:]>]*)?" "$file" | sort -u)
-[ -n "$links" ] || { echo "no links found in $file"; exit 1; }
+# grep exits 1 when no file has a match (not an error) and 2 when a file cannot be read.
+rc=0
+raw=$(grep -ohE "https://github\.com/${owner}/synthwerk[A-Za-z0-9._-]*(/[^)\"'[:space:]>]*)?" "$@") || rc=$?
+[ "$rc" -le 1 ] || { echo "cannot read: $*" >&2; exit 2; }
+links=$(printf '%s\n' "$raw" | sed '/^$/d' | sort -u)
+if [ -z "$links" ]; then
+  echo "no synthwerk links in: $*"
+  exit 0
+fi
 
 fail=0
 while IFS= read -r url; do

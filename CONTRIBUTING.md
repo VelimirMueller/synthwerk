@@ -46,9 +46,11 @@ Use these headings in the description:
 ## Checks in this repo
 
 ```bash
-python3 scripts/check-ascii.py   # exit 0: all rules pass
-scripts/check-links.sh           # exit 0: all links resolve
+python3 scripts/check-ascii.py README.md docs/*.md   # exit 0: all rules pass
+scripts/check-links.sh README.md docs/*.md           # exit 0: all links resolve
 ```
+
+- The `checks` workflow runs these and the script lint on every pull request. See [ci-cd.md](docs/ci-cd.md#checks-in-this-repo).
 
 ## Security
 

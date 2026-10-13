@@ -62,12 +62,17 @@ Each repo calls the blueprint workflows at `@v1`. A repo does not copy them.
 
 ## Checks in this repo
 
-This repo has no code. Its checks cover the words and the links.
+This repo has no code. Its checks cover the words, the links and the scripts.
 
 ```bash
-python3 scripts/check-ascii.py   # exit 0: all rules pass
-scripts/check-links.sh           # exit 0: all links resolve
+python3 scripts/check-ascii.py README.md docs/*.md   # exit 0: all rules pass
+scripts/check-links.sh README.md docs/*.md           # exit 0: all links resolve
+uvx ruff check scripts                               # Python scripts
+npx @biomejs/biome lint .                            # JS scripts and .figma/
 ```
+
+- The `checks` workflow (`.github/workflows/checks.yml`) runs all four on every pull request and on `main`.
+- Its job `required` is the required check on `main`.
 
 ## Adopt the CI in a repo
 
