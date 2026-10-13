@@ -9,6 +9,10 @@ This file started on 2026-10-10. The earlier entries are taken from the merged p
 
 ## 2026-10-13
 
+### Added
+
+- JetBrains Mono, the code font of the tokens: font files and OFL text in `assets/fonts/`, a row in `docs/third-party.md`, a line in `docs/design-system.md`.
+
 ### Changed
 
 - `@synthwerk/ui-vue` 0.1.0 (`synthwerk-ui`) is built: the roadmap (D3), the feature catalogue and the design system say so. The package name and the epic stay open (M2).
