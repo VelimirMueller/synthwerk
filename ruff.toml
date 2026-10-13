@@ -1,0 +1,8 @@
+# Lint for the Python scripts in scripts/. CI: .github/workflows/checks.yml.
+target-version = "py312"
+line-length = 120
+
+[lint]
+select = ["E", "F", "W", "I", "B", "UP"]
+# SVG path strings in make-banner.py are long by nature.
+ignore = ["E501"]

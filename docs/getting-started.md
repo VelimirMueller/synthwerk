@@ -24,9 +24,11 @@ What you can run today, in about 10 minutes.
 ```bash
 gh repo clone VelimirMueller/synthwerk
 cd synthwerk
-python3 scripts/check-ascii.py   # exit 0: all rules pass
-scripts/check-links.sh           # exit 0: all links resolve
+python3 scripts/check-ascii.py README.md docs/*.md   # exit 0: all rules pass
+scripts/check-links.sh README.md docs/*.md           # exit 0: all links resolve
 ```
+
+- CI runs the same checks on every pull request.
 
 - Read the [README](../README.md) for the repo list.
 - Read [architecture.md](architecture.md) for the full diagram.

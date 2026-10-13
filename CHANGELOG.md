@@ -11,12 +11,18 @@ This file started on 2026-10-10. The earlier entries are taken from the merged p
 
 ### Added
 
+- CI: the `checks` workflow runs `check-ascii.py` and `check-links.sh` on `README.md` and `docs/*.md`, plus ruff and Biome on the scripts, for every pull request.
 - JetBrains Mono, the code font of the tokens: font files and OFL text in `assets/fonts/`, a row in `docs/third-party.md`, a line in `docs/design-system.md`.
 
 ### Changed
 
 - `@synthwerk/ui-vue` 0.1.0 (`synthwerk-ui`) is built: the roadmap (D3), the feature catalogue and the design system say so. The package name and the epic stay open (M2).
 - The design-flow image shows Figma and `synthwerk-ui` as built.
+- `check-links.sh` takes many files. A file without synthwerk links passes.
+
+### Fixed
+
+- `docs/CLAUDE-PROJECT.md`: the instructions block is wrapped to 80 columns, so `check-ascii.py` passes.
 
 ## 2026-10-12
 

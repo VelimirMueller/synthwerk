@@ -17,9 +17,10 @@ Per-repo variant (run in any synthwerk-* repo that has a copy of this script and
 import argparse
 import os
 from xml.sax.saxutils import escape, quoteattr
-from fontTools.ttLib import TTFont
+
 from fontTools.pens.svgPathPen import SVGPathPen
 from fontTools.pens.transformPen import TransformPen
+from fontTools.ttLib import TTFont
 
 ROOT = os.path.normpath(os.path.join(os.path.dirname(__file__), ".."))
 FONTS = os.path.join(ROOT, "assets", "fonts")
