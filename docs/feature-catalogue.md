@@ -4,7 +4,7 @@
 
 Every planned feature, by area. One line per feature group.
 
-- **State** is one of `released`, `working`, `planned`.
+- **State** is one of `released`, `built`, `working`, `planned`. `built` means the code is on `main` but not published.
 - **MVP** means the feature is part of epics E0 to E4 and ships with milestone M3.
 - No feature below is `released` unless the line says so.
 
@@ -119,7 +119,7 @@ Repo: [synthwerk-sdk](https://github.com/VelimirMueller/synthwerk-sdk).
 | `@synthwerk/sdk` core: sign-in, typed API client, chat stream client | yes | E3 | planned |
 | `@synthwerk/react` and `@synthwerk/vue` adapters | no | E7 | planned |
 | `create-synthwerk-app` scaffold. React default, Vue by config | no | E7 | planned |
-| `synthwerk-ui` component library | no | open | planned, see [design-system.md](design-system.md) |
+| `synthwerk-ui` component library: seven Vue 3.5 components as `@synthwerk/ui-vue`. Package name: open (M2) | no | open (M2) | built, 0.1.0, see [design-system.md](design-system.md) |
 
 ## Public site and builder
 

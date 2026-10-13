@@ -54,8 +54,8 @@
     ]},
     {"key": "design-flow", "type": "flow", "title": "FROM TOKEN TO PRODUCT", "nodes": [
       {"title": "TOKENS", "sub": "released, 0.2.0", "hot": true},
-      {"title": "FIGMA", "sub": "library, planned"},
-      {"title": "SYNTHWERK-UI", "sub": "components, planned"},
+      {"title": "FIGMA", "sub": "library, built"},
+      {"title": "SYNTHWERK-UI", "sub": "components, built"},
       {"title": "PRODUCTS", "sub": "studio, widgets, site"}
     ], "caption": "One source: tokens. Figma and code read the same values."},
     {"key": "design-rules", "type": "cards", "title": "THE LOOK IN THREE RULES", "items": [

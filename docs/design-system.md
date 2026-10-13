@@ -4,15 +4,15 @@
 
 One visual language for every Synthwerk surface: READMEs, websites, the studio, the widgets.
 
-- **Today:** design tokens are released as `@synthwerk/tokens` 0.2.0. The [Figma library](https://www.figma.com/design/e7RJDqZc1F6TBW0Bqad8KG) holds the tokens as variables and is built from code. The presence style guide covers READMEs and banners.
-- **Next:** the `synthwerk-ui` component package.
+- **Today:** design tokens are released as `@synthwerk/tokens` 0.2.0. The [Figma library](https://www.figma.com/design/e7RJDqZc1F6TBW0Bqad8KG) holds the tokens as variables and is built from code. The presence style guide covers READMEs and banners. The first `synthwerk-ui` package, `@synthwerk/ui-vue` 0.1.0, is built.
+- **Next:** the studio and the widgets use `synthwerk-ui` (D4, with E3 and E4).
 
 ```text
 -- 01 -------------------------------------------------- DESIGN SYSTEM --
 
   +-----------+     +-----------+     +--------------+     +----------+
   |  tokens   | --> |   Figma   | --> | synthwerk-ui | --> | products |
-  | released  |     |   built   |     |   planned    |     | planned  |
+  | released  |     |   built   |     |    built     |     | planned  |
   +-----------+     +-----------+     +--------------+     +----------+
 
   one source: tokens. Figma and code read the same values.
@@ -35,7 +35,7 @@ One visual language for every Synthwerk surface: READMEs, websites, the studio, 
 | Tokens | Colours, themes, type, radii as CSS variables, Tailwind theme and JSON | [synthwerk-sdk / packages/tokens](https://github.com/VelimirMueller/synthwerk-sdk/tree/main/packages/tokens) | released, 0.2.0 |
 | Presence | README layout, banners, ASCII kit | [presence-style.md](presence-style.md) | written |
 | Figma library | Tokens as variables, text and effect styles, 32 component sets, patterns, brand, roadmap | [Figma file](https://www.figma.com/design/e7RJDqZc1F6TBW0Bqad8KG), built from [`.figma/`](../.figma/) | built from code, tokens 0.2.0 |
-| `synthwerk-ui` | The Figma components in code | `synthwerk-sdk`, package name not final | planned |
+| `synthwerk-ui` | The Figma components in code: seven Vue 3.5 components | [synthwerk-sdk / packages/ui-vue](https://github.com/VelimirMueller/synthwerk-sdk/tree/main/packages/ui-vue) as `@synthwerk/ui-vue`. Package name and epic: open (M2) | built, 0.1.0 |
 | Product UI | Studio, widgets, public site | `synthwerk-studio`, `synthwerk-widgets` | planned |
 
 ## The look
@@ -119,6 +119,10 @@ The Starter plan allows 3 pages. Foundations, Components and Patterns are sectio
 - First set: the components of the Figma **Components** page.
 - Each component reads tokens only. No colour or size is written into a component.
 - Checks: contrast of 4.5:1 or more for text, visible focus, keyboard use, both modes.
+- Built: `@synthwerk/ui-vue` 0.1.0 for Vue 3.5. Components: `SwButton`, `SwPill`, `SwInput`, `SwCard`, `SwStatusPill`, `SwTerminalSnippet`, `SwDivider`.
+- Link props go through `safeHref()`. Only relative, `#`, `http:`, `https:`, `mailto:` and `tel:` targets give a link.
+- A test checks text contrast of 4.5:1 or more for every theme, mode and group.
+- Not on npm yet. Package name and epic: open (M2).
 
 ## Rules
 

@@ -70,7 +70,7 @@ The design system runs beside the epics. It has no milestone of its own yet.
 |---|---|---|
 | D1 | `@synthwerk/tokens` with group accents | released, 0.2.0 |
 | D2 | Figma library: tokens as variables, type styles, base components | built from code ([design-system.md](design-system.md#figma)) |
-| D3 | `synthwerk-ui` package: the Figma components in code | planned |
+| D3 | `synthwerk-ui` package: the Figma components in code | built, `@synthwerk/ui-vue` 0.1.0. Package name and epic: open (M2) |
 | D4 | Studio and widgets use `synthwerk-ui` | planned, with E3 and E4 |
 
 ## Where the work is tracked
