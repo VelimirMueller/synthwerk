@@ -8,7 +8,7 @@ Seven milestones, M0 to M6. Dates are estimates. Work is planned in two-week spr
 -- 01 -------------------------------------------------------- ROADMAP --
 
   M0       M1       M2       M3       M4       M5       M6
-  [##]-----[  ]-----[  ]-----[  ]-----[  ]-----[  ]-----[  ]
+  [##]-----[>>]-----[  ]-----[  ]-----[  ]-----[  ]-----[  ]
   2026-10  2026-11  2027-01  2027-02  2027-04  2027-05  2027-06
   clean    spine    chat     MVP      public   paid +   cluster
   slate    local    on dev   on prd   demo     SDK      ready
@@ -18,7 +18,7 @@ Seven milestones, M0 to M6. Dates are estimates. Work is planned in two-week spr
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="../assets/docs/roadmap-status-v2-dark.svg">
-  <img alt="M0 clean slate, 2026-10: done. M1 spine runs locally, 2026-11: planned. M2 chat slice on dev, 2027-01: planned. M3 MVP on prd, 2027-02: planned. M4 public demo, 2027-04: planned. M5 paid plans and SDK apps, 2027-05: planned. M6 cluster-ready, 2027-06: planned" src="../assets/docs/roadmap-status-v2-light.svg" width="100%">
+  <img alt="M0 clean slate, 2026-10: done. M1 spine runs locally, 2026-11: in progress. M2 chat slice on dev, 2027-01: planned. M3 MVP on prd, 2027-02: planned. M4 public demo, 2027-04: planned. M5 paid plans and SDK apps, 2027-05: planned. M6 cluster-ready, 2027-06: planned" src="../assets/docs/roadmap-status-v2-light.svg" width="100%">
 </picture>
 
 ## Milestones

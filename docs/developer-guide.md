@@ -6,7 +6,7 @@ How the Synthwerk repos are built, named and changed.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="../assets/docs/developer-stats-v2-dark.svg">
-  <img alt="8 REPOS ON GITHUB. 4 REPOS PLANNED. 5 SHARED WORKFLOWS. 1 CONTRACT" src="../assets/docs/developer-stats-v2-light.svg" width="100%">
+  <img alt="11 REPOS ON GITHUB. 1 REPO PLANNED. 5 SHARED WORKFLOWS. 1 CONTRACT" src="../assets/docs/developer-stats-v2-light.svg" width="100%">
 </picture>
 
 ## Repos
@@ -14,16 +14,16 @@ How the Synthwerk repos are built, named and changed.
 | Repo | Role | Language | State |
 |---|---|---|---|
 | [synthwerk](https://github.com/VelimirMueller/synthwerk) | The map and the docs | Markdown | working |
-| [synthwerk-blueprint](https://github.com/VelimirMueller/synthwerk-blueprint) | Shared CI, lint configs, templates | YAML, JS | released, v1 |
+| [synthwerk-blueprint](https://github.com/VelimirMueller/synthwerk-blueprint) | Shared CI, lint configs, templates | YAML, JS | released, v1.1.0 |
 | [synthwerk-sdk](https://github.com/VelimirMueller/synthwerk-sdk) | npm packages: tokens now, SDK later | TypeScript | tokens 0.2.0 |
 | [synthwerk-vision](https://github.com/VelimirMueller/synthwerk-vision) | Image labels | Python | working |
 | [synthwerk-identity](https://github.com/VelimirMueller/synthwerk-identity) | Orgs, roles, entitlements | Go | rewrite planned |
 | [synthwerk-llm](https://github.com/VelimirMueller/synthwerk-llm) | LLM gateway, streaming chat, mascot | Go | rewrite planned |
 | [synthwerk-widgets](https://github.com/VelimirMueller/synthwerk-widgets) | Chat and vision widgets | Vue | rewrite planned |
 | [synthwerk-studio](https://github.com/VelimirMueller/synthwerk-studio) | Public site, builder, admin, health | Nuxt | rewrite planned |
-| `synthwerk-contracts` | OpenAPI, event schemas, generated clients | OpenAPI, JSON Schema | planned |
-| `synthwerk-infra` | Hosts, compose stack, edge, repo settings | OpenTofu | planned |
-| `synthwerk-pulse` | Health, audit log, numbers | Go | planned |
+| [synthwerk-contracts](https://github.com/VelimirMueller/synthwerk-contracts) | OpenAPI health API, CloudEvents schemas, generated Go and TS clients, shared Go kit | OpenAPI, JSON Schema, Go | working, Go kit `go/v0.1.0` |
+| [synthwerk-infra](https://github.com/VelimirMueller/synthwerk-infra) | Local compose stack: edge, WAF, bus, database, telemetry, pulse | Docker Compose | working locally |
+| [synthwerk-pulse](https://github.com/VelimirMueller/synthwerk-pulse) | Health of each service, live over SSE | Go | working, skeleton |
 | `synthwerk-e2e` | End-to-end tests across all services | Playwright | planned |
 
 - "Rewrite planned" means the repo has a new README. The old code is at the tag `legacy-final`.
@@ -38,7 +38,7 @@ How the Synthwerk repos are built, named and changed.
 | Environment variable | `SYNTHWERK_<SERVICE>_<NAME>` | `SYNTHWERK_LLM_PROVIDER` |
 | Shared setting | `SYNTHWERK_PLATFORM_<NAME>` | |
 | Branch | `feat/<topic>`, `fix/<topic>`, `docs/<topic>` | `feat/docs-hub` |
-| Release tag | `vX.Y.Z` | `v1.0.1` |
+| Release tag | `vX.Y.Z` | `v1.1.0` |
 
 ## Conventions
 

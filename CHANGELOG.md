@@ -9,8 +9,15 @@ This file started on 2026-10-10. The earlier entries are taken from the merged p
 
 ## 2026-10-21
 
+### Added
+
+- README and `docs/developer-guide.md` link the three spine repos: `synthwerk-contracts`, `synthwerk-infra`, `synthwerk-pulse` (#14).
+
 ### Changed
 
+- README: 11 repos on GitHub, 1 planned. Status, repos, roadmap and "where it stands" panels show the spine repos as working and M1 as in progress. Blueprint is v1.1.0. The hero banner says milestone M1.
+- `docs/developer-guide.md`: contracts, infra and pulse have their real state. infra uses Docker Compose, not OpenTofu.
+- `docs/roadmap.md`, `docs/feature-catalogue.md`, `docs/stakeholder-guide.md`, `docs/getting-started.md`, `docs/infrastructure.md`, `docs/third-party.md`: the local spine stack works. No service runs on a host yet.
 - `docs/infrastructure.md`: the server is one IONOS VPS (decided 2026-10-21). New section "The VPS" with the stated size: 8 cores, 8 GB, 256 GB disk, no GPU, and a memory budget. Not measured yet (#7).
 
 ### Fixed

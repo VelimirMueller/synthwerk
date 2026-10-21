@@ -45,12 +45,12 @@
       "title": "SYNTHWERK IN NUMBERS",
       "items": [
         {
-          "value": "8",
+          "value": "11",
           "label": "REPOS ON GITHUB"
         },
         {
-          "value": "4",
-          "label": "REPOS PLANNED"
+          "value": "1",
+          "label": "REPO PLANNED"
         },
         {
           "value": "7",
@@ -125,7 +125,7 @@
       "rows": [
         {
           "label": "synthwerk-blueprint",
-          "value": "v1.0.1 released",
+          "value": "v1.1.0 released",
           "state": "ok"
         },
         {
@@ -139,9 +139,24 @@
           "state": "ok"
         },
         {
+          "label": "synthwerk-contracts",
+          "value": "go/v0.1.0 released",
+          "state": "ok"
+        },
+        {
+          "label": "synthwerk-infra, synthwerk-pulse",
+          "value": "working locally",
+          "state": "ok"
+        },
+        {
           "label": "M0 clean slate",
           "value": "done",
           "state": "ok"
+        },
+        {
+          "label": "M1 spine runs locally",
+          "value": "in progress",
+          "state": "wip"
         },
         {
           "label": "identity, llm, widgets, studio",
@@ -149,7 +164,7 @@
           "state": "planned"
         },
         {
-          "label": "contracts, infra, pulse, e2e",
+          "label": "synthwerk-e2e",
           "value": "not created yet",
           "state": "off"
         }
@@ -181,7 +196,7 @@
         },
         {
           "lead": "What works today",
-          "text": "The blueprint, the design tokens and the vision classifier. The other services are planned or in rewrite."
+          "text": "The blueprint, the design tokens, the vision classifier, the contracts and the local spine stack. The other services are planned or in rewrite."
         }
       ]
     },
@@ -191,7 +206,7 @@
       "title": "GET THE MAP, CHECK THE MAP",
       "items": [
         {
-          "lead": "No service runs yet",
+          "lead": "This repo runs no service",
           "text": "The quick start is: get the map, check the map. `check-ascii.py` reads `README.md` and `assets/ascii`. `check-links.sh` checks `README.md`."
         },
         {
@@ -199,8 +214,8 @@
           "text": "Start with the [blueprint](https://github.com/VelimirMueller/synthwerk-blueprint#readme)."
         },
         {
-          "lead": "Containers come later",
-          "text": "`docker compose up` arrives with milestone M1."
+          "lead": "Run the spine locally",
+          "text": "`docker compose up` in [synthwerk-infra](https://github.com/VelimirMueller/synthwerk-infra#readme) starts edge, WAF, bus, database, telemetry and pulse."
         }
       ]
     },
@@ -257,7 +272,7 @@
         },
         {
           "lead": "No deploys yet",
-          "text": "No service deploys yet. This flow is the target for milestone M1 and later."
+          "text": "No service deploys to a host yet. The stack runs locally. The first host deploy waits for a server."
         },
         {
           "lead": "Full diagram",
@@ -272,7 +287,7 @@
       "rows": [
         {
           "cmd": "synthwerk-blueprint",
-          "text": "Shared CI workflows, lint configs, templates, feature-doc skill. YAML, JS. **v1.0.1 released.**"
+          "text": "Shared CI workflows, lint configs, templates, feature-doc skill. YAML, JS. **v1.1.0 released.**"
         },
         {
           "cmd": "synthwerk-sdk",
@@ -300,15 +315,15 @@
         },
         {
           "cmd": "synthwerk-contracts",
-          "text": "OpenAPI, event schemas, generated clients. OpenAPI, JSON Schema. **Planned.**"
+          "text": "OpenAPI health API, CloudEvents schemas, generated Go and TS clients, breaking-change check, shared Go kit. **go/v0.1.0 released.**"
         },
         {
           "cmd": "synthwerk-infra",
-          "text": "Servers, compose stack, edge, repo settings. OpenTofu. **Planned.**"
+          "text": "Compose stack: Traefik edge, Coraza WAF, NATS JetStream, PostgreSQL, otel-lgtm, pulse. Docker Compose. **Working locally.**"
         },
         {
           "cmd": "synthwerk-pulse",
-          "text": "Health, audit log, KPIs over SSE. Go. **Planned.**"
+          "text": "Polls the health of each service and streams it over SSE. Go. **Skeleton working.**"
         },
         {
           "cmd": "synthwerk-e2e",
@@ -393,7 +408,7 @@
         },
         {
           "cmd": "M1 · 2026-11",
-          "text": "**Spine runs locally.** Planned. `docker compose up` starts edge, bus, database, telemetry, pulse."
+          "text": "**Spine runs locally.** In progress. `docker compose up` starts edge, bus, database, telemetry, pulse. The dev deploy waits for a host."
         },
         {
           "cmd": "M2 · 2027-01",
@@ -530,12 +545,12 @@
           "label": "DONE: CLEAN SLATE, 2026-10"
         },
         {
-          "value": "3",
-          "label": "WORKS: BLUEPRINT, TOKENS, VISION"
+          "value": "6",
+          "label": "REPOS THAT WORK TODAY"
         },
         {
           "value": "M1",
-          "label": "NEXT: SPINE RUNS LOCALLY"
+          "label": "NOW: SPINE RUNS LOCALLY"
         }
       ]
     },
@@ -612,7 +627,7 @@
         },
         {
           "label": "synthwerk-blueprint",
-          "sub": "v1.0.1 released",
+          "sub": "v1.1.0 released",
           "href": "https://github.com/VelimirMueller/synthwerk-blueprint"
         },
         {
@@ -633,6 +648,21 @@
         {
           "label": "Plain text",
           "sub": "show copyable commands"
+        },
+        {
+          "label": "synthwerk-contracts",
+          "sub": "go/v0.1.0 released",
+          "href": "https://github.com/VelimirMueller/synthwerk-contracts"
+        },
+        {
+          "label": "synthwerk-infra",
+          "sub": "working locally",
+          "href": "https://github.com/VelimirMueller/synthwerk-infra"
+        },
+        {
+          "label": "synthwerk-pulse",
+          "sub": "skeleton working",
+          "href": "https://github.com/VelimirMueller/synthwerk-pulse"
         }
       ]
     },
@@ -645,7 +675,7 @@
     }
   ],
   "readme": {
-    "hero_alt": "SYNTHWERK. AI services you run yourself. In small pieces. Map, 8 repos, milestone M0. Working.",
+    "hero_alt": "SYNTHWERK. AI services you run yourself. In small pieces. Map, 11 repos, milestone M1. Working.",
     "items": [
       "lead",
       "stats",
@@ -702,6 +732,14 @@
           7,
           8,
           9
+        ]
+      },
+      {
+        "buttons": "links",
+        "only": [
+          17,
+          18,
+          19
         ]
       },
       "ways",

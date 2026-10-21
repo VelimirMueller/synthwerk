@@ -5,7 +5,8 @@
 What you can run today, in about 10 minutes.
 
 - **Today:** the map, the shared CI, the design tokens and the vision service work.
-- **Not yet:** `docker compose up` for the full stack arrives with milestone M1.
+- **Today, local only:** `docker compose up` in [synthwerk-infra](https://github.com/VelimirMueller/synthwerk-infra#readme) starts the spine: edge, WAF, bus, database, telemetry and pulse.
+- **Not yet:** no service runs on a host.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="../assets/docs/start-terminal-v2-dark.svg">
