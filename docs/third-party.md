@@ -12,7 +12,7 @@ Every outside tool and service that Synthwerk uses or plans to use.
 | Service | Purpose | State | Data it sees |
 |---|---|---|---|
 | GitHub | Code, Actions, ticket board, releases | in use | Source code |
-| Figma | Design system, roadmap board | planned | Design files |
+| Figma | Design system, roadmap board | in use | Design files |
 | Vercel | Front-end hosting for the demo | planned | Front-end code, request logs |
 | Supabase | Postgres for the demo | planned | Synthetic demo data |
 | IONOS | VPS for the demo back end and models | planned | Demo traffic |

@@ -34,10 +34,10 @@ A line marked `planned` names a thing that does not exist yet. The page says whe
 
 | Topic | Where | State |
 |---|---|---|
-| Design system | [design-system.md](design-system.md) | tokens 0.2.0 released, components planned |
+| Design system | [design-system.md](design-system.md) | tokens 0.2.0 released, `@synthwerk/ui-vue` 0.1.0 built, not on npm |
 | Design tokens | [synthwerk-sdk / packages/tokens](https://github.com/VelimirMueller/synthwerk-sdk/tree/main/packages/tokens) | released |
 | Presence style guide | [presence-style.md](presence-style.md) | written |
-| Figma library | [design-system.md](design-system.md#figma) | planned |
+| Figma library | [design-system.md](design-system.md#figma) | built from code |
 
 ## Build
 

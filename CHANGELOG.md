@@ -7,6 +7,13 @@ Changes across all Synthwerk repos are in [docs/release-notes.md](docs/release-n
 
 This file started on 2026-10-10. The earlier entries are taken from the merged pull requests #1 to #5, so they list files that were already on `main`, for example `docs/architecture.md`.
 
+## 2026-10-21
+
+### Fixed
+
+- `docs/README.md`: the Figma library is built from code, and `@synthwerk/ui-vue` 0.1.0 is built. Both rows said planned.
+- `docs/third-party.md`: Figma is in use.
+
 ## 2026-10-13
 
 ### Added
