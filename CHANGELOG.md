@@ -9,6 +9,10 @@ This file started on 2026-10-10. The earlier entries are taken from the merged p
 
 ## 2026-10-21
 
+### Changed
+
+- `docs/infrastructure.md`: the server is one IONOS VPS (decided 2026-10-21). New section "The VPS" with the stated size: 8 cores, 8 GB, 256 GB disk, no GPU, and a memory budget. Not measured yet (#7).
+
 ### Fixed
 
 - `docs/README.md`: the Figma library is built from code, and `@synthwerk/ui-vue` 0.1.0 is built. Both rows said planned.
