@@ -6,7 +6,7 @@ Synthwerk in five minutes, for people who decide and do not build.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="../assets/docs/stakeholder-status-v2-dark.svg">
-  <img alt="Shared CI and templates: released, v1. Design tokens: released, 0.2.0. Image recognition: working, eval 93.1 %. Local stack: edge, bus, database, health: working, M1. Sign-in, chat, admin: rewrite planned. Public demo: planned, M4. Deployed services: none" src="../assets/docs/stakeholder-status-v2-light.svg" width="100%">
+  <img alt="Shared CI and templates: released, v1.1.0. Design tokens: released, 0.2.0. Image recognition: working, eval 93.1 %. Local stack: edge, bus, database, telemetry, pulse: working, M1. Sign-in, chat, admin: rewrite planned. Public demo: planned, M4. Deployed services: none" src="../assets/docs/stakeholder-status-v2-light.svg" width="100%">
 </picture>
 
 ## What it is
@@ -19,10 +19,10 @@ Synthwerk in five minutes, for people who decide and do not build.
 
 | Area | State | Proof |
 |---|---|---|
-| Shared CI and templates | Released, v1 | [synthwerk-blueprint](https://github.com/VelimirMueller/synthwerk-blueprint) |
+| Shared CI and templates | Released, v1.1.0 | [synthwerk-blueprint](https://github.com/VelimirMueller/synthwerk-blueprint) |
 | Design tokens | Released, 0.2.0 | [synthwerk-sdk](https://github.com/VelimirMueller/synthwerk-sdk) |
 | Image recognition | Working. The eval set scores 93.1 % | [synthwerk-vision](https://github.com/VelimirMueller/synthwerk-vision) |
-| Local stack: edge, bus, database, health | Working locally, milestone M1 | [synthwerk-infra](https://github.com/VelimirMueller/synthwerk-infra) |
+| Local stack: edge, bus, database, telemetry, pulse | Working locally, milestone M1 | [synthwerk-infra](https://github.com/VelimirMueller/synthwerk-infra) |
 | Sign-in, chat, admin | Planned, rewrite | [roadmap.md](roadmap.md) |
 | Public demo | Planned, milestone M4 | [infrastructure.md](infrastructure.md) |
 

@@ -83,10 +83,10 @@
       {"value": "1", "label": "CONTRACT"}
     ]},
     {"key": "stakeholder-status", "type": "status", "title": "WHAT IS TRUE TODAY", "rows": [
-      {"label": "Shared CI and templates", "value": "released, v1", "state": "ok"},
+      {"label": "Shared CI and templates", "value": "released, v1.1.0", "state": "ok"},
       {"label": "Design tokens", "value": "released, 0.2.0", "state": "ok"},
       {"label": "Image recognition", "value": "working, eval 93.1 %", "state": "ok"},
-      {"label": "Local stack: edge, bus, database, health", "value": "working, M1", "state": "ok"},
+      {"label": "Local stack: edge, bus, database, telemetry, pulse", "value": "working, M1", "state": "ok"},
       {"label": "Sign-in, chat, admin", "value": "rewrite planned", "state": "planned"},
       {"label": "Public demo", "value": "planned, M4", "state": "planned"},
       {"label": "Deployed services", "value": "none", "state": "off"}

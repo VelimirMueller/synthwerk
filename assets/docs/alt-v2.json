@@ -32,8 +32,8 @@
   "cicd-flow-v2-light.svg": "FEAT/* -> MAIN -> DEV -> STG -> PRD. No environment branches. Deploys start with milestone M1.",
   "developer-stats-v2-dark.svg": "11 REPOS ON GITHUB. 1 REPO PLANNED. 5 SHARED WORKFLOWS. 1 CONTRACT",
   "developer-stats-v2-light.svg": "11 REPOS ON GITHUB. 1 REPO PLANNED. 5 SHARED WORKFLOWS. 1 CONTRACT",
-  "stakeholder-status-v2-dark.svg": "Shared CI and templates: released, v1. Design tokens: released, 0.2.0. Image recognition: working, eval 93.1 %. Local stack: edge, bus, database, health: working, M1. Sign-in, chat, admin: rewrite planned. Public demo: planned, M4. Deployed services: none",
-  "stakeholder-status-v2-light.svg": "Shared CI and templates: released, v1. Design tokens: released, 0.2.0. Image recognition: working, eval 93.1 %. Local stack: edge, bus, database, health: working, M1. Sign-in, chat, admin: rewrite planned. Public demo: planned, M4. Deployed services: none",
+  "stakeholder-status-v2-dark.svg": "Shared CI and templates: released, v1.1.0. Design tokens: released, 0.2.0. Image recognition: working, eval 93.1 %. Local stack: edge, bus, database, telemetry, pulse: working, M1. Sign-in, chat, admin: rewrite planned. Public demo: planned, M4. Deployed services: none",
+  "stakeholder-status-v2-light.svg": "Shared CI and templates: released, v1.1.0. Design tokens: released, 0.2.0. Image recognition: working, eval 93.1 %. Local stack: edge, bus, database, telemetry, pulse: working, M1. Sign-in, chat, admin: rewrite planned. Public demo: planned, M4. Deployed services: none",
   "board-flow-v2-dark.svg": "BACKLOG -> READY -> IN PROGRESS -> IN REVIEW -> DONE. One board for all synthwerk repos.",
   "board-flow-v2-light.svg": "BACKLOG -> READY -> IN PROGRESS -> IN REVIEW -> DONE. One board for all synthwerk repos."
 }
