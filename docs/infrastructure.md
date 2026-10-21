@@ -6,7 +6,8 @@ Where Synthwerk runs. This page covers hosting, the database and the demo.
 
 - **Today:** nothing is deployed. The services run on a developer machine or not at all.
 - **Decided 2026-10-10:** the demo runs on the stack below.
-- **Open:** the production plan names a different provider. See [Open decisions](#open-decisions).
+- **Decided 2026-10-21:** the server is one IONOS VPS. It replaces the earlier plan of one VM per environment.
+- **Open:** the database and front ends for prd, and whether dev, stg and prd share the VPS. See [Open decisions](#open-decisions).
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="../assets/docs/infra-flow-v2-dark.svg">
@@ -44,7 +45,35 @@ Where Synthwerk runs. This page covers hosting, the database and the demo.
 
 - The demo shows a distributed system: a front end, a back end and a database on three providers.
 - The VPS runs the models for the Synthwerk tools, as far as its hardware allows.
-- The VPS size is not recorded here yet. The first task on the board measures it and sets the model sizes.
+- The VPS size is in [The VPS](#the-vps).
+
+## The VPS
+
+Stated by the owner on 2026-10-21. Not measured yet: #7 checks the numbers with `lscpu`, `free -h`, `df -h` and `lsblk`.
+
+| Part | Value |
+|---|---|
+| Provider | IONOS, EU region |
+| CPU | 8 cores |
+| Memory | 8 GB |
+| Disk | 256 GB, stated as HDD |
+| GPU | None |
+| OS | Not recorded |
+
+### Memory budget (estimate)
+
+| Part | Memory |
+|---|---|
+| OS and Docker | about 0.5 GB |
+| Edge, NATS, Zitadel, Go services | about 1.5 GB |
+| Telemetry stack | about 1 GB |
+| Vision model | about 1 to 2 GB |
+| Left for the chat model | about 3 GB |
+
+- Largest chat model: about 3B to 4B parameters at 4-bit, on the CPU. A 7B model does not fit next to the rest of the stack.
+- Answers stream slower than on a GPU. The eval in #72 measures the speed.
+- On a spinning disk, models load slowly. `lsblk -d -o NAME,ROTA` shows `1` for a spinning disk.
+- Open (M1, #7): the final model size, after the numbers are measured.
 
 ## Hosting and database
 
@@ -56,7 +85,7 @@ Where Synthwerk runs. This page covers hosting, the database and the demo.
 | Event bus | NATS on the VPS | Planned, milestone M1 |
 | Edge | Traefik and a web application firewall on the VPS | Planned, milestone M1 |
 | Telemetry | OpenTelemetry stack on the VPS | Planned, milestone M1 |
-| Models | Local models on the VPS | Size depends on the hardware |
+| Models | Local models on the VPS | CPU only. About 3B to 4B at 4-bit, see [The VPS](#the-vps) |
 | Secrets | GitHub environment secrets | No secret in a repo |
 
 ## Environments
@@ -75,7 +104,8 @@ Where Synthwerk runs. This page covers hosting, the database and the demo.
 
 | Topic | Earlier plan | Demo stack | To decide |
 |---|---|---|---|
-| Server provider | Another EU cloud, built with OpenTofu, one VM per environment | One IONOS VPS | Does the VPS replace the plan, or is it the demo only |
+| Server provider | Another EU cloud, built with OpenTofu, one VM per environment | One IONOS VPS | Decided 2026-10-21: one IONOS VPS |
+| Environments on the VPS | One VM each | dev only | Whether stg and prd share the 8 GB VPS |
 | Database | Postgres on the server, with its own backups | Supabase | Which one is used for prd |
 | Front ends | Served from the server behind the edge | Vercel | Which one is used for prd |
 | Mascot host | Its own VM with no network egress | Not placed | Whether the VPS can isolate it |
