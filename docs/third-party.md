@@ -51,7 +51,7 @@ Every outside tool and service that Synthwerk uses or plans to use.
 | Playwright | End-to-end tests, social preview render | in use for the render, planned for tests |
 | Vue, Nuxt | Widgets and studio | planned |
 | TanStack Query | Data layer of the SDK adapters | planned |
-| Go | identity, llm, pulse | planned |
+| Go | contracts, pulse. Later identity and llm | in use |
 
 ## Fonts
 

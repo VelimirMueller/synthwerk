@@ -82,9 +82,9 @@ Stated by the owner on 2026-10-21. Not measured yet: #7 checks the numbers with 
 | Front-end hosting | Vercel | Preview build per pull request |
 | Back-end hosting | IONOS VPS | Docker Compose. One host |
 | Database | Supabase Postgres | One project for the demo |
-| Event bus | NATS on the VPS | Planned, milestone M1 |
-| Edge | Traefik and a web application firewall on the VPS | Planned, milestone M1 |
-| Telemetry | OpenTelemetry stack on the VPS | Planned, milestone M1 |
+| Event bus | NATS on the VPS | Runs locally in `synthwerk-infra`. Not on the VPS yet |
+| Edge | Traefik and a web application firewall on the VPS | Runs locally in `synthwerk-infra`. Not on the VPS yet |
+| Telemetry | OpenTelemetry stack on the VPS | Runs locally in `synthwerk-infra`. Not on the VPS yet |
 | Models | Local models on the VPS | CPU only. About 3B to 4B at 4-bit, see [The VPS](#the-vps) |
 | Secrets | GitHub environment secrets | No secret in a repo |
 

@@ -22,7 +22,7 @@ Every planned feature, by area. One line per feature group.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="../assets/docs/features-stats-v2-dark.svg">
-  <img alt="10 FEATURE AREAS. 5 EPICS IN THE MVP. 2 PARTS RELEASED. 1 SERVICE WORKING" src="../assets/docs/features-stats-v2-light.svg" width="100%">
+  <img alt="10 FEATURE AREAS. 5 EPICS IN THE MVP. 3 PARTS RELEASED. 2 SERVICES WORKING" src="../assets/docs/features-stats-v2-light.svg" width="100%">
 </picture>
 
 ## Identity and access
@@ -85,11 +85,11 @@ Repo: `synthwerk-studio`.
 
 ## Health
 
-Repo: `synthwerk-pulse`, shown in the studio.
+Repo: [synthwerk-pulse](https://github.com/VelimirMueller/synthwerk-pulse), shown in the studio.
 
 | Feature | MVP | Epic | State |
 |---|---|---|---|
-| Live status per service | yes | E1, E4 | planned |
+| Live status per service | yes | E1, E4 | working in pulse. Studio view planned (E4) |
 | Rate, errors and p95 per service | yes | E4 | planned |
 | CPU, memory, disk, database connections, pending messages | yes | E4 | planned |
 | Tokens per minute and model latency | yes | E4 | planned |
@@ -148,14 +148,14 @@ Second binary in `synthwerk-llm`. The name Strobe is not final.
 
 ## Platform
 
-Repos: [synthwerk-blueprint](https://github.com/VelimirMueller/synthwerk-blueprint), `synthwerk-infra`, `synthwerk-contracts`, `synthwerk-e2e`.
+Repos: [synthwerk-blueprint](https://github.com/VelimirMueller/synthwerk-blueprint), [synthwerk-infra](https://github.com/VelimirMueller/synthwerk-infra), [synthwerk-contracts](https://github.com/VelimirMueller/synthwerk-contracts), `synthwerk-e2e`.
 
 | Feature | MVP | Epic | State |
 |---|---|---|---|
-| Reusable CI workflows, lint configs, repo templates | yes | E0 | released, v1 |
-| One image, built once, promoted by digest: dev, stg, prd | yes | E1 | planned |
-| Health and readiness endpoints in each service | yes | E1 | planned |
-| Facts as events through a transactional outbox | yes | E1 | planned |
-| One contract for APIs and events. Clients are generated | yes | E1 | planned |
+| Reusable CI workflows, lint configs, repo templates | yes | E0 | released, v1.1.0 |
+| One image, built once, promoted by digest: dev, stg, prd | yes | E1 | built in the blueprint. No host yet |
+| Health and readiness endpoints in each service | yes | E1 | working in vision and pulse |
+| Facts as events through a transactional outbox | yes | E1 | released in the Go kit `go/v0.1.0`. Used by pulse |
+| One contract for APIs and events. Clients are generated | yes | E1 | working |
 | End-to-end tests across all services | yes | E3 | planned |
 | Same images on k3s | no | E8 | planned |

@@ -1,7 +1,7 @@
 <p>
 <picture>
   <source media="(prefers-color-scheme: light)" srcset="assets/banner/hero-v2-light.svg">
-  <img alt="SYNTHWERK. AI services you run yourself. In small pieces. Map, 8 repos, milestone M0. Working." src="assets/banner/hero-v2-dark.svg" width="100%">
+  <img alt="SYNTHWERK. AI services you run yourself. In small pieces. Map, 11 repos, milestone M1. Working." src="assets/banner/hero-v2-dark.svg" width="100%">
 </picture>
 </p>
 
@@ -15,7 +15,7 @@
 <p>
 <picture>
   <source media="(prefers-color-scheme: light)" srcset="assets/readme/stats-v4-light.svg">
-  <img alt="8 REPOS ON GITHUB. 4 REPOS PLANNED. 7 MILESTONES, M0-M6. 0 PAID AI APIS IN DEV" src="assets/readme/stats-v4-dark.svg" width="100%">
+  <img alt="11 REPOS ON GITHUB. 1 REPO PLANNED. 7 MILESTONES, M0-M6. 0 PAID AI APIS IN DEV" src="assets/readme/stats-v4-dark.svg" width="100%">
 </picture>
 </p>
 
@@ -35,7 +35,7 @@
 <p>
 <picture>
   <source media="(prefers-color-scheme: light)" srcset="assets/readme/what-v4-light.svg">
-  <img alt="One repo per part: Each part is a separate repo synthwerk-&lt;role&gt;. This repo is the map. Two ways in: Drop the widgets into a website, or build your own app with the SDK. Local models, local-first: In development, models run on your machine. No paid AI provider is needed. Self-hosted. What works today: The blueprint, the design tokens and the vision classifier. The other services are planned or in rewrite" src="assets/readme/what-v4-dark.svg" width="100%">
+  <img alt="One repo per part: Each part is a separate repo synthwerk-&lt;role&gt;. This repo is the map. Two ways in: Drop the widgets into a website, or build your own app with the SDK. Local models, local-first: In development, models run on your machine. No paid AI provider is needed. Self-hosted. What works today: The blueprint, the design tokens, the vision classifier, the contracts and the local spine stack. The other services are planned or in rewrite" src="assets/readme/what-v4-dark.svg" width="100%">
 </picture>
 </p>
 
@@ -67,7 +67,7 @@ scripts/check-links.sh           # checks README.md
 <p>
 <picture>
   <source media="(prefers-color-scheme: light)" srcset="assets/readme/startnotes-v4-light.svg">
-  <img alt="No service runs yet: The quick start is: get the map, check the map. check-ascii.py reads README.md and assets/ascii. check-links.sh checks README.md. Adopt the shared CI: Start with the blueprint (https://github.com/VelimirMueller/synthwerk-blueprint#readme). Containers come later: docker compose up arrives with milestone M1" src="assets/readme/startnotes-v4-dark.svg" width="100%">
+  <img alt="This repo runs no service: The quick start is: get the map, check the map. check-ascii.py reads README.md and assets/ascii. check-links.sh checks README.md. Adopt the shared CI: Start with the blueprint (https://github.com/VelimirMueller/synthwerk-blueprint#readme). Run the spine locally: docker compose up in synthwerk-infra (https://github.com/VelimirMueller/synthwerk-infra#readme) starts edge, WAF, bus, database, telemetry and pulse" src="assets/readme/startnotes-v4-dark.svg" width="100%">
 </picture>
 </p>
 
@@ -100,7 +100,7 @@ scripts/check-links.sh           # checks README.md
 <p>
 <picture>
   <source media="(prefers-color-scheme: light)" srcset="assets/readme/how-v4-light.svg">
-  <img alt="Trunk-based: There are no environment branches. One image is built once and promoted by digest. One blueprint: Every repo calls the blueprint workflows at @v1 and uses the same README and feature-doc layout. One contract: APIs and events are defined in synthwerk-contracts. Clients are generated from it. Read-only MCP tools: The llm service reads the other services through read-only MCP tools. No deploys yet: No service deploys yet. This flow is the target for milestone M1 and later. Full diagram: The full ecosystem diagram is in docs/architecture.md" src="assets/readme/how-v4-dark.svg" width="100%">
+  <img alt="Trunk-based: There are no environment branches. One image is built once and promoted by digest. One blueprint: Every repo calls the blueprint workflows at @v1 and uses the same README and feature-doc layout. One contract: APIs and events are defined in synthwerk-contracts. Clients are generated from it. Read-only MCP tools: The llm service reads the other services through read-only MCP tools. No deploys yet: No service deploys to a host yet. The stack runs locally. The first host deploy waits for a server. Full diagram: The full ecosystem diagram is in docs/architecture.md" src="assets/readme/how-v4-dark.svg" width="100%">
 </picture>
 </p>
 
@@ -119,7 +119,7 @@ scripts/check-links.sh           # checks README.md
 <p>
 <picture>
   <source media="(prefers-color-scheme: light)" srcset="assets/readme/repos-v4-light.svg">
-  <img alt="synthwerk-blueprint: Shared CI workflows, lint configs, templates, feature-doc skill. YAML, JS. v1.0.1 released. synthwerk-sdk: npm packages. Design tokens now, SDK later. TypeScript. tokens 0.2.0. synthwerk-vision: Image labels with an open vocabulary and a topic tree. Python. Working. synthwerk-identity: Orgs, roles, entitlements, paywall. Login by Zitadel. Go. Rewrite planned. synthwerk-llm: LLM gateway, streaming chat, mascot binary. Go. Rewrite planned. synthwerk-widgets: Embeddable chat and vision widgets. Vue 3.5. Rewrite planned. synthwerk-studio: Public site, page builder, admin, live health. Nuxt 4. Rewrite planned. synthwerk-contracts: OpenAPI, event schemas, generated clients. OpenAPI, JSON Schema. Planned. synthwerk-infra: Servers, compose stack, edge, repo settings. OpenTofu. Planned. synthwerk-pulse: Health, audit log, KPIs over SSE. Go. Planned. synthwerk-e2e: End-to-end tests across all services. Playwright. Planned" src="assets/readme/repos-v4-dark.svg" width="100%">
+  <img alt="synthwerk-blueprint: Shared CI workflows, lint configs, templates, feature-doc skill. YAML, JS. v1.1.0 released. synthwerk-sdk: npm packages. Design tokens now, SDK later. TypeScript. tokens 0.2.0. synthwerk-vision: Image labels with an open vocabulary and a topic tree. Python. Working. synthwerk-identity: Orgs, roles, entitlements, paywall. Login by Zitadel. Go. Rewrite planned. synthwerk-llm: LLM gateway, streaming chat, mascot binary. Go. Rewrite planned. synthwerk-widgets: Embeddable chat and vision widgets. Vue 3.5. Rewrite planned. synthwerk-studio: Public site, page builder, admin, live health. Nuxt 4. Rewrite planned. synthwerk-contracts: OpenAPI health API, CloudEvents schemas, generated Go and TS clients, breaking-change check, shared Go kit. go/v0.1.0 released. synthwerk-infra: Compose stack: Traefik edge, Coraza WAF, NATS JetStream, PostgreSQL, otel-lgtm, pulse. Docker Compose. Working locally. synthwerk-pulse: Polls the health of each service and streams it over SSE. Go. Skeleton working. synthwerk-e2e: End-to-end tests across all services. Playwright. Planned" src="assets/readme/repos-v4-dark.svg" width="100%">
 </picture>
 </p>
 
@@ -142,6 +142,12 @@ scripts/check-links.sh           # checks README.md
 <a href="https://github.com/VelimirMueller/synthwerk-studio"><picture><source media="(prefers-color-scheme: light)" srcset="assets/readme/links-9-v4-light.svg"><img alt="synthwerk-studio (https://github.com/VelimirMueller/synthwerk-studio)" src="assets/readme/links-9-v4-dark.svg" width="32%"></picture></a>
 </p>
 
+<p align="center">
+<a href="https://github.com/VelimirMueller/synthwerk-contracts"><picture><source media="(prefers-color-scheme: light)" srcset="assets/readme/links-17-v4-light.svg"><img alt="synthwerk-contracts (https://github.com/VelimirMueller/synthwerk-contracts)" src="assets/readme/links-17-v4-dark.svg" width="32%"></picture></a>
+<a href="https://github.com/VelimirMueller/synthwerk-infra"><picture><source media="(prefers-color-scheme: light)" srcset="assets/readme/links-18-v4-light.svg"><img alt="synthwerk-infra (https://github.com/VelimirMueller/synthwerk-infra)" src="assets/readme/links-18-v4-dark.svg" width="32%"></picture></a>
+<a href="https://github.com/VelimirMueller/synthwerk-pulse"><picture><source media="(prefers-color-scheme: light)" srcset="assets/readme/links-19-v4-light.svg"><img alt="synthwerk-pulse (https://github.com/VelimirMueller/synthwerk-pulse)" src="assets/readme/links-19-v4-dark.svg" width="32%"></picture></a>
+</p>
+
 <p>
 <picture>
   <source media="(prefers-color-scheme: light)" srcset="assets/readme/ways-v4-light.svg">
@@ -159,7 +165,7 @@ scripts/check-links.sh           # checks README.md
 <p>
 <picture>
   <source media="(prefers-color-scheme: light)" srcset="assets/readme/roadmap-v4-light.svg">
-  <img alt="M0 · 2026-10: Clean slate. Done. Old names removed. Blueprint CI green in a repo. M1 · 2026-11: Spine runs locally. Planned. docker compose up starts edge, bus, database, telemetry, pulse. M2 · 2027-01: Chat slice on dev. Planned. A passkey user gets streamed answers in an embedded chat. M3 · 2027-02: MVP on prd. Planned. The approved stg build runs on prd. Restore drill done. M4 · 2027-04: Public demo. Planned. Public site with live chat, vision and the mascot. M5 · 2027-05: Paid plans and SDK apps. Planned. Checkout changes entitlements. App templates for React and Vue. M6 · 2027-06: Cluster-ready. Planned. Same images on k3s. Security review closed. Card scan works. M0-M6: Targets are estimates. Estimates are not promises. This line is" src="assets/readme/roadmap-v4-dark.svg" width="100%">
+  <img alt="M0 · 2026-10: Clean slate. Done. Old names removed. Blueprint CI green in a repo. M1 · 2026-11: Spine runs locally. In progress. docker compose up starts edge, bus, database, telemetry, pulse. The dev deploy waits for a host. M2 · 2027-01: Chat slice on dev. Planned. A passkey user gets streamed answers in an embedded chat. M3 · 2027-02: MVP on prd. Planned. The approved stg build runs on prd. Restore drill done. M4 · 2027-04: Public demo. Planned. Public site with live chat, vision and the mascot. M5 · 2027-05: Paid plans and SDK apps. Planned. Checkout changes entitlements. App templates for React and Vue. M6 · 2027-06: Cluster-ready. Planned. Same images on k3s. Security review closed. Card scan works. M0-M6: Targets are estimates. Estimates are not promises. This line is" src="assets/readme/roadmap-v4-dark.svg" width="100%">
 </picture>
 </p>
 
@@ -186,14 +192,14 @@ scripts/check-links.sh           # checks README.md
 <p>
 <picture>
   <source media="(prefers-color-scheme: light)" srcset="assets/readme/status-v4-light.svg">
-  <img alt="synthwerk-blueprint: v1.0.1 released. synthwerk-sdk / tokens: 0.2.0. synthwerk-vision: working. M0 clean slate: done. identity, llm, widgets, studio: rewrite planned. contracts, infra, pulse, e2e: not created yet" src="assets/readme/status-v4-dark.svg" width="100%">
+  <img alt="synthwerk-blueprint: v1.1.0 released. synthwerk-sdk / tokens: 0.2.0. synthwerk-vision: working. synthwerk-contracts: go/v0.1.0 released. synthwerk-infra, synthwerk-pulse: working locally. M0 clean slate: done. M1 spine runs locally: in progress. identity, llm, widgets, studio: rewrite planned. synthwerk-e2e: not created yet" src="assets/readme/status-v4-dark.svg" width="100%">
 </picture>
 </p>
 
 <p>
 <picture>
   <source media="(prefers-color-scheme: light)" srcset="assets/readme/now-v4-light.svg">
-  <img alt="M0 DONE: CLEAN SLATE, 2026-10. 3 WORKS: BLUEPRINT, TOKENS, VISION. M1 NEXT: SPINE RUNS LOCALLY" src="assets/readme/now-v4-dark.svg" width="100%">
+  <img alt="M0 DONE: CLEAN SLATE, 2026-10. 6 REPOS THAT WORK TODAY. M1 NOW: SPINE RUNS LOCALLY" src="assets/readme/now-v4-dark.svg" width="100%">
 </picture>
 </p>
 
