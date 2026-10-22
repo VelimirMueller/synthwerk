@@ -4,7 +4,7 @@
 
 Where Synthwerk runs. This page covers hosting, the database and the demo.
 
-- **Today:** nothing is deployed. The services run on a developer machine or not at all.
+- **Today (2026-10-23):** vision runs on dev on the VPS, deployed by digest on every merge to `main`. A second, small VPS watches it from outside. The other services run on a developer machine.
 - **Decided 2026-10-10:** the demo runs on the stack below.
 - **Decided 2026-10-21:** the server is one IONOS VPS. It replaces the earlier plan of one VM per environment.
 - **Open:** the database and front ends for prd, and whether dev, stg and prd share the VPS. See [Open decisions](#open-decisions).
@@ -49,16 +49,29 @@ Where Synthwerk runs. This page covers hosting, the database and the demo.
 
 ## The VPS
 
-Stated by the owner on 2026-10-21. Not measured yet: #7 checks the numbers with `lscpu`, `free -h`, `df -h` and `lsblk`.
+Measured on 2026-10-22 and 2026-10-23 with `lscpu`, `free -h`, `df -h`, `lsblk` and a direct write test (#7). The plan said 8 cores; the VPS has 4.
 
 | Part | Value |
 |---|---|
-| Provider | IONOS, EU region |
-| CPU | 8 cores |
-| Memory | 8 GB |
-| Disk | 256 GB, stated as HDD |
+| Provider | IONOS VPS, EU region |
+| CPU | 4 vCPU, AMD EPYC-Milan (KVM), AVX2, no AVX-512 |
+| Memory | 7.7 GiB, plus a 4 GiB swap file |
+| Disk | 237 GB, about 525 MB/s direct write (SSD class; the virtual disk reports `ROTA 1`, which says nothing on a VM) |
 | GPU | None |
-| OS | Not recorded |
+| OS | Debian 13 "trixie", kernel 6.12 |
+| Network | About 1.2 Gbit/s download |
+| Hardening | Key-only SSH, fail2ban, unattended upgrades, IONOS firewall policy; Lynis index 79 |
+
+### The watcher VPS
+
+| Part | Value |
+|---|---|
+| Role | Outside watcher: Gatus behind Caddy, public page https://status.velimir-mueller.de, ntfy alerts |
+| Size | 1 vCPU, 854 MB usable memory, 20 GB disk, 2 GB swap |
+| Checks | dev host from outside, heartbeats from inside (`host`, `vision`), the public sites |
+| Config | `synthwerk-infra/watch/` |
+
+- It is too small for telemetry or models. Telemetry stays on the dev VPS.
 
 ### Memory budget (estimate)
 
@@ -67,13 +80,12 @@ Stated by the owner on 2026-10-21. Not measured yet: #7 checks the numbers with 
 | OS and Docker | about 0.5 GB |
 | Edge, NATS, Zitadel, Go services | about 1.5 GB |
 | Telemetry stack | about 1 GB |
-| Vision model | about 1 to 2 GB |
-| Left for the chat model | about 3 GB |
+| Vision service | 0.7 GB measured (limit 3 GB) |
+| Left for the chat model | about 3 to 4 GB |
 
-- Largest chat model: about 3B to 4B parameters at 4-bit, on the CPU. A 7B model does not fit next to the rest of the stack.
-- Answers stream slower than on a GPU. The eval in #72 measures the speed.
-- On a spinning disk, models load slowly. `lsblk -d -o NAME,ROTA` shows `1` for a spinning disk.
-- Open (M1, #7): the final model size, after the numbers are measured.
+- **Largest chat model: 3B to 4B parameters at 4-bit (Q4), on the CPU.** A 7B model does not fit next to the rest of the stack.
+- 4 vCPU make answers stream slower than the 8 cores the plan assumed. The eval in #72 measures the speed.
+- Swap catches peaks only. A model that needs swap to fit is too big.
 
 ## Hosting and database
 
@@ -105,7 +117,7 @@ Stated by the owner on 2026-10-21. Not measured yet: #7 checks the numbers with 
 | Topic | Earlier plan | Demo stack | To decide |
 |---|---|---|---|
 | Server provider | Another EU cloud, built with OpenTofu, one VM per environment | One IONOS VPS | Decided 2026-10-21: one IONOS VPS |
-| Environments on the VPS | One VM each | dev only | Whether stg and prd share the 8 GB VPS |
+| Environments on the VPS | One VM each | dev only | Whether stg and prd share the 7.7 GiB VPS. Today all three deploy to one compose dir, so stg or prd on this host would replace dev |
 | Database | Postgres on the server, with its own backups | Supabase | Which one is used for prd |
 | Front ends | Served from the server behind the edge | Vercel | Which one is used for prd |
 | Mascot host | Its own VM with no network egress | Not placed | Whether the VPS can isolate it |
