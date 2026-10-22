@@ -1,4 +1,4 @@
-# Checks of the map repo: ASCII art, synthwerk links, script lint.
+# Checks of the map repo: ASCII art, synthwerk links, script and shell lint.
 # Required check for the ruleset on main: "required".
 name: checks
 
@@ -64,9 +64,24 @@ jobs:
       - name: Biome (scripts/*.mjs, .figma)
         run: npx --yes @biomejs/biome@2.5.15 lint --diagnostic-level=warn .
 
+  # Shell scripts: bash syntax check and shellcheck (warning and above).
+  shell:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: bash -n (*.sh)
+        run: git ls-files -z '*.sh' | xargs -0 -r -n1 bash -n
+      - name: shellcheck --severity=warning (*.sh)
+        run: git ls-files -z '*.sh' | xargs -0 -r shellcheck --severity=warning
+
   required:
     if: always()
-    needs: [ascii, links, lint]
+    needs: [ascii, links, lint, shell]
     runs-on: ubuntu-latest
     timeout-minutes: 5
     permissions: {}
