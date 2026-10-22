@@ -58,7 +58,7 @@ SW.selectComp = async (p, m) => { const c = SW.cmp('VERTICAL', { gap: 6, w: 320 
   SW.add(f, SW.dot(10, 'flagship/fill'), v, await SW.icon('chevron-down', m, 'fg-muted', 18)); SW.grow(v); SW.put(c, f, true);
   if (p.State === 'Open') { const menu = SW.col(2, { pad: 6, r: 'md', fill: SW.r(m, 'surface'), stroke: SW.r(m, 'border'), name: 'menu' });
     if (m === 'light') await h.effect(menu, 'effects/shadow-card-light');
-    for (const [i, [g, n]] of [['flagship', 'Flagship'], ['vlm', 'vlm'], ['rig', 'Rig']].entries()) {
+    for (const [i, [g, n]] of [['flagship', 'Flagship'], ['lab', 'Lab'], ['ops', 'Ops'], ['venture', 'Venture']].entries()) {
       const it = SW.row(10, { pad: [8, 10], r: 8, name: 'option', fill: i === 0 ? SW.r(m, 'surface-2') : null });
       const t = await SW.t(n, 'text/sm', SW.r(m, i === 0 ? 'fg' : 'fg-muted'), { name: 'option' });
       SW.add(it, SW.dot(8, g + '/fill'), t); SW.grow(t);
