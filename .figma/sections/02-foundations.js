@@ -52,11 +52,11 @@ SW.section({ name: '01 · Foundations', page: PG.D, run: async () => {
   const acc = SW.col(28, { name: 'Accents' }); SW.put(b, acc, true);
   SW.add(acc, await SW.block('Colour · group and service accents', 'data-group and data-service', 'A group changes accent-2, accent-2-fg, accent-2-text and ring only. Flagship is the default and equals the theme values. A service changes the service accent only. Emerald stays status.'));
   const gr = SW.row(24, { name: 'groups', align: 'MIN' });
-  for (const [g, who] of [['flagship', 'synthwerk family · default'], ['vlm', 'vlm-* repos'], ['rig', 'tix, rig, dual-review']]) {
-    const c = SW.panel('dark', { gap: 0, pad: 0, w: 448, clip: true, name: 'group/' + g });
+  for (const [g, who] of [['flagship', 'synthwerk family · default'], ['lab', 'personal side projects'], ['ops', 'private tools'], ['venture', 'private-income products']]) {
+    const c = SW.panel('dark', { gap: 0, pad: 0, w: 332, clip: true, name: 'group/' + g });
     const top = SW.row(0, { name: 'swatches' });
-    const f = SW.rect(224, 112, g + '/fill'); f.name = g + '/fill'; const d = SW.rect(112, 112, g + '/dark/accent'); d.name = g + '/dark/accent';
-    const l = SW.rect(112, 112, g + '/light/accent'); l.name = g + '/light/accent'; SW.add(top, f, d, l);
+    const f = SW.rect(166, 112, g + '/fill'); f.name = g + '/fill'; const d = SW.rect(83, 112, g + '/dark/accent'); d.name = g + '/dark/accent';
+    const l = SW.rect(83, 112, g + '/light/accent'); l.name = g + '/light/accent'; SW.add(top, f, d, l);
     const meta = SW.col(8, { pad: [20, 24], name: 'meta' });
     SW.add(meta, await SW.t(g, 'display/xl', 'dark/fg'), await SW.t(who, 'text/sm', 'dark/fg-muted'),
       await SW.t('fill ' + SW.hex[g + '/fill'] + '  ·  dark ' + SW.hex[g + '/dark/accent'] + '  ·  light ' + SW.hex[g + '/light/accent'], 'display/label-sm', 'dark/fg-subtle'));

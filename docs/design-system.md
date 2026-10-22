@@ -75,7 +75,7 @@ One visual language for every Synthwerk surface: READMEs, websites, the studio, 
 The Figma library is built. Link: [Synthwerk design system](https://www.figma.com/design/e7RJDqZc1F6TBW0Bqad8KG).
 
 - **Source:** the vfb pack in [`.figma/`](../.figma/). Code builds every board. Do not edit a board by hand: the next build replaces it.
-- **Tokens:** `.figma/tokens.json` holds 193 variables, 19 text styles and 3 effect styles. `.figma/tools/tokens.mjs` writes it from `@synthwerk/tokens`.
+- **Tokens:** `.figma/tokens.json` holds 204 variables, 19 text styles and 3 effect styles. `.figma/tools/tokens.mjs` writes it from `@synthwerk/tokens`.
 - **Variables:** collections `primitives`, `theme`, `group`, `size`, `type` and `motion`. Each variable has its scopes, a description and the CSS name as web code syntax.
 - **Modes:** the Starter plan has one variable mode. Dark and light are two names: `dark/<role>` and `light/<role>`, aliased to the primitives.
 - **Components:** 32 component sets. Each set has `Mode=Dark|Light` and its kinds, states and sizes. Components use variables and text styles only.
