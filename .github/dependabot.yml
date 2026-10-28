@@ -1,10 +1,9 @@
 # Weekly, grouped, one PR per ecosystem (CI-COST-04). No package manifest: only the action pins.
-# target-branch develop: Dependabot opens no PR until the control repo creates develop (fleet-standard#7).
+# No target-branch: updates go to the default branch (main now, develop once the control repo makes it the default, fleet-standard#7).
 version: 2
 updates:
   - package-ecosystem: github-actions
     directory: /
-    target-branch: develop
     schedule:
       interval: weekly
       day: monday
