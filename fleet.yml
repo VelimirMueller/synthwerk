@@ -21,3 +21,7 @@ exceptions:
   - rule: GOV-ENV-10
     value: no release environment
     reason: The hub publishes no release, so it has no release environment.
+  - rule: CI-UNIT-03
+    value:
+      lines: 0
+    reason: The hub has no library code and no unit tests (CI-UNIT-01); a coverage floor has nothing to measure, so it is 0.
