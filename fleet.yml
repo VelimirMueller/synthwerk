@@ -16,8 +16,8 @@ exceptions:
     value: no develop ruleset
     reason: The repo has no develop branch yet; the control repo sets the required checks with it (fleet-standard#7).
   - rule: GOV-RS-04
-    value: "main: required check `required`, no stage branch"
-    reason: The main ruleset still requires the old check `required` and there is no stage branch; the owner switches the check to `conclusion` when this file lands, and the control repo replaces the ruleset (fleet-standard#7).
+    value: "main: required check `conclusion`, no stage branch"
+    reason: The main ruleset predates the standard (its required check moved from `required` to `conclusion` on 2026-10-28) and there is no stage branch; the control repo replaces the ruleset (fleet-standard#7).
   - rule: GOV-ENV-10
     value: no release environment
     reason: The hub publishes no release, so it has no release environment.

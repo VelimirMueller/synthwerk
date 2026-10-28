@@ -1,4 +1,4 @@
-# Fleet standard ci.yml (library tier). Stages call VelimirMueller/fleet-workflows at v0.0.1.
+# Fleet standard ci.yml (library tier). Stages call VelimirMueller/fleet-workflows at v0.0.2.
 # The hub holds docs, lint configs and helper scripts: no package and no unit tests (fleet.yml).
 name: ci
 
@@ -52,7 +52,7 @@ jobs:
     if: ${{ !failure() && !cancelled() && needs.changes.outputs.code == 'true' }}
     permissions:
       contents: read
-    uses: VelimirMueller/fleet-workflows/.github/workflows/_ci-lint.yml@v0.0.1
+    uses: VelimirMueller/fleet-workflows/.github/workflows/_ci-lint.yml@v0.0.2
     with:
       stack: python
       install-command: "true"
@@ -68,7 +68,7 @@ jobs:
     if: ${{ !failure() && !cancelled() && needs.changes.outputs.code == 'true' }}
     permissions:
       contents: read
-    uses: VelimirMueller/fleet-workflows/.github/workflows/_ci-unit.yml@v0.0.1
+    uses: VelimirMueller/fleet-workflows/.github/workflows/_ci-unit.yml@v0.0.2
     with:
       stack: generic
       command: echo "No unit tests, the hub has no library code (fleet.yml exception CI-UNIT-01)."
@@ -79,7 +79,7 @@ jobs:
     if: ${{ !failure() && !cancelled() && github.event_name == 'workflow_dispatch' && inputs.e2e }}
     permissions:
       contents: read
-    uses: VelimirMueller/fleet-workflows/.github/workflows/_ci-e2e.yml@v0.0.1
+    uses: VelimirMueller/fleet-workflows/.github/workflows/_ci-e2e.yml@v0.0.2
     with:
       stack: generic
       command: echo "No e2e tests in the hub."
@@ -89,7 +89,7 @@ jobs:
     if: ${{ !failure() && !cancelled() && needs.changes.outputs.code == 'true' }}
     permissions:
       contents: read
-    uses: VelimirMueller/fleet-workflows/.github/workflows/_ci-build.yml@v0.0.1
+    uses: VelimirMueller/fleet-workflows/.github/workflows/_ci-build.yml@v0.0.2
     with:
       stack: generic
       command: echo "Nothing to build, the hub publishes no package (fleet.yml exception CI-BUILD-04)."
