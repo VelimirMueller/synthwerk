@@ -1,0 +1,2371 @@
+{
+  "vfb": {
+    "build": "2dfccff9",
+    "at": "2026-10-22T20:24:07.596Z",
+    "tokens": {
+      "sha256": "0ed5343c970f5bb970cd9a3ecf729266e122c425134cda7160367de89156a897",
+      "commit": "3902c5e8c2faa005a1e652a1f986fe9a8722efda",
+      "dirty": false,
+      "at": "2026-10-22T20:23:49.199Z"
+    }
+  },
+  "$schema": "vfb-tokens/1",
+  "collections": {
+    "primitives": {
+      "white": {
+        "type": "COLOR",
+        "value": "#ffffff",
+        "description": "Primitive white. Do not use on a layer: use a theme role."
+      },
+      "black": {
+        "type": "COLOR",
+        "value": "#000000",
+        "description": "Primitive black. Do not use on a layer: use a theme role."
+      },
+      "zinc-50": {
+        "type": "COLOR",
+        "value": "#fafafa",
+        "description": "Primitive zinc-50. Do not use on a layer: use a theme role."
+      },
+      "zinc-100": {
+        "type": "COLOR",
+        "value": "#f4f4f5",
+        "description": "Primitive zinc-100. Do not use on a layer: use a theme role."
+      },
+      "zinc-200": {
+        "type": "COLOR",
+        "value": "#e4e4e7",
+        "description": "Primitive zinc-200. Do not use on a layer: use a theme role."
+      },
+      "zinc-300": {
+        "type": "COLOR",
+        "value": "#d4d4d8",
+        "description": "Primitive zinc-300. Do not use on a layer: use a theme role."
+      },
+      "zinc-350": {
+        "type": "COLOR",
+        "value": "#b4b4bc",
+        "description": "Primitive zinc-350. Do not use on a layer: use a theme role."
+      },
+      "zinc-400": {
+        "type": "COLOR",
+        "value": "#a1a1aa",
+        "description": "Primitive zinc-400. Do not use on a layer: use a theme role."
+      },
+      "zinc-450": {
+        "type": "COLOR",
+        "value": "#8a8a93",
+        "description": "Primitive zinc-450. Do not use on a layer: use a theme role."
+      },
+      "zinc-500": {
+        "type": "COLOR",
+        "value": "#71717a",
+        "description": "Primitive zinc-500. Do not use on a layer: use a theme role."
+      },
+      "zinc-550": {
+        "type": "COLOR",
+        "value": "#6b6b74",
+        "description": "Primitive zinc-550. Do not use on a layer: use a theme role."
+      },
+      "zinc-600": {
+        "type": "COLOR",
+        "value": "#52525b",
+        "description": "Primitive zinc-600. Do not use on a layer: use a theme role."
+      },
+      "zinc-700": {
+        "type": "COLOR",
+        "value": "#3f3f46",
+        "description": "Primitive zinc-700. Do not use on a layer: use a theme role."
+      },
+      "zinc-800": {
+        "type": "COLOR",
+        "value": "#27272a",
+        "description": "Primitive zinc-800. Do not use on a layer: use a theme role."
+      },
+      "zinc-850": {
+        "type": "COLOR",
+        "value": "#18181b",
+        "description": "Primitive zinc-850. Do not use on a layer: use a theme role."
+      },
+      "zinc-900": {
+        "type": "COLOR",
+        "value": "#121214",
+        "description": "Primitive zinc-900. Do not use on a layer: use a theme role."
+      },
+      "zinc-950": {
+        "type": "COLOR",
+        "value": "#09090b",
+        "description": "Primitive zinc-950. Do not use on a layer: use a theme role."
+      },
+      "graphite-950": {
+        "type": "COLOR",
+        "value": "#0c0c10",
+        "description": "Primitive graphite-950. Do not use on a layer: use a theme role."
+      },
+      "graphite-900": {
+        "type": "COLOR",
+        "value": "#131318",
+        "description": "Primitive graphite-900. Do not use on a layer: use a theme role."
+      },
+      "graphite-850": {
+        "type": "COLOR",
+        "value": "#18181f",
+        "description": "Primitive graphite-850. Do not use on a layer: use a theme role."
+      },
+      "graphite-800": {
+        "type": "COLOR",
+        "value": "#1e1e28",
+        "description": "Primitive graphite-800. Do not use on a layer: use a theme role."
+      },
+      "graphite-750": {
+        "type": "COLOR",
+        "value": "#1c1c28",
+        "description": "Primitive graphite-750. Do not use on a layer: use a theme role."
+      },
+      "graphite-700": {
+        "type": "COLOR",
+        "value": "#282838",
+        "description": "Primitive graphite-700. Do not use on a layer: use a theme role."
+      },
+      "graphite-500": {
+        "type": "COLOR",
+        "value": "#6b6b84",
+        "description": "Primitive graphite-500. Do not use on a layer: use a theme role."
+      },
+      "graphite-400": {
+        "type": "COLOR",
+        "value": "#8a8aa0",
+        "description": "Primitive graphite-400. Do not use on a layer: use a theme role."
+      },
+      "emerald-300": {
+        "type": "COLOR",
+        "value": "#6ee7b7",
+        "description": "Primitive emerald-300. Do not use on a layer: use a theme role."
+      },
+      "emerald-400": {
+        "type": "COLOR",
+        "value": "#34d399",
+        "description": "Primitive emerald-400. Do not use on a layer: use a theme role."
+      },
+      "emerald-500": {
+        "type": "COLOR",
+        "value": "#10b981",
+        "description": "Primitive emerald-500. Do not use on a layer: use a theme role."
+      },
+      "emerald-700": {
+        "type": "COLOR",
+        "value": "#047857",
+        "description": "Primitive emerald-700. Do not use on a layer: use a theme role."
+      },
+      "emerald-800": {
+        "type": "COLOR",
+        "value": "#065f46",
+        "description": "Primitive emerald-800. Do not use on a layer: use a theme role."
+      },
+      "indigo-300": {
+        "type": "COLOR",
+        "value": "#a5b4fc",
+        "description": "Primitive indigo-300. Do not use on a layer: use a theme role."
+      },
+      "indigo-400": {
+        "type": "COLOR",
+        "value": "#818cf8",
+        "description": "Primitive indigo-400. Do not use on a layer: use a theme role."
+      },
+      "indigo-500": {
+        "type": "COLOR",
+        "value": "#6366f1",
+        "description": "Primitive indigo-500. Do not use on a layer: use a theme role."
+      },
+      "indigo-600": {
+        "type": "COLOR",
+        "value": "#4f46e5",
+        "description": "Primitive indigo-600. Do not use on a layer: use a theme role."
+      },
+      "indigo-700": {
+        "type": "COLOR",
+        "value": "#4338ca",
+        "description": "Primitive indigo-700. Do not use on a layer: use a theme role."
+      },
+      "indigo-800": {
+        "type": "COLOR",
+        "value": "#3730a3",
+        "description": "Primitive indigo-800. Do not use on a layer: use a theme role."
+      },
+      "violet-300": {
+        "type": "COLOR",
+        "value": "#c4b5fd",
+        "description": "Primitive violet-300. Do not use on a layer: use a theme role."
+      },
+      "violet-400": {
+        "type": "COLOR",
+        "value": "#a78bfa",
+        "description": "Primitive violet-400. Do not use on a layer: use a theme role."
+      },
+      "violet-500": {
+        "type": "COLOR",
+        "value": "#8b5cf6",
+        "description": "Primitive violet-500. Do not use on a layer: use a theme role."
+      },
+      "violet-600": {
+        "type": "COLOR",
+        "value": "#7c3aed",
+        "description": "Primitive violet-600. Do not use on a layer: use a theme role."
+      },
+      "violet-700": {
+        "type": "COLOR",
+        "value": "#6d28d9",
+        "description": "Primitive violet-700. Do not use on a layer: use a theme role."
+      },
+      "violet-800": {
+        "type": "COLOR",
+        "value": "#5b21b6",
+        "description": "Primitive violet-800. Do not use on a layer: use a theme role."
+      },
+      "pink-400": {
+        "type": "COLOR",
+        "value": "#f472b6",
+        "description": "Primitive pink-400. Do not use on a layer: use a theme role."
+      },
+      "pink-700": {
+        "type": "COLOR",
+        "value": "#be185d",
+        "description": "Primitive pink-700. Do not use on a layer: use a theme role."
+      },
+      "amber-300": {
+        "type": "COLOR",
+        "value": "#fcd34d",
+        "description": "Primitive amber-300. Do not use on a layer: use a theme role."
+      },
+      "amber-400": {
+        "type": "COLOR",
+        "value": "#fbbf24",
+        "description": "Primitive amber-400. Do not use on a layer: use a theme role."
+      },
+      "amber-500": {
+        "type": "COLOR",
+        "value": "#f59e0b",
+        "description": "Primitive amber-500. Do not use on a layer: use a theme role."
+      },
+      "amber-700": {
+        "type": "COLOR",
+        "value": "#b45309",
+        "description": "Primitive amber-700. Do not use on a layer: use a theme role."
+      },
+      "amber-800": {
+        "type": "COLOR",
+        "value": "#92400e",
+        "description": "Primitive amber-800. Do not use on a layer: use a theme role."
+      },
+      "amber-900": {
+        "type": "COLOR",
+        "value": "#78350f",
+        "description": "Primitive amber-900. Do not use on a layer: use a theme role."
+      },
+      "red-300": {
+        "type": "COLOR",
+        "value": "#fca5a5",
+        "description": "Primitive red-300. Do not use on a layer: use a theme role."
+      },
+      "red-400": {
+        "type": "COLOR",
+        "value": "#f87171",
+        "description": "Primitive red-400. Do not use on a layer: use a theme role."
+      },
+      "red-500": {
+        "type": "COLOR",
+        "value": "#ef4444",
+        "description": "Primitive red-500. Do not use on a layer: use a theme role."
+      },
+      "red-700": {
+        "type": "COLOR",
+        "value": "#b91c1c",
+        "description": "Primitive red-700. Do not use on a layer: use a theme role."
+      },
+      "red-800": {
+        "type": "COLOR",
+        "value": "#991b1b",
+        "description": "Primitive red-800. Do not use on a layer: use a theme role."
+      },
+      "blue-300": {
+        "type": "COLOR",
+        "value": "#93c5fd",
+        "description": "Primitive blue-300. Do not use on a layer: use a theme role."
+      },
+      "blue-400": {
+        "type": "COLOR",
+        "value": "#60a5fa",
+        "description": "Primitive blue-400. Do not use on a layer: use a theme role."
+      },
+      "blue-700": {
+        "type": "COLOR",
+        "value": "#1d4ed8",
+        "description": "Primitive blue-700. Do not use on a layer: use a theme role."
+      },
+      "blue-800": {
+        "type": "COLOR",
+        "value": "#1e40af",
+        "description": "Primitive blue-800. Do not use on a layer: use a theme role."
+      },
+      "teal-400": {
+        "type": "COLOR",
+        "value": "#2dd4bf",
+        "description": "Primitive teal-400. Do not use on a layer: use a theme role."
+      },
+      "teal-500": {
+        "type": "COLOR",
+        "value": "#14b8a6",
+        "description": "Primitive teal-500. Do not use on a layer: use a theme role."
+      },
+      "teal-600": {
+        "type": "COLOR",
+        "value": "#0d9488",
+        "description": "Primitive teal-600. Do not use on a layer: use a theme role."
+      },
+      "teal-700": {
+        "type": "COLOR",
+        "value": "#0f766e",
+        "description": "Primitive teal-700. Do not use on a layer: use a theme role."
+      },
+      "brand/ink": {
+        "type": "COLOR",
+        "value": "{zinc-850}",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "Brand palette \"ink\" (banners, social previews) = zinc-850 #18181B."
+      },
+      "brand/night": {
+        "type": "COLOR",
+        "value": "{graphite-950}",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "Brand palette \"night\" (banners, social previews) = graphite-950 #0C0C10."
+      },
+      "brand/paper": {
+        "type": "COLOR",
+        "value": "{zinc-50}",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "Brand palette \"paper\" (banners, social previews) = zinc-50 #FAFAFA."
+      },
+      "brand/line": {
+        "type": "COLOR",
+        "value": "{zinc-200}",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "Brand palette \"line\" (banners, social previews) = zinc-200 #E4E4E7."
+      },
+      "brand/sub": {
+        "type": "COLOR",
+        "value": "{zinc-600}",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "Brand palette \"sub\" (banners, social previews) = zinc-600 #52525B."
+      },
+      "brand/faint": {
+        "type": "COLOR",
+        "value": "{zinc-500}",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "Brand palette \"faint\" (banners, social previews) = zinc-500 #71717A."
+      },
+      "brand/emerald": {
+        "type": "COLOR",
+        "value": "{emerald-500}",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "Brand palette \"emerald\" (banners, social previews) = emerald-500 #10B981."
+      },
+      "brand/emerald-print": {
+        "type": "COLOR",
+        "value": "{emerald-700}",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "Brand palette \"emerald-print\" (banners, social previews) = emerald-700 #047857."
+      },
+      "brand/indigo": {
+        "type": "COLOR",
+        "value": "{indigo-500}",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "Brand palette \"indigo\" (banners, social previews) = indigo-500 #6366F1."
+      },
+      "brand/indigo-print": {
+        "type": "COLOR",
+        "value": "{indigo-600}",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "Brand palette \"indigo-print\" (banners, social previews) = indigo-600 #4F46E5."
+      },
+      "brand/glow-teal": {
+        "type": "COLOR",
+        "value": "{teal-500}",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "Brand palette \"glow-teal\" (banners, social previews) = teal-500 #14B8A6."
+      },
+      "brand/glow-red": {
+        "type": "COLOR",
+        "value": "{red-500}",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "Brand palette \"glow-red\" (banners, social previews) = red-500 #EF4444."
+      },
+      "brand/glow-violet": {
+        "type": "COLOR",
+        "value": "{violet-500}",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "Brand palette \"glow-violet\" (banners, social previews) = violet-500 #8B5CF6."
+      },
+      "night-950": {
+        "type": "COLOR",
+        "value": "#0a0a0b",
+        "description": "Primitive night-950. Do not use on a layer: use a theme role."
+      },
+      "night-700": {
+        "type": "COLOR",
+        "value": "#26262b",
+        "description": "Primitive night-700. Do not use on a layer: use a theme role."
+      },
+      "magenta-400": {
+        "type": "COLOR",
+        "value": "#ee4fff",
+        "description": "Primitive magenta-400. Do not use on a layer: use a theme role."
+      },
+      "fuchsia-300": {
+        "type": "COLOR",
+        "value": "#f0abfc",
+        "description": "Primitive fuchsia-300. Do not use on a layer: use a theme role."
+      },
+      "fuchsia-700": {
+        "type": "COLOR",
+        "value": "#a21caf",
+        "description": "Primitive fuchsia-700. Do not use on a layer: use a theme role."
+      },
+      "fuchsia-800": {
+        "type": "COLOR",
+        "value": "#86198f",
+        "description": "Primitive fuchsia-800. Do not use on a layer: use a theme role."
+      }
+    },
+    "theme": {
+      "dark/bg": {
+        "type": "COLOR",
+        "value": "{night-950}",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL"
+        ],
+        "description": "Theme default, data-mode=\"dark\": bg = night-950 #0A0A0B."
+      },
+      "dark/surface": {
+        "type": "COLOR",
+        "value": "{graphite-900}",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL"
+        ],
+        "description": "Theme default, data-mode=\"dark\": surface = graphite-900 #131318."
+      },
+      "dark/surface-2": {
+        "type": "COLOR",
+        "value": "{graphite-850}",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL"
+        ],
+        "description": "Theme default, data-mode=\"dark\": surface-2 = graphite-850 #18181F."
+      },
+      "dark/border": {
+        "type": "COLOR",
+        "value": "{night-700}",
+        "scopes": [
+          "STROKE_COLOR"
+        ],
+        "description": "Theme default, data-mode=\"dark\": border = night-700 #26262B."
+      },
+      "dark/border-subtle": {
+        "type": "COLOR",
+        "value": "{graphite-750}",
+        "scopes": [
+          "STROKE_COLOR"
+        ],
+        "description": "Theme default, data-mode=\"dark\": border-subtle = graphite-750 #1C1C28."
+      },
+      "dark/border-control": {
+        "type": "COLOR",
+        "value": "{graphite-500}",
+        "scopes": [
+          "STROKE_COLOR"
+        ],
+        "description": "Theme default, data-mode=\"dark\": border-control = graphite-500 #6B6B84."
+      },
+      "dark/fg": {
+        "type": "COLOR",
+        "value": "{zinc-200}",
+        "scopes": [
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "Theme default, data-mode=\"dark\": fg = zinc-200 #E4E4E7."
+      },
+      "dark/fg-muted": {
+        "type": "COLOR",
+        "value": "{zinc-400}",
+        "scopes": [
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "Theme default, data-mode=\"dark\": fg-muted = zinc-400 #A1A1AA."
+      },
+      "dark/fg-subtle": {
+        "type": "COLOR",
+        "value": "{graphite-400}",
+        "scopes": [
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "Theme default, data-mode=\"dark\": fg-subtle = graphite-400 #8A8AA0."
+      },
+      "dark/accent": {
+        "type": "COLOR",
+        "value": "{zinc-50}",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "Theme default, data-mode=\"dark\": accent = zinc-50 #FAFAFA."
+      },
+      "dark/accent-fg": {
+        "type": "COLOR",
+        "value": "{graphite-950}",
+        "scopes": [
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "Theme default, data-mode=\"dark\": accent-fg = graphite-950 #0C0C10."
+      },
+      "dark/accent-text": {
+        "type": "COLOR",
+        "value": "{zinc-50}",
+        "scopes": [
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "Theme default, data-mode=\"dark\": accent-text = zinc-50 #FAFAFA."
+      },
+      "dark/accent-2": {
+        "type": "COLOR",
+        "value": "{indigo-400}",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "Theme default, data-mode=\"dark\": accent-2 = indigo-400 #818CF8."
+      },
+      "dark/accent-2-fg": {
+        "type": "COLOR",
+        "value": "{graphite-950}",
+        "scopes": [
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "Theme default, data-mode=\"dark\": accent-2-fg = graphite-950 #0C0C10."
+      },
+      "dark/accent-2-text": {
+        "type": "COLOR",
+        "value": "{indigo-400}",
+        "scopes": [
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "Theme default, data-mode=\"dark\": accent-2-text = indigo-400 #818CF8."
+      },
+      "dark/success": {
+        "type": "COLOR",
+        "value": "{emerald-500}",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "Theme default, data-mode=\"dark\": success = emerald-500 #10B981."
+      },
+      "dark/warning": {
+        "type": "COLOR",
+        "value": "{amber-400}",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "Theme default, data-mode=\"dark\": warning = amber-400 #FBBF24."
+      },
+      "dark/danger": {
+        "type": "COLOR",
+        "value": "{red-400}",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "Theme default, data-mode=\"dark\": danger = red-400 #F87171."
+      },
+      "dark/info": {
+        "type": "COLOR",
+        "value": "{blue-400}",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "Theme default, data-mode=\"dark\": info = blue-400 #60A5FA."
+      },
+      "dark/ring": {
+        "type": "COLOR",
+        "value": "{indigo-400}",
+        "scopes": [
+          "STROKE_COLOR"
+        ],
+        "description": "Theme default, data-mode=\"dark\": ring = indigo-400 #818CF8."
+      },
+      "light/bg": {
+        "type": "COLOR",
+        "value": "{zinc-50}",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL"
+        ],
+        "description": "Theme default, data-mode=\"light\": bg = zinc-50 #FAFAFA."
+      },
+      "light/surface": {
+        "type": "COLOR",
+        "value": "{white}",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL"
+        ],
+        "description": "Theme default, data-mode=\"light\": surface = white #FFFFFF."
+      },
+      "light/surface-2": {
+        "type": "COLOR",
+        "value": "{zinc-100}",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL"
+        ],
+        "description": "Theme default, data-mode=\"light\": surface-2 = zinc-100 #F4F4F5."
+      },
+      "light/border": {
+        "type": "COLOR",
+        "value": "{zinc-200}",
+        "scopes": [
+          "STROKE_COLOR"
+        ],
+        "description": "Theme default, data-mode=\"light\": border = zinc-200 #E4E4E7."
+      },
+      "light/border-subtle": {
+        "type": "COLOR",
+        "value": "{zinc-100}",
+        "scopes": [
+          "STROKE_COLOR"
+        ],
+        "description": "Theme default, data-mode=\"light\": border-subtle = zinc-100 #F4F4F5."
+      },
+      "light/border-control": {
+        "type": "COLOR",
+        "value": "{zinc-450}",
+        "scopes": [
+          "STROKE_COLOR"
+        ],
+        "description": "Theme default, data-mode=\"light\": border-control = zinc-450 #8A8A93."
+      },
+      "light/fg": {
+        "type": "COLOR",
+        "value": "{zinc-850}",
+        "scopes": [
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "Theme default, data-mode=\"light\": fg = zinc-850 #18181B."
+      },
+      "light/fg-muted": {
+        "type": "COLOR",
+        "value": "{zinc-600}",
+        "scopes": [
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "Theme default, data-mode=\"light\": fg-muted = zinc-600 #52525B."
+      },
+      "light/fg-subtle": {
+        "type": "COLOR",
+        "value": "{zinc-550}",
+        "scopes": [
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "Theme default, data-mode=\"light\": fg-subtle = zinc-550 #6B6B74."
+      },
+      "light/accent": {
+        "type": "COLOR",
+        "value": "{zinc-850}",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "Theme default, data-mode=\"light\": accent = zinc-850 #18181B."
+      },
+      "light/accent-fg": {
+        "type": "COLOR",
+        "value": "{zinc-50}",
+        "scopes": [
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "Theme default, data-mode=\"light\": accent-fg = zinc-50 #FAFAFA."
+      },
+      "light/accent-text": {
+        "type": "COLOR",
+        "value": "{zinc-850}",
+        "scopes": [
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "Theme default, data-mode=\"light\": accent-text = zinc-850 #18181B."
+      },
+      "light/accent-2": {
+        "type": "COLOR",
+        "value": "{indigo-600}",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "Theme default, data-mode=\"light\": accent-2 = indigo-600 #4F46E5."
+      },
+      "light/accent-2-fg": {
+        "type": "COLOR",
+        "value": "{white}",
+        "scopes": [
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "Theme default, data-mode=\"light\": accent-2-fg = white #FFFFFF."
+      },
+      "light/accent-2-text": {
+        "type": "COLOR",
+        "value": "{indigo-600}",
+        "scopes": [
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "Theme default, data-mode=\"light\": accent-2-text = indigo-600 #4F46E5."
+      },
+      "light/success": {
+        "type": "COLOR",
+        "value": "{emerald-700}",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "Theme default, data-mode=\"light\": success = emerald-700 #047857."
+      },
+      "light/warning": {
+        "type": "COLOR",
+        "value": "{amber-700}",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "Theme default, data-mode=\"light\": warning = amber-700 #B45309."
+      },
+      "light/danger": {
+        "type": "COLOR",
+        "value": "{red-700}",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "Theme default, data-mode=\"light\": danger = red-700 #B91C1C."
+      },
+      "light/info": {
+        "type": "COLOR",
+        "value": "{blue-700}",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "Theme default, data-mode=\"light\": info = blue-700 #1D4ED8."
+      },
+      "light/ring": {
+        "type": "COLOR",
+        "value": "{indigo-600}",
+        "scopes": [
+          "STROKE_COLOR"
+        ],
+        "description": "Theme default, data-mode=\"light\": ring = indigo-600 #4F46E5."
+      },
+      "dark/texture-grid": {
+        "type": "COLOR",
+        "value": "#ffffff0b",
+        "scopes": [
+          "SHAPE_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "Grid line, 32 px grid: white at 4.5 %."
+      },
+      "dark/glow-edge-teal": {
+        "type": "COLOR",
+        "value": "#14b8a638",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL"
+        ],
+        "description": "Edge glow teal: teal-500 at 22 %, centre 16 % / 0 %. Page edges only, never behind text."
+      },
+      "dark/glow-edge-red": {
+        "type": "COLOR",
+        "value": "#ef444424",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL"
+        ],
+        "description": "Edge glow red: red-500 at 14 %, centre 52 % / 0 %. Page edges only, never behind text."
+      },
+      "dark/glow-edge-violet": {
+        "type": "COLOR",
+        "value": "#8b5cf638",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL"
+        ],
+        "description": "Edge glow violet: violet-500 at 22 %, centre 90 % / 4 %. Page edges only, never behind text."
+      },
+      "dark/badge-service-tint": {
+        "type": "FLOAT",
+        "value": 14,
+        "description": "Share of the service accent in a service badge fill, in percent (dark)."
+      },
+      "light/texture-grid": {
+        "type": "COLOR",
+        "value": "#18181b0d",
+        "scopes": [
+          "SHAPE_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "Grid line, 32 px grid: zinc-850 at 5 %."
+      },
+      "light/glow-edge-teal": {
+        "type": "COLOR",
+        "value": "#14b8a624",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL"
+        ],
+        "description": "Edge glow teal: teal-500 at 14 %, centre 16 % / 0 %. Page edges only, never behind text."
+      },
+      "light/glow-edge-red": {
+        "type": "COLOR",
+        "value": "#ef444414",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL"
+        ],
+        "description": "Edge glow red: red-500 at 8 %, centre 52 % / 0 %. Page edges only, never behind text."
+      },
+      "light/glow-edge-violet": {
+        "type": "COLOR",
+        "value": "#8b5cf624",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL"
+        ],
+        "description": "Edge glow violet: violet-500 at 14 %, centre 90 % / 4 %. Page edges only, never behind text."
+      },
+      "light/badge-service-tint": {
+        "type": "FLOAT",
+        "value": 8,
+        "description": "Share of the service accent in a service badge fill, in percent (light)."
+      },
+      "alpha/dark/success/40": {
+        "type": "COLOR",
+        "value": "#10b98166",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "Derived by vfb: dark/success at 40 %."
+      },
+      "alpha/dark/success/10": {
+        "type": "COLOR",
+        "value": "#10b9811a",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "Derived by vfb: dark/success at 10 %."
+      },
+      "alpha/dark/accent-2/10": {
+        "type": "COLOR",
+        "value": "#818cf81a",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "Derived by vfb: dark/accent-2 at 10 %."
+      },
+      "alpha/dark/accent-2/40": {
+        "type": "COLOR",
+        "value": "#818cf866",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "Derived by vfb: dark/accent-2 at 40 %."
+      },
+      "alpha/dark/border-control/60": {
+        "type": "COLOR",
+        "value": "#6b6b8499",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "Derived by vfb: dark/border-control at 60 %."
+      },
+      "alpha/dark/accent/86": {
+        "type": "COLOR",
+        "value": "#fafafadb",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "Derived by vfb: dark/accent at 86 %."
+      },
+      "alpha/light/accent/86": {
+        "type": "COLOR",
+        "value": "#18181bdb",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "Derived by vfb: light/accent at 86 %."
+      },
+      "alpha/dark/accent-text/35": {
+        "type": "COLOR",
+        "value": "#fafafa59",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "Derived by vfb: dark/accent-text at 35 %."
+      },
+      "alpha/light/accent-text/35": {
+        "type": "COLOR",
+        "value": "#18181b59",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "Derived by vfb: light/accent-text at 35 %."
+      },
+      "alpha/dark/warning/10": {
+        "type": "COLOR",
+        "value": "#fbbf241a",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "Derived by vfb: dark/warning at 10 %."
+      },
+      "alpha/dark/warning/40": {
+        "type": "COLOR",
+        "value": "#fbbf2466",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "Derived by vfb: dark/warning at 40 %."
+      },
+      "alpha/dark/fg-subtle/10": {
+        "type": "COLOR",
+        "value": "#8a8aa01a",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "Derived by vfb: dark/fg-subtle at 10 %."
+      },
+      "alpha/dark/fg-subtle/40": {
+        "type": "COLOR",
+        "value": "#8a8aa066",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "Derived by vfb: dark/fg-subtle at 40 %."
+      },
+      "alpha/dark/danger/10": {
+        "type": "COLOR",
+        "value": "#f871711a",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "Derived by vfb: dark/danger at 10 %."
+      },
+      "alpha/dark/danger/40": {
+        "type": "COLOR",
+        "value": "#f8717166",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "Derived by vfb: dark/danger at 40 %."
+      },
+      "alpha/light/success/10": {
+        "type": "COLOR",
+        "value": "#0478571a",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "Derived by vfb: light/success at 10 %."
+      },
+      "alpha/light/success/40": {
+        "type": "COLOR",
+        "value": "#04785766",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "Derived by vfb: light/success at 40 %."
+      },
+      "alpha/light/warning/10": {
+        "type": "COLOR",
+        "value": "#b453091a",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "Derived by vfb: light/warning at 10 %."
+      },
+      "alpha/light/warning/40": {
+        "type": "COLOR",
+        "value": "#b4530966",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "Derived by vfb: light/warning at 40 %."
+      },
+      "alpha/light/fg-subtle/10": {
+        "type": "COLOR",
+        "value": "#6b6b741a",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "Derived by vfb: light/fg-subtle at 10 %."
+      },
+      "alpha/light/fg-subtle/40": {
+        "type": "COLOR",
+        "value": "#6b6b7466",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "Derived by vfb: light/fg-subtle at 40 %."
+      },
+      "alpha/light/danger/10": {
+        "type": "COLOR",
+        "value": "#b91c1c1a",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "Derived by vfb: light/danger at 10 %."
+      },
+      "alpha/light/danger/40": {
+        "type": "COLOR",
+        "value": "#b91c1c66",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "Derived by vfb: light/danger at 40 %."
+      },
+      "alpha/dark/accent-2/14": {
+        "type": "COLOR",
+        "value": "#818cf824",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "Derived by vfb: dark/accent-2 at 14 %."
+      },
+      "alpha/dark/accent-2/50": {
+        "type": "COLOR",
+        "value": "#818cf880",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "Derived by vfb: dark/accent-2 at 50 %."
+      },
+      "alpha/light/accent-2/14": {
+        "type": "COLOR",
+        "value": "#4f46e524",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "Derived by vfb: light/accent-2 at 14 %."
+      },
+      "alpha/light/accent-2/50": {
+        "type": "COLOR",
+        "value": "#4f46e580",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "Derived by vfb: light/accent-2 at 50 %."
+      },
+      "alpha/dark/surface/85": {
+        "type": "COLOR",
+        "value": "#131318d9",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "Derived by vfb: dark/surface at 85 %."
+      },
+      "alpha/light/surface/85": {
+        "type": "COLOR",
+        "value": "#ffffffd9",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "Derived by vfb: light/surface at 85 %."
+      },
+      "alpha/dark/danger/50": {
+        "type": "COLOR",
+        "value": "#f8717180",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "Derived by vfb: dark/danger at 50 %."
+      },
+      "alpha/light/danger/50": {
+        "type": "COLOR",
+        "value": "#b91c1c80",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "Derived by vfb: light/danger at 50 %."
+      },
+      "alpha/dark/accent-2/70": {
+        "type": "COLOR",
+        "value": "#818cf8b2",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "Derived by vfb: dark/accent-2 at 70 %."
+      }
+    },
+    "group": {
+      "flagship/fill": {
+        "type": "COLOR",
+        "value": "{indigo-500}",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "data-group=\"flagship\": graphic fill for glows, lines and banner art. Never text."
+      },
+      "flagship/dark/accent": {
+        "type": "COLOR",
+        "value": "{indigo-400}",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "data-group=\"flagship\", dark: accent-2, accent-2-text and ring = indigo-400."
+      },
+      "flagship/dark/fg": {
+        "type": "COLOR",
+        "value": "{graphite-950}",
+        "scopes": [
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "data-group=\"flagship\", dark: text on an accent fill = graphite-950."
+      },
+      "flagship/light/accent": {
+        "type": "COLOR",
+        "value": "{indigo-600}",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "data-group=\"flagship\", light: accent-2, accent-2-text and ring = indigo-600."
+      },
+      "flagship/light/fg": {
+        "type": "COLOR",
+        "value": "{white}",
+        "scopes": [
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "data-group=\"flagship\", light: text on an accent fill = white."
+      },
+      "vlm/fill": {
+        "type": "COLOR",
+        "value": "{violet-500}",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "data-group=\"vlm\": graphic fill for glows, lines and banner art. Never text."
+      },
+      "vlm/dark/accent": {
+        "type": "COLOR",
+        "value": "{violet-400}",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "data-group=\"vlm\", dark: accent-2, accent-2-text and ring = violet-400."
+      },
+      "vlm/dark/fg": {
+        "type": "COLOR",
+        "value": "{graphite-950}",
+        "scopes": [
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "data-group=\"vlm\", dark: text on an accent fill = graphite-950."
+      },
+      "vlm/light/accent": {
+        "type": "COLOR",
+        "value": "{violet-600}",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "data-group=\"vlm\", light: accent-2, accent-2-text and ring = violet-600."
+      },
+      "vlm/light/fg": {
+        "type": "COLOR",
+        "value": "{white}",
+        "scopes": [
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "data-group=\"vlm\", light: text on an accent fill = white."
+      },
+      "rig/fill": {
+        "type": "COLOR",
+        "value": "{amber-500}",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "data-group=\"rig\": graphic fill for glows, lines and banner art. Never text."
+      },
+      "rig/dark/accent": {
+        "type": "COLOR",
+        "value": "{amber-400}",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "data-group=\"rig\", dark: accent-2, accent-2-text and ring = amber-400."
+      },
+      "rig/dark/fg": {
+        "type": "COLOR",
+        "value": "{graphite-950}",
+        "scopes": [
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "data-group=\"rig\", dark: text on an accent fill = graphite-950."
+      },
+      "rig/light/accent": {
+        "type": "COLOR",
+        "value": "{amber-700}",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "data-group=\"rig\", light: accent-2, accent-2-text and ring = amber-700."
+      },
+      "rig/light/fg": {
+        "type": "COLOR",
+        "value": "{white}",
+        "scopes": [
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "data-group=\"rig\", light: text on an accent fill = white."
+      },
+      "service/studio/dark": {
+        "type": "COLOR",
+        "value": "{indigo-400}",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "data-service=\"studio\", dark: indigo-400. The dark step is also the accent stripe in all modes."
+      },
+      "service/studio/light": {
+        "type": "COLOR",
+        "value": "{indigo-700}",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "data-service=\"studio\", light: indigo-700. The dark step is also the accent stripe in all modes."
+      },
+      "service/llm/dark": {
+        "type": "COLOR",
+        "value": "{violet-400}",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "data-service=\"llm\", dark: violet-400. The dark step is also the accent stripe in all modes."
+      },
+      "service/llm/light": {
+        "type": "COLOR",
+        "value": "{violet-700}",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "data-service=\"llm\", light: violet-700. The dark step is also the accent stripe in all modes."
+      },
+      "service/vision/dark": {
+        "type": "COLOR",
+        "value": "{pink-400}",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "data-service=\"vision\", dark: pink-400. The dark step is also the accent stripe in all modes."
+      },
+      "service/vision/light": {
+        "type": "COLOR",
+        "value": "{pink-700}",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "data-service=\"vision\", light: pink-700. The dark step is also the accent stripe in all modes."
+      },
+      "service/pulse/dark": {
+        "type": "COLOR",
+        "value": "{amber-400}",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "data-service=\"pulse\", dark: amber-400. The dark step is also the accent stripe in all modes."
+      },
+      "service/pulse/light": {
+        "type": "COLOR",
+        "value": "{amber-800}",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "data-service=\"pulse\", light: amber-800. The dark step is also the accent stripe in all modes."
+      },
+      "service/identity/dark": {
+        "type": "COLOR",
+        "value": "{blue-400}",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "data-service=\"identity\", dark: blue-400. The dark step is also the accent stripe in all modes."
+      },
+      "service/identity/light": {
+        "type": "COLOR",
+        "value": "{blue-700}",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "data-service=\"identity\", light: blue-700. The dark step is also the accent stripe in all modes."
+      },
+      "service/widgets/dark": {
+        "type": "COLOR",
+        "value": "{teal-400}",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "data-service=\"widgets\", dark: teal-400. The dark step is also the accent stripe in all modes."
+      },
+      "service/widgets/light": {
+        "type": "COLOR",
+        "value": "{teal-700}",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "data-service=\"widgets\", light: teal-700. The dark step is also the accent stripe in all modes."
+      },
+      "alpha/service/studio/dark/14": {
+        "type": "COLOR",
+        "value": "#818cf824",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "Derived by vfb: service/studio/dark at 14 %."
+      },
+      "alpha/service/llm/dark/14": {
+        "type": "COLOR",
+        "value": "#a78bfa24",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "Derived by vfb: service/llm/dark at 14 %."
+      },
+      "alpha/service/vision/dark/14": {
+        "type": "COLOR",
+        "value": "#f472b624",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "Derived by vfb: service/vision/dark at 14 %."
+      },
+      "alpha/service/pulse/dark/14": {
+        "type": "COLOR",
+        "value": "#fbbf2424",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "Derived by vfb: service/pulse/dark at 14 %."
+      },
+      "alpha/service/identity/dark/14": {
+        "type": "COLOR",
+        "value": "#60a5fa24",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "Derived by vfb: service/identity/dark at 14 %."
+      },
+      "alpha/service/widgets/dark/14": {
+        "type": "COLOR",
+        "value": "#2dd4bf24",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "Derived by vfb: service/widgets/dark at 14 %."
+      },
+      "alpha/service/studio/dark/8": {
+        "type": "COLOR",
+        "value": "#818cf814",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "Derived by vfb: service/studio/dark at 8 %."
+      },
+      "alpha/service/llm/dark/8": {
+        "type": "COLOR",
+        "value": "#a78bfa14",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "Derived by vfb: service/llm/dark at 8 %."
+      },
+      "alpha/service/vision/dark/8": {
+        "type": "COLOR",
+        "value": "#f472b614",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "Derived by vfb: service/vision/dark at 8 %."
+      },
+      "alpha/service/pulse/dark/8": {
+        "type": "COLOR",
+        "value": "#fbbf2414",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "Derived by vfb: service/pulse/dark at 8 %."
+      },
+      "alpha/service/identity/dark/8": {
+        "type": "COLOR",
+        "value": "#60a5fa14",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "Derived by vfb: service/identity/dark at 8 %."
+      },
+      "alpha/service/widgets/dark/8": {
+        "type": "COLOR",
+        "value": "#2dd4bf14",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "Derived by vfb: service/widgets/dark at 8 %."
+      },
+      "lab/fill": {
+        "type": "COLOR",
+        "value": "{violet-500}",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "data-group=\"lab\": graphic fill for glows, lines and banner art. Never text."
+      },
+      "lab/dark/accent": {
+        "type": "COLOR",
+        "value": "{violet-400}",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "data-group=\"lab\", dark: accent-2, accent-2-text and ring = violet-400."
+      },
+      "lab/dark/fg": {
+        "type": "COLOR",
+        "value": "{graphite-950}",
+        "scopes": [
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "data-group=\"lab\", dark: text on an accent fill = graphite-950."
+      },
+      "lab/light/accent": {
+        "type": "COLOR",
+        "value": "{violet-600}",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "data-group=\"lab\", light: accent-2, accent-2-text and ring = violet-600."
+      },
+      "lab/light/fg": {
+        "type": "COLOR",
+        "value": "{white}",
+        "scopes": [
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "data-group=\"lab\", light: text on an accent fill = white."
+      },
+      "ops/fill": {
+        "type": "COLOR",
+        "value": "{magenta-400}",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "data-group=\"ops\": graphic fill for glows, lines and banner art. Never text."
+      },
+      "ops/dark/accent": {
+        "type": "COLOR",
+        "value": "{magenta-400}",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "data-group=\"ops\", dark: accent-2, accent-2-text and ring = magenta-400."
+      },
+      "ops/dark/fg": {
+        "type": "COLOR",
+        "value": "{graphite-950}",
+        "scopes": [
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "data-group=\"ops\", dark: text on an accent fill = graphite-950."
+      },
+      "ops/light/accent": {
+        "type": "COLOR",
+        "value": "{fuchsia-700}",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "data-group=\"ops\", light: accent-2, accent-2-text and ring = fuchsia-700."
+      },
+      "ops/light/fg": {
+        "type": "COLOR",
+        "value": "{white}",
+        "scopes": [
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "data-group=\"ops\", light: text on an accent fill = white."
+      },
+      "venture/fill": {
+        "type": "COLOR",
+        "value": "{amber-500}",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "data-group=\"venture\": graphic fill for glows, lines and banner art. Never text."
+      },
+      "venture/dark/accent": {
+        "type": "COLOR",
+        "value": "{amber-400}",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "data-group=\"venture\", dark: accent-2, accent-2-text and ring = amber-400."
+      },
+      "venture/dark/fg": {
+        "type": "COLOR",
+        "value": "{graphite-950}",
+        "scopes": [
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "data-group=\"venture\", dark: text on an accent fill = graphite-950."
+      },
+      "venture/light/accent": {
+        "type": "COLOR",
+        "value": "{amber-700}",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "data-group=\"venture\", light: accent-2, accent-2-text and ring = amber-700."
+      },
+      "venture/light/fg": {
+        "type": "COLOR",
+        "value": "{white}",
+        "scopes": [
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "description": "data-group=\"venture\", light: text on an accent fill = white."
+      }
+    },
+    "size": {
+      "radius-sm": {
+        "type": "FLOAT",
+        "value": 10,
+        "scopes": [
+          "CORNER_RADIUS"
+        ],
+        "description": "Radius sm = 0.625rem."
+      },
+      "radius-md": {
+        "type": "FLOAT",
+        "value": 14,
+        "scopes": [
+          "CORNER_RADIUS"
+        ],
+        "description": "Radius md = 0.875rem."
+      },
+      "radius-card": {
+        "type": "FLOAT",
+        "value": 24,
+        "scopes": [
+          "CORNER_RADIUS"
+        ],
+        "description": "Radius card = 1.5rem."
+      },
+      "radius-page": {
+        "type": "FLOAT",
+        "value": 32,
+        "scopes": [
+          "CORNER_RADIUS"
+        ],
+        "description": "Radius page = 2rem."
+      },
+      "radius-pill": {
+        "type": "FLOAT",
+        "value": 9999,
+        "scopes": [
+          "CORNER_RADIUS"
+        ],
+        "description": "Radius pill = 9999px."
+      },
+      "space-1": {
+        "type": "FLOAT",
+        "value": 4,
+        "scopes": [
+          "WIDTH_HEIGHT",
+          "GAP"
+        ],
+        "description": "Tailwind 4 spacing step (0.25rem unit). Not in @synthwerk/tokens: Tailwind owns spacing."
+      },
+      "space-2": {
+        "type": "FLOAT",
+        "value": 8,
+        "scopes": [
+          "WIDTH_HEIGHT",
+          "GAP"
+        ],
+        "description": "Tailwind 4 spacing step (0.25rem unit). Not in @synthwerk/tokens: Tailwind owns spacing."
+      },
+      "space-3": {
+        "type": "FLOAT",
+        "value": 12,
+        "scopes": [
+          "WIDTH_HEIGHT",
+          "GAP"
+        ],
+        "description": "Tailwind 4 spacing step (0.25rem unit). Not in @synthwerk/tokens: Tailwind owns spacing."
+      },
+      "space-4": {
+        "type": "FLOAT",
+        "value": 16,
+        "scopes": [
+          "WIDTH_HEIGHT",
+          "GAP"
+        ],
+        "description": "Tailwind 4 spacing step (0.25rem unit). Not in @synthwerk/tokens: Tailwind owns spacing."
+      },
+      "space-6": {
+        "type": "FLOAT",
+        "value": 24,
+        "scopes": [
+          "WIDTH_HEIGHT",
+          "GAP"
+        ],
+        "description": "Tailwind 4 spacing step (0.25rem unit). Not in @synthwerk/tokens: Tailwind owns spacing."
+      },
+      "space-8": {
+        "type": "FLOAT",
+        "value": 32,
+        "scopes": [
+          "WIDTH_HEIGHT",
+          "GAP"
+        ],
+        "description": "Tailwind 4 spacing step (0.25rem unit). Not in @synthwerk/tokens: Tailwind owns spacing."
+      },
+      "space-12": {
+        "type": "FLOAT",
+        "value": 48,
+        "scopes": [
+          "WIDTH_HEIGHT",
+          "GAP"
+        ],
+        "description": "Tailwind 4 spacing step (0.25rem unit). Not in @synthwerk/tokens: Tailwind owns spacing."
+      },
+      "space-16": {
+        "type": "FLOAT",
+        "value": 64,
+        "scopes": [
+          "WIDTH_HEIGHT",
+          "GAP"
+        ],
+        "description": "Tailwind 4 spacing step (0.25rem unit). Not in @synthwerk/tokens: Tailwind owns spacing."
+      },
+      "space-24": {
+        "type": "FLOAT",
+        "value": 96,
+        "scopes": [
+          "WIDTH_HEIGHT",
+          "GAP"
+        ],
+        "description": "Tailwind 4 spacing step (0.25rem unit). Not in @synthwerk/tokens: Tailwind owns spacing."
+      },
+      "focus-outline": {
+        "type": "FLOAT",
+        "value": 2,
+        "scopes": [
+          "STROKE_FLOAT"
+        ],
+        "description": "Focus ring width: 2px solid var(--ring)."
+      },
+      "focus-outline-offset": {
+        "type": "FLOAT",
+        "value": 2,
+        "scopes": [
+          "GAP"
+        ],
+        "description": "Gap between a control and its focus ring."
+      }
+    },
+    "type": {
+      "font-display": {
+        "type": "STRING",
+        "value": "Space Mono",
+        "scopes": [
+          "FONT_FAMILY"
+        ],
+        "description": "\"Space Mono\", ui-monospace, SFMono-Regular, Menlo, monospace. Weights 400, 700."
+      },
+      "font-sans": {
+        "type": "STRING",
+        "value": "Inter",
+        "scopes": [
+          "FONT_FAMILY"
+        ],
+        "description": "Inter, system-ui, -apple-system, \"Segoe UI\", sans-serif. Weights 400, 600."
+      },
+      "font-mono": {
+        "type": "STRING",
+        "value": "JetBrains Mono",
+        "scopes": [
+          "FONT_FAMILY"
+        ],
+        "description": "\"JetBrains Mono\", ui-monospace, SFMono-Regular, Menlo, monospace. Weights 400, 700."
+      },
+      "text-xs": {
+        "type": "FLOAT",
+        "value": 12,
+        "scopes": [
+          "FONT_SIZE"
+        ],
+        "description": "Text step xs: 12 px."
+      },
+      "text-xs-line-height": {
+        "type": "FLOAT",
+        "value": 16,
+        "scopes": [
+          "LINE_HEIGHT"
+        ],
+        "description": "Line height of step xs: 16 px."
+      },
+      "text-sm": {
+        "type": "FLOAT",
+        "value": 13,
+        "scopes": [
+          "FONT_SIZE"
+        ],
+        "description": "Text step sm: 13 px."
+      },
+      "text-sm-line-height": {
+        "type": "FLOAT",
+        "value": 20,
+        "scopes": [
+          "LINE_HEIGHT"
+        ],
+        "description": "Line height of step sm: 20 px."
+      },
+      "text-base": {
+        "type": "FLOAT",
+        "value": 15,
+        "scopes": [
+          "FONT_SIZE"
+        ],
+        "description": "Text step base: 15 px."
+      },
+      "text-base-line-height": {
+        "type": "FLOAT",
+        "value": 24,
+        "scopes": [
+          "LINE_HEIGHT"
+        ],
+        "description": "Line height of step base: 24 px."
+      },
+      "text-lg": {
+        "type": "FLOAT",
+        "value": 17,
+        "scopes": [
+          "FONT_SIZE"
+        ],
+        "description": "Text step lg: 17 px."
+      },
+      "text-lg-line-height": {
+        "type": "FLOAT",
+        "value": 26,
+        "scopes": [
+          "LINE_HEIGHT"
+        ],
+        "description": "Line height of step lg: 26 px."
+      },
+      "text-xl": {
+        "type": "FLOAT",
+        "value": 20,
+        "scopes": [
+          "FONT_SIZE"
+        ],
+        "description": "Text step xl: 20 px."
+      },
+      "text-xl-line-height": {
+        "type": "FLOAT",
+        "value": 28,
+        "scopes": [
+          "LINE_HEIGHT"
+        ],
+        "description": "Line height of step xl: 28 px."
+      },
+      "text-2xl": {
+        "type": "FLOAT",
+        "value": 24,
+        "scopes": [
+          "FONT_SIZE"
+        ],
+        "description": "Text step 2xl: 24 px."
+      },
+      "text-2xl-line-height": {
+        "type": "FLOAT",
+        "value": 30,
+        "scopes": [
+          "LINE_HEIGHT"
+        ],
+        "description": "Line height of step 2xl: 30 px."
+      },
+      "text-3xl": {
+        "type": "FLOAT",
+        "value": 30,
+        "scopes": [
+          "FONT_SIZE"
+        ],
+        "description": "Text step 3xl: 30 px."
+      },
+      "text-3xl-line-height": {
+        "type": "FLOAT",
+        "value": 36,
+        "scopes": [
+          "LINE_HEIGHT"
+        ],
+        "description": "Line height of step 3xl: 36 px."
+      },
+      "text-5xl": {
+        "type": "FLOAT",
+        "value": 48,
+        "scopes": [
+          "FONT_SIZE"
+        ],
+        "description": "Text step 5xl: 48 px."
+      },
+      "text-5xl-line-height": {
+        "type": "FLOAT",
+        "value": 52,
+        "scopes": [
+          "LINE_HEIGHT"
+        ],
+        "description": "Line height of step 5xl: 52 px."
+      }
+    },
+    "motion": {
+      "duration-instant": {
+        "type": "FLOAT",
+        "value": 80,
+        "description": "80ms. Reduced motion: 0.01ms."
+      },
+      "duration-fast": {
+        "type": "FLOAT",
+        "value": 150,
+        "description": "150ms. Reduced motion: 0.01ms."
+      },
+      "duration-base": {
+        "type": "FLOAT",
+        "value": 200,
+        "description": "200ms. Reduced motion: 0.01ms."
+      },
+      "duration-slow": {
+        "type": "FLOAT",
+        "value": 320,
+        "description": "320ms. Reduced motion: 0.01ms."
+      },
+      "duration-warp": {
+        "type": "FLOAT",
+        "value": 550,
+        "description": "550ms. Reduced motion: 0.01ms."
+      }
+    }
+  },
+  "text": {
+    "text/xs": {
+      "family": "Inter",
+      "style": "Regular",
+      "size": 12,
+      "lineHeight": "16px",
+      "description": "Inter 12/16. Captions, hints, meta."
+    },
+    "text/sm": {
+      "family": "Inter",
+      "style": "Regular",
+      "size": 13,
+      "lineHeight": "20px",
+      "description": "Inter 13/20. UI text, table cells."
+    },
+    "text/base": {
+      "family": "Inter",
+      "style": "Regular",
+      "size": 15,
+      "lineHeight": "24px",
+      "description": "Inter 15/24. Body."
+    },
+    "text/lg": {
+      "family": "Inter",
+      "style": "Regular",
+      "size": 17,
+      "lineHeight": "26px",
+      "description": "Inter 17/26. Lead text."
+    },
+    "text/sm-strong": {
+      "family": "Inter",
+      "style": "Semi Bold",
+      "size": 13,
+      "lineHeight": "20px",
+      "description": "Inter 600 13/20. Small controls, button sm."
+    },
+    "text/base-strong": {
+      "family": "Inter",
+      "style": "Semi Bold",
+      "size": 15,
+      "lineHeight": "24px",
+      "description": "Inter 600 15/24. Controls, button md."
+    },
+    "heading/xl": {
+      "family": "Inter",
+      "style": "Semi Bold",
+      "size": 20,
+      "lineHeight": "28px",
+      "description": "Inter 600 20/28."
+    },
+    "heading/2xl": {
+      "family": "Inter",
+      "style": "Semi Bold",
+      "size": 24,
+      "lineHeight": "30px",
+      "description": "Inter 600 24/30."
+    },
+    "heading/3xl": {
+      "family": "Inter",
+      "style": "Semi Bold",
+      "size": 30,
+      "lineHeight": "36px",
+      "letterSpacing": -1,
+      "description": "Inter 600 30/36."
+    },
+    "heading/5xl": {
+      "family": "Inter",
+      "style": "Semi Bold",
+      "size": 48,
+      "lineHeight": "52px",
+      "letterSpacing": -4,
+      "description": "Inter 600 48/52, tracking -0.04em."
+    },
+    "display/label-xs": {
+      "family": "Space Mono",
+      "style": "Bold",
+      "size": 12,
+      "lineHeight": "16px",
+      "letterSpacing": 15,
+      "case": "UPPER",
+      "description": "Space Mono Bold 12/16, capitals, tracking 0.15em. Labels and pills."
+    },
+    "display/label-sm": {
+      "family": "Space Mono",
+      "style": "Regular",
+      "size": 13,
+      "lineHeight": "20px",
+      "description": "Space Mono 13/20. ASCII art, $ command snippets."
+    },
+    "display/3xl": {
+      "family": "Space Mono",
+      "style": "Bold",
+      "size": 30,
+      "lineHeight": "36px",
+      "description": "Space Mono Bold 30/36."
+    },
+    "display/5xl": {
+      "family": "Space Mono",
+      "style": "Bold",
+      "size": 48,
+      "lineHeight": "52px",
+      "letterSpacing": -4,
+      "description": "Space Mono Bold 48/52, tracking -0.04em."
+    },
+    "display/xl": {
+      "family": "Space Mono",
+      "style": "Bold",
+      "size": 20,
+      "lineHeight": "28px",
+      "description": "Space Mono Bold 20/28. Wordmark in bars."
+    },
+    "display/7xl": {
+      "family": "Space Mono",
+      "style": "Bold",
+      "size": 72,
+      "lineHeight": "76px",
+      "letterSpacing": -4,
+      "description": "Space Mono Bold 72/76, -4 %. Figma-only hero step above the 5xl token."
+    },
+    "display/9xl": {
+      "family": "Space Mono",
+      "style": "Bold",
+      "size": 128,
+      "lineHeight": "128px",
+      "letterSpacing": -4,
+      "description": "Space Mono Bold 128, -4 %. Figma-only wordmark step for banners."
+    },
+    "mono/sm": {
+      "family": "JetBrains Mono",
+      "style": "Regular",
+      "size": 13,
+      "lineHeight": "20px",
+      "description": "JetBrains Mono 13/20. Code, logs, diffs."
+    },
+    "mono/base": {
+      "family": "JetBrains Mono",
+      "style": "Regular",
+      "size": 15,
+      "lineHeight": "24px",
+      "description": "JetBrains Mono 15/24. Large code."
+    }
+  },
+  "effects": {
+    "effects/glow-dark": [
+      {
+        "type": "DROP_SHADOW",
+        "color": "#6366f1",
+        "opacity": 0.25,
+        "x": 0,
+        "y": 0,
+        "blur": 40,
+        "spread": -10
+      }
+    ],
+    "effects/glow-light": [
+      {
+        "type": "DROP_SHADOW",
+        "color": "#6366f1",
+        "opacity": 0.15,
+        "x": 0,
+        "y": 0,
+        "blur": 20,
+        "spread": 2
+      }
+    ],
+    "effects/shadow-card-light": [
+      {
+        "type": "DROP_SHADOW",
+        "color": "#000000",
+        "opacity": 0.04,
+        "x": 0,
+        "y": 1,
+        "blur": 2,
+        "spread": 0
+      },
+      {
+        "type": "DROP_SHADOW",
+        "color": "#000000",
+        "opacity": 0.08,
+        "x": 0,
+        "y": 4,
+        "blur": 24,
+        "spread": -8
+      }
+    ]
+  }
+}
