@@ -48,9 +48,9 @@ What Synthwerk is:
 - Hosting: the demo runs on Vercel, one IONOS VPS and Supabase. prd runs on
   the same IONOS VPS (decided 2026-10-29). The prd database and front ends are
   Open (infrastructure.md).
-- Email: Resend. Object storage: Supabase Storage. Mascot index: pgvector in
-  the stack's PostgreSQL, embedding model multilingual-e5-small (all decided
-  2026-10-29).
+- Email: Resend. Object storage: Supabase Storage. Mascot index: a flat
+  vector file in the mascot image, built with multilingual-e5-small, exact
+  search in memory (all decided 2026-10-29).
 - Branching: trunk + promotion. main -> dev, tag -> stg, approval -> prd, same
   image digest.
 - This repo: every pull request runs the checks workflow (ASCII rules, links,

@@ -142,8 +142,8 @@ Second binary in `synthwerk-llm`. The name Strobe is not final.
 | Feature | MVP | Epic | State |
 |---|---|---|---|
 | Answers without sign-in on the public site and the docs | no | E6 | planned |
-| Answers Synthwerk facts from its own index and cites a source. Index: pgvector, model `multilingual-e5-small` (decided 2026-10-29, #78) | no | E6 | planned |
-| No tools, no database, no network egress. Local model only. Open (M4, #48): how this rule fits the pgvector index | no | E6 | planned |
+| Answers Synthwerk facts from its own index and cites a source. Index: flat vector file in the image, model `multilingual-e5-small` (decided 2026-10-29, #78) | no | E6 | planned |
+| No tools, no database, no network egress. Local model only | no | E6 | planned |
 | No conversation is stored on the server | no | E6 | planned |
 
 ## Platform

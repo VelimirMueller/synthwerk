@@ -7,7 +7,7 @@ Where Synthwerk runs. This page covers hosting, the database and the demo.
 - **Today (2026-10-23):** vision runs on dev on the VPS, deployed by digest on every merge to `main`. A second, small VPS watches it from outside. The other services run on a developer machine.
 - **Decided 2026-10-10:** the demo runs on the stack below.
 - **Decided 2026-10-21:** the server is one IONOS VPS. It replaces the earlier plan of one VM per environment.
-- **Decided 2026-10-29:** prd runs on the same IONOS VPS (#8). Email goes through Resend (#73). Uploads go to Supabase Storage (#77). The mascot index is pgvector in the stack's PostgreSQL, with the embedding model `multilingual-e5-small` (#78). See [Decisions of 2026-10-29](#decisions-of-2026-10-29).
+- **Decided 2026-10-29:** prd runs on the same IONOS VPS (#8). Email goes through Resend (#73). Uploads go to Supabase Storage (#77). The mascot index is a flat vector file in the mascot image, built with the embedding model `multilingual-e5-small` (#78). See [Decisions of 2026-10-29](#decisions-of-2026-10-29).
 - **Open:** the database and front ends for prd, and whether dev, stg and prd share the VPS. See [Open decisions](#open-decisions).
 
 <picture>
@@ -102,7 +102,7 @@ Measured on 2026-10-22 and 2026-10-23 with `lscpu`, `free -h`, `df -h`, `lsblk` 
 | Models | Local models on the VPS | CPU only. About 3B to 4B at 4-bit, see [The VPS](#the-vps) |
 | Email | Resend | Decided 2026-10-29 (#73). EU sending region. Mailpit catches mail in local development |
 | Object storage | Supabase Storage | Decided 2026-10-29 (#77). Provider only. The vision service still stores uploads in a local folder |
-| Vector index | pgvector in the stack's PostgreSQL | Decided 2026-10-29 (#78). For the mascot index |
+| Mascot index | Flat vector file in the mascot image | Decided 2026-10-29 (#78). Built at image build time. No database, no egress |
 | Embedding model | `multilingual-e5-small` on the VPS | Decided 2026-10-29 (#78). CPU only, 384 dimensions |
 | Secrets | GitHub environment secrets | No secret in a repo |
 
@@ -127,7 +127,7 @@ Measured on 2026-10-22 and 2026-10-23 with `lscpu`, `free -h`, `df -h`, `lsblk` 
 | Environments on the VPS | One VM each | dev only | Whether stg and prd share the 7.7 GiB VPS. Today all three deploy to one compose dir, so stg or prd on this host would replace dev |
 | Database | Postgres on the server, with its own backups | Supabase | Which one is used for prd |
 | Front ends | Served from the server behind the edge | Vercel | Which one is used for prd |
-| Mascot host | Its own VM with no network egress | Not placed | Whether the VPS can isolate it, and how the mascot reads its pgvector index (#48) |
+| Mascot host | Its own VM with no network egress | Not placed | Whether the VPS can isolate it (#48) |
 
 - A decision here changes [architecture.md](architecture.md). Update both in one pull request.
 
@@ -137,10 +137,10 @@ Velimir decided these four topics on 2026-10-29.
 
 | Topic | Decision | Issue | Still open |
 |---|---|---|---|
-| Production hosting | The existing IONOS VPS, measured in [The VPS](#the-vps) | #8 | Database and front ends for prd. Whether stg and prd share the VPS |
+| Production hosting | The existing IONOS VPS, measured in [The VPS](#the-vps) | #8 | Database and front ends for prd. Whether stg and prd share the VPS (#101) |
 | Email provider | Resend | #73 | Domain set-up and the DPA before the first real mail |
 | Object storage | Supabase Storage | #77 | The upload code in `synthwerk-vision`, keyed per org (#77) |
-| Embedding model and vector index | `multilingual-e5-small` and pgvector in the stack's PostgreSQL | #78 | How the mascot reads the index and stays isolated (#48) |
+| Embedding model and mascot index | `multilingual-e5-small`, flat vector file in the mascot image, exact search in memory | #78 | Where the mascot runs (#48) |
 
 ### Email: Resend
 
@@ -156,14 +156,16 @@ Velimir decided these four topics on 2026-10-29.
 - Free plan: 1 GB storage, 50 MB per file, 5 GB egress. A free project pauses after 1 week with no activity. Source: supabase.com/pricing, read 2026-10-29.
 - The S3 API has no object versioning. A deleted object is gone.
 
-### Embedding model and vector index
+### Embedding model and mascot index
 
 - **Model: `intfloat/multilingual-e5-small`.** MIT license. 118M parameters, 12 layers, 384 dimensions, 512 tokens per input. About 100 languages, German and English included.
 - **Memory: about 0.5 GB** with the runtime (0.25 GB of weights at 16-bit). It fits next to the 3B to 4B chat model in the [memory budget](#memory-budget-estimate).
-- **Index: pgvector** in the stack's PostgreSQL. Column type `vector(384)`, HNSW index, cosine distance.
+- **Index: a flat vector file in the mascot image.** The image build embeds the public corpus with `multilingual-e5-small`. It writes one 384-dimension float32 vector per chunk, normalised, plus the source of each chunk for the citation.
+- **Search: exact cosine search in memory.** The vectors are normalised, so cosine is a dot product. No index library, no database.
+- **Size:** 1.5 KB per chunk. 10,000 chunks take about 15 MB and one search takes a few milliseconds on the CPU. The corpus is the public docs, so it stays far smaller.
+- **No egress:** the model files and the vector file ship in the image. The mascot embeds each question in its own process. A new corpus needs a new image.
 - **Runtime:** Ollama, the runtime of the `synthwerk-llm` gateway, from a GGUF import. The official Ollama library has no copy of this model. If Ollama cannot load it, ONNX Runtime runs it. ONNX Runtime is in use in `synthwerk-vision`.
 - Inputs need the prefix `query: ` or `passage: `. Without it, the results get worse.
-- The stack image `postgres:18.6-alpine` has no pgvector. The database image needs the extension before the first index.
 
 | Candidate | Dimensions | Memory | Why not |
 |---|---|---|---|

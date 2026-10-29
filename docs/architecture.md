@@ -5,7 +5,7 @@ The full diagrams behind the [README](../README.md). The README keeps the short 
 - Each service and front end is a `synthwerk-<name>` repo. `synthwerk-infra` configures the edge and the bus.
 - The llm service reads the other services through read-only MCP tools.
 - **Strobe** is the public mascot: a no-login helper on the website. It is isolated from all other services. The name is not final.
-- Decided 2026-10-29 (#78): the mascot index is pgvector in the stack's PostgreSQL. The diagram still says "no db". Open (M4, #48): how the mascot reads the index and stays isolated, for example a read-only role on its own schema.
+- Decided 2026-10-29 (#78): the mascot index is a flat vector file in the mascot image, built at image build time with `multilingual-e5-small`. The mascot searches it in memory. It keeps the rule: no database, no egress.
 - Decided 2026-10-29 (#8): prd runs on the existing IONOS VPS. See [infrastructure.md](infrastructure.md#decisions-of-2026-10-29).
 
 ## Ecosystem

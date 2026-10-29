@@ -41,8 +41,7 @@ Every outside tool and service that Synthwerk uses or plans to use.
 | Zitadel | Sign-in, passkeys, MFA | planned |
 | NATS JetStream | Event bus | planned |
 | PostgreSQL | Database | planned |
-| pgvector | Vector index for the mascot (#78). PostgreSQL License | planned, decided 2026-10-29 |
-| `multilingual-e5-small` | Embedding model for the mascot index (#78). MIT license | planned, decided 2026-10-29 |
+| `multilingual-e5-small` | Embedding model for the mascot index (#78). Ships in the mascot image with a flat vector file. No index library. MIT license | planned, decided 2026-10-29 |
 | Traefik | Edge and TLS | planned |
 | Coraza | Web application firewall | planned |
 | OpenTelemetry | Traces, metrics, logs | planned |
