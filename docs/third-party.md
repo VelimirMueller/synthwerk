@@ -15,12 +15,24 @@ Every outside tool and service that Synthwerk uses or plans to use.
 | Figma | Design system, roadmap board | in use | Design files |
 | Vercel | Front-end hosting for the demo | planned | Front-end code, request logs |
 | Supabase | Postgres for the demo | planned | Synthetic demo data |
-| IONOS | VPS for the back end and models | planned | Demo traffic |
+| Supabase Storage | Object storage for uploads (#77) | planned, decided 2026-10-29 | Uploaded images |
+| IONOS | VPS for the back end and models. Hosts prd (#8) | in use for dev, prd decided 2026-10-29 | Demo traffic, later all prd traffic |
+| Resend | Email: invites, double opt-in (#73) | planned, decided 2026-10-29 | Mail addresses, mail text, delivery logs |
 | Hosted LLM provider | Chat answers in production | planned, choice per environment | Prompts of signed-in users |
 | Payment provider | Checkout and paid plans | planned, milestone M5 | Billing data |
 
 - A provider that processes personal data needs a data processing agreement before go-live.
 - Development needs none of the paid services.
+
+### Region, DPA and price
+
+| Service | Region | DPA | Price |
+|---|---|---|---|
+| Resend | Sends from Ireland (`eu-west-1`). Account data and logs stay in the US | Yes, with EU SCCs and the EU-U.S. Data Privacy Framework | Free: 3,000 mails per month, 100 per day. Pro: 20 USD per month |
+| Supabase Storage | EU region, same project as the database (#15) | Yes, accept it before real data | Free: 1 GB, 50 MB per file, 5 GB egress. Pauses after 1 week with no activity |
+
+- Sources: resend.com/pricing, resend.com/legal/dpa, resend.com/docs/dashboard/domains/regions, supabase.com/pricing. Read on 2026-10-29.
+- The details are in [infrastructure.md](infrastructure.md#decisions-of-2026-10-29).
 
 ## Run on our hosts
 
@@ -29,6 +41,8 @@ Every outside tool and service that Synthwerk uses or plans to use.
 | Zitadel | Sign-in, passkeys, MFA | planned |
 | NATS JetStream | Event bus | planned |
 | PostgreSQL | Database | planned |
+| pgvector | Vector index for the mascot (#78). PostgreSQL License | planned, decided 2026-10-29 |
+| `multilingual-e5-small` | Embedding model for the mascot index (#78). MIT license | planned, decided 2026-10-29 |
 | Traefik | Edge and TLS | planned |
 | Coraza | Web application firewall | planned |
 | OpenTelemetry | Traces, metrics, logs | planned |

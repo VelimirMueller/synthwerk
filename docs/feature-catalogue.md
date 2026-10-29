@@ -62,7 +62,7 @@ Repos: `synthwerk-widgets`, `synthwerk-vision`.
 | Feature | MVP | Epic | State |
 |---|---|---|---|
 | Image labels with an open vocabulary and a topic tree | no | E5 | working in `synthwerk-vision` |
-| Upload a file or take a photo | no | E5 | planned |
+| Upload a file or take a photo. Uploads go to Supabase Storage (decided 2026-10-29, #77) | no | E5 | planned |
 | Client resizes the image before upload | no | E5 | planned |
 | Primary label, topic, uncertainty flag and alternatives | no | E5 | planned |
 | Vision widget installs as a PWA | no | E5 | planned |
@@ -75,7 +75,7 @@ Repo: `synthwerk-studio`.
 
 | Feature | MVP | Epic | State |
 |---|---|---|---|
-| List, invite and deactivate users. Change roles | yes | E4 | planned |
+| List, invite and deactivate users. Change roles. Invite mail through Resend (decided 2026-10-29, #73) | yes | E4 | planned |
 | Manage apps and allow-lists. Generate the snippet. Live preview | yes | E4 | planned |
 | Widget settings with a preview that updates without reload | yes | E4 | planned |
 | AI settings: model alias, system prompt, input length, quota | yes | E4 | planned |
@@ -133,7 +133,7 @@ Repo: `synthwerk-studio`.
 | Analytics only after opt-in consent | no | E6 | planned |
 | Section editor: hero, proof, benefits, pricing, FAQ, call to action | no | E6 | planned |
 | Preview, publish, roll back | no | E6 | planned |
-| Lead capture with double opt-in | no | E6 | planned |
+| Lead capture with double opt-in. Mail through Resend (decided 2026-10-29, #73) | no | E6 | planned |
 
 ## Public mascot
 
@@ -142,8 +142,8 @@ Second binary in `synthwerk-llm`. The name Strobe is not final.
 | Feature | MVP | Epic | State |
 |---|---|---|---|
 | Answers without sign-in on the public site and the docs | no | E6 | planned |
-| Answers Synthwerk facts from its own index and cites a source | no | E6 | planned |
-| No tools, no database, no network egress. Local model only | no | E6 | planned |
+| Answers Synthwerk facts from its own index and cites a source. Index: pgvector, model `multilingual-e5-small` (decided 2026-10-29, #78) | no | E6 | planned |
+| No tools, no database, no network egress. Local model only. Open (M4, #48): how this rule fits the pgvector index | no | E6 | planned |
 | No conversation is stored on the server | no | E6 | planned |
 
 ## Platform

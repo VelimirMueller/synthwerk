@@ -7,6 +7,14 @@ Changes across all Synthwerk repos are in [docs/release-notes.md](docs/release-n
 
 This file started on 2026-10-10. The earlier entries are taken from the merged pull requests #1 to #5, so they list files that were already on `main`, for example `docs/architecture.md`.
 
+## 2026-10-29
+
+### Changed
+
+- `docs/infrastructure.md`: four decisions of 2026-10-29. prd runs on the existing IONOS VPS (#8). Email: Resend (#73). Object storage: Supabase Storage (#77). Mascot index: pgvector with `multilingual-e5-small`, 384 dimensions, about 0.5 GB (#78). The memory budget has a row for the embedding model.
+- `docs/third-party.md`: rows for Resend, Supabase Storage, pgvector and `multilingual-e5-small`, with region, DPA and price.
+- `docs/architecture.md`, `docs/feature-catalogue.md`, `docs/CLAUDE-PROJECT.md`, `docs/stakeholder-guide.md`, `docs/README.md`: point to the decisions.
+
 ## 2026-10-21
 
 ### Added
