@@ -54,7 +54,7 @@ A line marked `planned` names a thing that does not exist yet. The page says whe
 
 | Topic | Where | State |
 |---|---|---|
-| Infrastructure | [infrastructure.md](infrastructure.md) | demo stack decided, production plan open |
+| Infrastructure | [infrastructure.md](infrastructure.md) | demo stack and prd host decided, prd database and front ends open |
 | Hosting and database | [infrastructure.md](infrastructure.md#hosting-and-database) | written |
 | CI/CD | [ci-cd.md](ci-cd.md) | blueprint v1 released |
 | Third-party tools | [third-party.md](third-party.md) | written |

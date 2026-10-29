@@ -66,7 +66,7 @@ Synthwerk in five minutes, for people who decide and do not build.
 |---|---|
 | One person builds it | Small repos, shared CI, each part works alone |
 | The scope is large | The MVP is epics E0 to E4. All other parts come later |
-| Hosting is not final | The demo stack is decided. The production choice is open, see [infrastructure.md](infrastructure.md) |
+| Hosting is not final | The demo stack is decided. prd runs on the IONOS VPS (decided 2026-10-29). The prd database and front ends are open, see [infrastructure.md](infrastructure.md) |
 | Dates slip | Each milestone has a testable proof. The board shows the state |
 
 ## Terms
