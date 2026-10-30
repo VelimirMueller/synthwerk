@@ -4,7 +4,7 @@
 
 Where Synthwerk runs. This page covers hosting, the database and the demo.
 
-- **Today (2026-10-23):** vision runs on dev on the VPS, deployed by digest on every merge to `main`. A second, small VPS watches it from outside. The other services run on a developer machine.
+- **Today (2026-10-30):** vision runs on dev on the VPS, deployed by digest. Since the fleet standard, vision builds and publishes its image only from `develop`: `deploy.yml` starts by hand on `develop` (`gh workflow run deploy.yml --ref develop`), not on a merge to `main`. Open: the GitHub environment `dev` of synthwerk-vision still allows only `main`, so the first `develop` run (2026-10-30) published the image but its deploy step was refused. A second, small VPS watches it from outside. The other services run on a developer machine; synthwerk-infra pins the published images by digest.
 - **Decided 2026-10-10:** the demo runs on the stack below.
 - **Decided 2026-10-21:** the server is one IONOS VPS. It replaces the earlier plan of one VM per environment.
 - **Decided 2026-10-29:** prd runs on the same IONOS VPS (#8). Email goes through Resend (#73). Uploads go to Supabase Storage (#77). The mascot index is a flat vector file in the mascot image, built with the embedding model `multilingual-e5-small` (#78). See [Decisions of 2026-10-29](#decisions-of-2026-10-29).
