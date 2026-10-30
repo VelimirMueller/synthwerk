@@ -96,12 +96,12 @@ Measured on 2026-10-22 and 2026-10-23 with `lscpu`, `free -h`, `df -h`, `lsblk` 
 | Front-end hosting | Vercel | Preview build per pull request |
 | Back-end hosting | IONOS VPS | Docker Compose. One host |
 | Database | Supabase Postgres | One project for the demo |
-| Event bus | NATS on the VPS | Runs locally in `synthwerk-infra`. Not on the VPS yet |
+| Event bus | NATS on the VPS | Runs locally in `synthwerk-infra`. Not on the VPS yet. Before stg: the NATS user of identity needs consumer rights on `EVT_LLM` |
 | Edge | Traefik and a web application firewall on the VPS | Runs locally in `synthwerk-infra`. Not on the VPS yet |
 | Telemetry | OpenTelemetry stack on the VPS | Runs locally in `synthwerk-infra`. Not on the VPS yet |
 | Models | Local models on the VPS | CPU only. About 3B to 4B at 4-bit, see [The VPS](#the-vps) |
 | Email | Resend | Decided 2026-10-29 (#73). EU sending region. Mailpit catches mail in local development |
-| Object storage | Supabase Storage | Decided 2026-10-29 (#77). Provider only. The vision service still stores uploads in a local folder |
+| Object storage | Supabase Storage | Decided 2026-10-29 (#77). vision stores uploads in an S3-compatible bucket, keyed and bounded per org: Supabase Storage on prd, a local folder or an S3 emulator in local development |
 | Mascot index | Flat vector file in the mascot image | Decided 2026-10-29 (#78). Built at image build time. No database, no egress |
 | Embedding model | `multilingual-e5-small` on the VPS | Decided 2026-10-29 (#78). CPU only, 384 dimensions |
 | Secrets | GitHub environment secrets | No secret in a repo |
@@ -139,7 +139,7 @@ Velimir decided these four topics on 2026-10-29.
 |---|---|---|---|
 | Production hosting | The existing IONOS VPS, measured in [The VPS](#the-vps) | #8 | Database and front ends for prd. Whether stg and prd share the VPS (#101) |
 | Email provider | Resend | #73 | Domain set-up and the DPA before the first real mail |
-| Object storage | Supabase Storage | #77 | The upload code in `synthwerk-vision`, keyed per org (#77) |
+| Object storage | Supabase Storage | #77 | Bucket and S3 keys per environment. The upload code in `synthwerk-vision` is merged (#77) |
 | Embedding model and mascot index | `multilingual-e5-small`, flat vector file in the mascot image, exact search in memory | #78 | Where the mascot runs (#48) |
 
 ### Email: Resend
