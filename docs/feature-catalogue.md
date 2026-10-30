@@ -137,13 +137,13 @@ Repo: `synthwerk-studio`.
 
 ## Public mascot
 
-Second binary in `synthwerk-llm`. The name Strobe is not final.
+Repo: [synthwerk-mascot](https://github.com/VelimirMueller/synthwerk-mascot) (#48). Its own Python service on ONNX Runtime, not a binary in `synthwerk-llm`: the image is the isolation boundary. Answers are passages from the docs with their source. No language model writes text. The name Strobe is not final.
 
 | Feature | MVP | Epic | State |
 |---|---|---|---|
 | Answers without sign-in on the public site and the docs | no | E6 | planned |
-| Answers Synthwerk facts from its own index and cites a source. Index: flat vector file in the image, model `multilingual-e5-small` (decided 2026-10-29, #78) | no | E6 | planned |
-| No tools, no database, no network egress. Local model only | no | E6 | planned |
+| Answers Synthwerk facts from its own index and cites a source. Index: flat vector file in the image, model `multilingual-e5-small` (decided 2026-10-29, #78) | no | E6 | working, not deployed |
+| No tools, no database, no network egress. Local model only. Strict rate limit | no | E6 | working, not deployed |
 | No conversation is stored on the server | no | E6 | planned |
 
 ## Platform

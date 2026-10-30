@@ -7,6 +7,17 @@ Changes across all Synthwerk repos are in [docs/release-notes.md](docs/release-n
 
 This file started on 2026-10-10. The earlier entries are taken from the merged pull requests #1 to #5, so they list files that were already on `main`, for example `docs/architecture.md`.
 
+## 2026-10-30
+
+### Added
+
+- `docs/developer-guide.md`: repo row for `synthwerk-mascot`, the isolated public mascot (#48).
+
+### Changed
+
+- `docs/feature-catalogue.md`, `docs/architecture.md`: the mascot is its own Python repo, not a binary in `synthwerk-llm`. Answers are passages from the docs with their source; no language model writes text (#48).
+- `docs/infrastructure.md`, `docs/third-party.md`: the mascot runs `multilingual-e5-small` on ONNX Runtime (int8 file, about 470 MiB in the container), not on Ollama (#48).
+
 ## 2026-10-29
 
 ### Changed

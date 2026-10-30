@@ -41,12 +41,12 @@ Every outside tool and service that Synthwerk uses or plans to use.
 | Zitadel | Sign-in, passkeys, MFA | planned |
 | NATS JetStream | Event bus | planned |
 | PostgreSQL | Database | planned |
-| `multilingual-e5-small` | Embedding model for the mascot index (#78). Ships in the mascot image with a flat vector file. No index library. MIT license | planned, decided 2026-10-29 |
+| `multilingual-e5-small` | Embedding model for the mascot index (#78). Ships in the mascot image with a flat vector file. No index library. MIT license | in use, `synthwerk-mascot` |
 | Traefik | Edge and TLS | planned |
 | Coraza | Web application firewall | planned |
 | OpenTelemetry | Traces, metrics, logs | planned |
 | Ollama | Local models in development | planned |
-| ONNX Runtime | Vision models on the CPU | in use, `synthwerk-vision` |
+| ONNX Runtime | Vision models and the mascot embedding model on the CPU | in use, `synthwerk-vision`, `synthwerk-mascot` |
 | Umami | Analytics, only after opt-in consent | planned |
 | Docker Compose | Run the stack on one host | planned |
 | OpenTofu | Build hosts and repo settings | planned |
