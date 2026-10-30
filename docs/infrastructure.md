@@ -164,7 +164,7 @@ Velimir decided these four topics on 2026-10-29.
 - **Search: exact cosine search in memory.** The vectors are normalised, so cosine is a dot product. No index library, no database.
 - **Size:** 1.5 KB per chunk. 10,000 chunks take about 15 MB and one search takes a few milliseconds on the CPU. The corpus is the public docs, so it stays far smaller.
 - **No egress:** the model files and the vector file ship in the image. The mascot embeds each question in its own process. A new corpus needs a new image.
-- **Runtime:** Ollama, the runtime of the `synthwerk-llm` gateway, from a GGUF import. The official Ollama library has no copy of this model. If Ollama cannot load it, ONNX Runtime runs it. ONNX Runtime is in use in `synthwerk-vision`.
+- **Runtime:** ONNX Runtime in [synthwerk-mascot](https://github.com/VelimirMueller/synthwerk-mascot) (#48), as in `synthwerk-vision`. The image uses the int8 ONNX file of the model authors: 118 MB, about 470 MiB of memory in the container. Ollama is not used.
 - Inputs need the prefix `query: ` or `passage: `. Without it, the results get worse.
 
 | Candidate | Dimensions | Memory | Why not |
