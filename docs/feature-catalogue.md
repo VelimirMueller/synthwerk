@@ -116,9 +116,9 @@ Repo: [synthwerk-sdk](https://github.com/VelimirMueller/synthwerk-sdk).
 | Feature | MVP | Epic | State |
 |---|---|---|---|
 | `@synthwerk/tokens`: colours, themes, type, accent families | yes | E0 | released, 0.2.0 |
-| `@synthwerk/sdk` core: sign-in, typed API client, chat stream client | yes | E3 | planned |
-| `@synthwerk/react` and `@synthwerk/vue` adapters | no | E7 | planned |
-| `create-synthwerk-app` scaffold. React default, Vue by config | no | E7 | planned |
+| `@synthwerk/sdk` core: sign-in, typed API client, chat stream client | yes | E3 | built, 0.3.0 |
+| `@synthwerk/react` and `@synthwerk/vue` adapters | no | E7 | built, 0.1.0 |
+| `create-synthwerk-app` scaffold. React default, Vue by config | no | E7 | built, 0.1.0 |
 | `synthwerk-ui` component library: seven Vue 3.5 components as `@synthwerk/ui-vue`. Package name: open (M2) | no | open (M2) | built, 0.1.0, see [design-system.md](design-system.md) |
 
 ## Public site and builder
