@@ -58,6 +58,7 @@ A line marked `planned` names a thing that does not exist yet. The page says whe
 | Hosting and database | [infrastructure.md](infrastructure.md#hosting-and-database) | written |
 | CI/CD | [ci-cd.md](ci-cd.md) | blueprint v1 released |
 | Third-party tools | [third-party.md](third-party.md) | written |
+| Security review | [security-review-2026-11.md](security-review-2026-11.md) | done 2026-11-16, 6 medium findings open |
 
 ## Project
 
